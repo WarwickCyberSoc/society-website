@@ -1,0 +1,4 @@
+Contact: mailto:u1906821@live.warwick.ac.uk
+Preferred-Languages: en
+Canonical: https://society.cyber.warwick.ac.uk/.well-known/security.txt
+
