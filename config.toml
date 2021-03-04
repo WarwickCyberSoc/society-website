@@ -46,22 +46,22 @@ search = true
   [[menu.nav]]
   name = "Blog Posts"
   url = "/post/"
-  weight = 2.0
+  weight = 3.0
 
   [[menu.nav]]
   name = "Tags"
   url = "/tags/"
-  weight = 3.0
+  weight = 5.0
 
   [[menu.nav]]
   name = "About"
   url = "/about/"
-  weight = 4.0
+  weight = 2.0
 
   [[menu.nav]]
   name = "Competitions"
   url = "/competitions/"
-  weight = 5.0
+  weight = 4.0
 
 [markup]
 defaultMarkdownHandler = "goldmark"
