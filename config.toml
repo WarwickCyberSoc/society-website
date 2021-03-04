@@ -27,10 +27,9 @@ dateFormat = "Jan 2, 2006"
 search = true
 #showThemeSwitcher = true
 #moveFooterToHeader = false
-#customCss = [
-#  "css/custom_01.css",
-#  "css/custom_02.css"
-#]
+customCss = [
+  "css/override-code.css"
+]
 #customJs = [
 #  "js/custom_01.js",
 #  "js/custom_02.js"

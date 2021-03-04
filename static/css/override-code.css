@@ -1,0 +1,6 @@
+/* Prism uses 1em for formatted code, this reduces it to a nicer size */
+
+code[class*="language-"], pre[class*="language-"]
+{
+font-size: 0.75em !important;
+}
