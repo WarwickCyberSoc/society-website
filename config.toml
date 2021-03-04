@@ -18,7 +18,7 @@ quality = 99.0
 
 [params]
 description = "WMG Cyber Society at the University of Warwick"
-homeMetaContent = "TODO"
+homeMetaContent = "WMG Cyber Society at the University of Warwick"
 footer = "Made with [Hugo](https://gohugo.io/). Themed by [Cupper](https://github.com/zwbetz-gh/cupper-hugo-theme)."
 dateFormat = "Jan 2, 2006"
 #codePenUser = "someUser"
@@ -44,24 +44,29 @@ search = true
   weight = 1.0
 
   [[menu.nav]]
-  name = "Blog Posts"
-  url = "/post/"
-  weight = 3.0
-
-  [[menu.nav]]
-  name = "Tags"
-  url = "/tags/"
-  weight = 5.0
-
-  [[menu.nav]]
-  name = "About"
+  name = "About Us"
   url = "/about/"
   weight = 2.0
+
+  [[menu.nav]]
+  name = "The Team"
+  url = "/team/"
+  weight = 3.0
 
   [[menu.nav]]
   name = "Competitions"
   url = "/competitions/"
   weight = 4.0
+
+  [[menu.nav]]
+  name = "Blog Posts"
+  url = "/post/"
+  weight = 5.0
+
+  [[menu.nav]]
+  name = "Tags"
+  url = "/tags/"
+  weight = 6.0
 
 [markup]
 defaultMarkdownHandler = "goldmark"
