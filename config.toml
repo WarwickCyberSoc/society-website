@@ -43,29 +43,24 @@ customCss = [
   weight = 1.0
 
   [[menu.nav]]
-  name = "About Us"
-  url = "/about/"
-  weight = 2.0
-
-  [[menu.nav]]
-  name = "The Team"
+  name = "Meet The Team"
   url = "/team/"
-  weight = 3.0
-
-  [[menu.nav]]
-  name = "Competitions"
-  url = "/competitions/"
-  weight = 4.0
+  weight = 2.0
 
   [[menu.nav]]
   name = "Blog Posts"
   url = "/post/"
-  weight = 5.0
+  weight = 3.0
+
+  [[menu.nav]]
+  name = "Report Security Issue"
+  url = "/.well-known/security.txt"
+  weight = 4.0
 
   [[menu.nav]]
   name = "Tags"
   url = "/tags/"
-  weight = 6.0
+  weight = 5.0
 
 [markup]
 defaultMarkdownHandler = "goldmark"
