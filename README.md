@@ -8,7 +8,8 @@ Install Hugo by following their guide [here.](https://gohugo.io/getting-started/
 You'll then want to [fork the git repository](https://docs.github.com/en/github/getting-started-with-github/fork-a-repo#fork-an-example-repository) in order to make a PR later. Once you have forked the repo, clone down your fork.
 
 ```
-git clone MYFORKURL
+# Note the recurse-submodules, this is required to download the theme.
+git clone --recurse-submodules -j8 MYFORKURL
 cd society-website
 hugo server -D
 ```
