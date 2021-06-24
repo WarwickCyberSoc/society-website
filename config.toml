@@ -44,7 +44,7 @@ customCss = [
 
   [[menu.nav]]
   name = "Meet The Team"
-  url = "/team/"
+  url = "/team"
   weight = 2.0
 
   [[menu.nav]]
