@@ -27,7 +27,7 @@ table tr:nth-child(4n+1)
 | President                       | Welfare Officer                 | External Comms Officer          |
 | Josh H.                         | Julia L.                        | Drew G.                         |
 |                                 |                                 |                                 |
-| ![Picture](/images/team/freyat.jpg) | ![Picture](/images/team/angusg.jpg) | ![Picture](/images/team/hackerman.jpg) |
+| ![Picture](/images/team/freyat.jpg) | ![Picture](/images/team/angusg.jpg) | ![Picture](/images/team/adamb.jpg) |
 | Treasurer                       | Social Executive                | Social Executive                |
 | Freya T.                        | Angus G.                        | Adam B.                         |
 |                                 |                                 |                                 |
