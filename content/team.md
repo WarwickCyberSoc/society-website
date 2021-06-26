@@ -22,7 +22,7 @@ table tr:nth-child(4n+1)
 }
 </style>
 
-| ![Picture](/images/team/joshh.jpg) | ![Picture](/images/team/hackerman.jpg) | ![Picture](/images/team/hackerman.jpg) |
+| ![Picture](/images/team/joshh.jpg) | ![Picture](/images/team/julial.jpg) | ![Picture](/images/team/drewg.jpg) |
 |---------------------------------|---------------------------------|---------------------------------|
 | President                       | Welfare Officer                 | External Comms Officer          |
 | Josh H.                         | Julia L.                        | Drew G.                         |
