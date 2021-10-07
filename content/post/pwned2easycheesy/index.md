@@ -414,4 +414,4 @@ And there we have it! Sending that payload to the server grants us a shell as `c
 Overall, this was a brilliant challenge, and I found it really fun to solve, with it being very rewarding when it finally worked for me.
 
 
-This blog post can also be found on Angus' personal site: https://angusgardnerwkc.github.io/2021/03/01/pwnEd_Easy_Cheesy_Writeup.html
+This blog post can also be found on Angus' personal site: https://angusgardnerwkc.github.io/2021/02/28/pwnEd_Easy_Cheesy_Writeup.html
