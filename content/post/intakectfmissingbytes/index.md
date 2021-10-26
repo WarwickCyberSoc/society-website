@@ -3,7 +3,6 @@ title: "IntakeCTF - Missing Bytes Writeup"
 tags: ["forensics", "intakectf"]
 date: 2021-10-26T18:18:41+01:00
 author: "Chris H"
-draft: true
 ---
 
 Here is my writeup for the **Missing Bytes** challenge from the IntakeCTF, hosted by the society.
