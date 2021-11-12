@@ -58,14 +58,19 @@ customCss = [
   weight = 4.0
 
   [[menu.nav]]
+  name = "Contact Us"
+  url = "mailto:cybersoc@warwick.ac.uk"
+  weight = 5.0
+
+  [[menu.nav]]
   name = "Report Security Issue"
   url = "/.well-known/security.txt"
-  weight = 5.0
+  weight = 6.0
 
   [[menu.nav]]
   name = "Tags"
   url = "/tags/"
-  weight = 6.0
+  weight = 7.0
 
 [markup]
 defaultMarkdownHandler = "goldmark"
