@@ -3,7 +3,7 @@ date: "2021"
 title: "Upcoming Events"
 ---
 
--- <style>
+<style>
 table
 {
 text-align: center;
@@ -13,9 +13,9 @@ width: auto;
 </style> 
 
 These are the upcoming academic talks, dates/times can change. 
-For exact details, keep upto date with the #talks channel.
+For exact details, keep up to date with the #talks channel.
 
---/ CAPACITY FOR INPERSON EVENTS /-- <br>
+**CAPACITY FOR INPERSON EVENTS** <br>
 As the lecture rooms as 'tiered' rooms, we can use the rooms full capacity. Thus, there are no realistic limitations which will apply for us.
 <br> MS.01 CAPACITY IS 270 <br>
 L3 CAPACITY IS 336 <br>
@@ -35,4 +35,4 @@ L3 CAPACITY IS 336 <br>
 </div>
 
 For in person events, you can find an exact way to get there by navigating to the <a href="https://warwick.ac.uk/about/visiting/maps/interactive/" target="_blank">university interactive map (here).</a> Then, search the room name, and view the floorplans for an exact way to get there. On the day, I'll be waiting outside the building. 
-<br> Questions? Message me (Drew) on Discord :)
+<br> Questions? Contact any of the [exec team](/team)
