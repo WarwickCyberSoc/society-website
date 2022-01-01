@@ -22,13 +22,15 @@ table tr:nth-child(4n+1)
 }
 </style>
 
-| ![Picture](/images/team/joshh.jpg) | ![Picture](/images/team/julial.jpg) | ![Picture](/images/team/drewg.jpg) |
+| ![Picture](/images/team/president.jpg) | ![Picture](/images/team/vicepres.jpg) | ![Picture](/images/team/excomms.jpg) |
 |---------------------------------|---------------------------------|---------------------------------|
-| President                       | Welfare Officer                 | External Comms Officer          |
-| Josh H.                         | Julia L.                        | Drew G.                         |
+| President                       | Vice President                  | External Comms Officer          |
+| Josh H.                         | Alex M.                         | Kunal S.                        |
 |                                 |                                 |                                 |
-| ![Picture](/images/team/freyat.jpg) | ![Picture](/images/team/angusg.jpg) | ![Picture](/images/team/adamb.jpg) |
+| ![Picture](/images/team/treasurer.jpg) | ![Picture](/images/team/social1.jpg) | ![Picture](/images/team/social2.jpg) |
 | Treasurer                       | Social Executive                | Social Executive                |
-| Freya T.                        | Angus G.                        | Adam B.                         |
+| Oscar C.                        | Chris H.                        | Joe B.                          |
 |                                 |                                 |                                 |
-
+| ![Picture](/images/team/welfare.jpg) | ![Picture](/images/team/technician.jpg) | |
+| Welfare Officer                 | Technician                      |                                 |
+| James J.                        | Cameron W.                      |                                 | 
