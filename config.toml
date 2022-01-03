@@ -19,7 +19,7 @@ quality = 99.0
 [params]
 description = "WMG Cyber Society at the University of Warwick"
 homeMetaContent = "WMG Cyber Society at the University of Warwick"
-footer = "Made with [Hugo](https://gohugo.io/). Themed by [Cupper](https://github.com/zwbetz-gh/cupper-hugo-theme)."
+footer = "Made with [Hugo](https://gohugo.io/). Theme based on [Cupper](https://github.com/zwbetz-gh/cupper-hugo-theme)."
 dateFormat = "Jan 2, 2006"
 #codePenUser = "someUser"
 #katex = true
