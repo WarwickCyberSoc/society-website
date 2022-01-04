@@ -32,4 +32,4 @@ Thank you to our sponsors for giving us swag for our participants and winners! I
 
 {{< figure src="sticker-mule-logo.png" width="500" alt="Sticker Mule Logo" >}}
 
-**Sticker Mule** offer custom printed items like stickers, labels and magnets for cheap prices! Check them out at [https://www.stickermule.com/](https://www.stickermule.com).
+**Sticker Mule** offer custom printed items like stickers, labels and magnets for cheap prices! Check them out at [https://www.stickermule.com/uk](https://www.stickermule.com/uk).
