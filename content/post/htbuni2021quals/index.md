@@ -2,6 +2,7 @@
 title: "HTB x UNI CTF 2021 Qualifier Winners"
 date: 2022-01-03T16:10:35Z
 author: "Joshua H."
+tags: ["ctf"]
 ---
 
 [HTB x UNI CTF 2021](https://www.hackthebox.com/universities/university-ctf-2021) is an annual CTF hosted by [Hack The Box](https://www.hackthebox.com/). **WMGCyber**, our society team came in first place, beating over nearly 600 other teams, as well as completing 25 out of the 29 possible challenges and being the first to solve a few of the challenges too!

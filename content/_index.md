@@ -19,5 +19,7 @@ We are a society of students studying Cyber Security at the [University of Warwi
 - [#1 pwnEd2 CTF (2021)](/pwned2ctfwinners)
 - [#1 Veracode The Hacker Games (2021)](https://www.veracode.com/press-release/university-warwick-wins-veracodes-first-ever-hacker-games)
 - [#1 HTB x UNI CTF Qualifiers (2021)](/htbuni2021quals)
+- [#1 BAESystems & University of Warwick Computing Society (2021)](/baesystemswinners)
+
 ## Interested with working with us?
 If you're interested in hosting an event, doing a talk (online or in-person) or anything else with the WMG Cyber Society, please feel free to contact us at cybersoc [at] warwick.ac.uk.
