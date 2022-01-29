@@ -36,9 +36,8 @@ For exact details, keep up to date with the #talks / #announcements channel.
 
 | Host | Details | Host URL | Discord message for extra info | Date
 | ------ | ------ | ------ | ------ | ------ | 
-| picoMini | Beginner CTF | <a href="https://play.picoctf.org/events/69" target="_blank">Pico site</a>  | <a href="https://discord.com/channels/626073898068344854/626372270201503775/925035675185733682" target="_blank">MSG</a> | 10th January - 4th February
-| Nettitude | ?? CTF | <a href="https://labs.nettitude.com/tag/ctf/" target="_blank">Nettitude writeups</a>  | <a href="#" target="_blank">MSG</a> | February (exact TBA)
-| WMG Cyber Society Society (us!) | Yet Another CTF | <a href="https://society.cyber.warwick.ac.uk/yetanotherctfannouncement/" target="_blank">More info blog</a>  | <a href="https://discord.com/channels/626073898068344854/626075437973372939/927631328176910457" target="_blank">MSG</a> | 2pm 3rd March - 12pm 6th March
+| Nettitude | Beginner CTF | <a href="https://labs.nettitude.com/tag/ctf/" target="_blank">Nettitude CTF Writeups</a>  | <a href="#" target="_blank">MSG</a> | 23rd February
+| WMG Cyber Society Society (us!) | Yet Another CTF, Beginner / Intermediate CTF | <a href="https://society.cyber.warwick.ac.uk/yetanotherctfannouncement/" target="_blank">More info available here</a>  | <a href="https://discord.com/channels/626073898068344854/626075437973372939/927631328176910457" target="_blank">MSG</a> | 2pm 2rd March - 12pm 6th March
 
 
 </div>
@@ -46,4 +45,4 @@ For exact details, keep up to date with the #talks / #announcements channel.
 
 
 For in person events, you can find an exact way to get there by navigating to the <a href="https://warwick.ac.uk/about/visiting/maps/interactive/" target="_blank">university interactive map (here).</a> Then, search the room name, and view the floorplans for an exact way to get there.
-<br> Questions? Contact any of the [exec team](/team)
+<br> Questions? Contact any of the [exec team](/team).
