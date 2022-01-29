@@ -7,7 +7,7 @@ author: "Joshua H."
 The WMG Cyber Society is proud to announce it's second CTF named **Yet Another CTF**! This is an internal CTF hosted by the society, open to all members on the BSc. Cyber Security course at the University of Warwick. The CTF, unlike [IntakeCTF](/intakectf), will follow the style of a regular CTF, where educational resources, hints, etc. will not be provided, therefore testing your skills! 
 
 **CTF Details:**
-- Starts at **2pm 3rd March in IMC246** (pizzas will be available like last time!)
+- Starts at **2pm 2rd March in IMC246** (pizzas will be available like last time!)
 - Ends at **12pm 6th March**
 - Maximum of **4 people per team**
 - Prizes will be available for the **top 3 teams!**
