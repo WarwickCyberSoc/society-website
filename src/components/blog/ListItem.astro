@@ -1,6 +1,6 @@
 ---
-import { Icon } from 'astro-icon';
-import { Picture } from '@astrojs/image/components';
+import { Icon } from 'astro-icon/components';
+import { Image } from 'astro:assets';
 import PostTags from '~/components/blog/Tags.astro';
 
 import { BLOG } from '~/config.mjs';
@@ -25,7 +25,6 @@ const link = !BLOG?.post?.disabled ? getPermalink(post.permalink, 'post') : '';
     <header>
       <div class="mb-1">
         <span class="text-sm">
-          <Icon name="tabler:clock" class="w-3.5 h-3.5 inline-block -mt-0.5 dark:text-gray-400" />
           <time datetime={String(post.publishDate)}>{getFormattedDate(post.publishDate)}</time>
           {
             post.category && (
