@@ -11,7 +11,7 @@ import { findImage } from '~/utils/images';
 
 export async function getStaticPaths() {
   if (BLOG?.disabled || BLOG?.post?.disabled) return [];
-  return (await fetchPosts()).map((post) => ({
+  return (await fetchPosts()).flatMap((post) => ({
     params: {
       blog: post.permalink,
     },
