@@ -1,6 +1,6 @@
 ---
-import { Icon } from 'astro-icon';
-import { Picture } from '@astrojs/image/components';
+import { Icon } from 'astro-icon/components';
+import { Image } from 'astro:assets';
 
 import PostTags from '~/components/blog/Tags.astro';
 import SocialShare from '~/components/common/SocialShare.astro';
@@ -23,7 +23,7 @@ const { post, url } = Astro.props;
     <header class={post.image ? '' : ''}>
       <div class="flex justify-between flex-col sm:flex-row max-w-3xl mx-auto mt-0 mb-2 px-4 sm:px-6 sm:items-center">
         <p>
-          <Icon name="tabler:clock" class="w-4 h-4 inline-block -mt-0.5 dark:text-gray-400" />
+          <Icon name="tabler:clock" class="w-4 h-4 inline-block -mt-0.5 pr-1 dark:text-gray-400" />
           <time datetime={String(post.publishDate)}>{getFormattedDate(post.publishDate)}</time>
         </p>
       </div>
@@ -40,7 +40,7 @@ const { post, url } = Astro.props;
 
       {
         post.image ? (
-          <Picture
+          <Image
             src={post.image}
             class="max-w-full lg:max-w-6xl mx-auto mb-6 sm:rounded-md bg-gray-400 dark:bg-slate-700"
             widths={[400, 900]}

@@ -1,5 +1,5 @@
 ---
-import { Picture } from '@astrojs/image/components';
+import { Image } from 'astro:assets';
 
 interface CallToAction {
   text: string;
@@ -35,7 +35,7 @@ const {
               {typeof image === 'string' ? (
                 <Fragment set:html={image} />
               ) : (
-                <Picture
+                <Image
                   class="rounded-md w-full"
                   widths={[1104]}
                   aspectRatio={1104 / 552}

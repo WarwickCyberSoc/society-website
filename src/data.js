@@ -18,13 +18,13 @@ export const headerData = {
   
 export const footerData = {
   secondaryLinks: [
-    { text: 'Report a Security Issue', href: 'mailto:cybersoc@warwick.ac.uk' },
+    { text: 'Report a Security Issue', href: 'mailto:contact@warwickcybersoc.com' },
   ],
   socialLinks: [
     { ariaLabel: 'Instagram', icon: 'tabler:brand-instagram', href: 'https://www.instagram.com/warwickcybersoc/' },
     { ariaLabel: 'Github', icon: 'tabler:brand-github', href: 'https://github.com/wmgcyber' },
     { ariaLabel: 'Discord', icon: 'tabler:brand-discord', href: ' https://discord.com/invite/WkKTxjEzUt'},
-    { ariaLable: 'Mail', icon: 'tabler:mail', href: 'mailto:cybersoc@warwick.ac.uk' },
+    { ariaLable: 'Mail', icon: 'tabler:mail', href: 'mailto:contact@warwickcybersoc.com' },
     { type: 'button', text: 'Join The Society', href: 'https://www.warwicksu.com/societies-sports/societies/61481/' },
   ],
   footNote: `
