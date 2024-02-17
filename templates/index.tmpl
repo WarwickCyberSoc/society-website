@@ -1,24 +1,38 @@
+{{ define "head" }}
+{{ end }}
 {{define "content"}}
-<img src="/headerImage.png" alt="Warwick Cyber Security Society" style="width:100%;height:100%;object-fit:cover;position:absolute;z-index:-1;filter:brightness(50%);top:0;left:0;"/>
-<h1>Warwick Cyber Security Society</h1>
-Hello and welcome to the Warwick Cyber Security Society! We're a friendly and inclusive community centred around our love of Cyber Security. From competing in CTFs to hosting talks and great socials, we're definitely the place to be if you love all things cyber, want to get involved with an up and coming discipline, or just want to have some fun!
-
-<h2>Society Achievements</h2>
-<ul>
-	{{range .Achievements}}
-		<li>{{.Title}}</li>
-	{{end}}
-</ul>
-<div id="exec" class="container">
-<h2>Meet the Exec</h2>
-<div class="execContainer">
-{{ range .Exec }}
-		<div class="exec">
-			<img src="{{.Image}}" alt="{{.Name}}" class="execImage"/> 
-			<h3>{{.Name}}</h3>
-			<h4>{{.Role}}</h4>
+<section>
+	<div class="container" id="mainHeader">
+		<img src="/images/headerImage.png" alt="Warwick Cyber Security Society"	class="headerImage" loading="eager" width="828" />
+		<p>
+		Hello and welcome to the <span class="bold inline">Warwick Cyber Security Society!</span> We're a friendly and inclusive community centred around our love of Cyber Security. From competing in CTFs to hosting talks and great socials, we're definitely the place to be if you love all things cyber, want to get involved with an up and coming discipline, or just want to have some fun!</p>
+	</div>
+</section>
+<section>
+	<div class="container" id="Achievements">
+	<h2 class="subTitle" id="Achievements">Society Achievements</h2>
+	<div class="achievementContainer">
+	{{ range .Achievements }}
+		<div class="achievement">
+			<span class="fa fa-circle-chevron-right icon"></span>
+			<p class="title" >{{.Title}}</p>
 		</div>
-{{end}}
-</div>
-</div>
+	{{end}}
+	</div>
+	</div>
+</section>
+<section class="alt-bg">
+	<div id="exec" class="container">
+	<h2 class="subTitle">Meet the Exec</h2>
+	<div class="execContainer">
+	{{ range .Exec }}
+			<div class="execMember bg">
+				<img src="images/{{.Image}}" alt="{{.Name}}" class="execImage" loading="lazy" width="300" />
+				<p class="name" >{{.Name}}</p>
+				<p class="role" >{{.Role}}</p>
+			</div>
+	{{end}}
+	</div>
+	</div>
+</section>
 {{end}}

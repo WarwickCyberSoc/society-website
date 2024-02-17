@@ -1,0 +1,21 @@
+{{define "head"}}
+<script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.10/index.global.js'></script>
+<script src='/js/google-calendar.js'></script>
+<script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+				let calendar = new FullCalendar.Calendar(calendarEl, {
+					googleCalendarApiKey: '{{.GoogleCalendarAPIKey}}',
+					events: {
+						googleCalendarId: '{{.GoogleCalendarID}}'
+						}
+				});
+        calendar.render();
+      });
+</script>
+{{end}}
+{{define "content"}}
+<section>
+	<div id="calendar"></div>
+</section>
+{{end}}
