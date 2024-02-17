@@ -104,20 +104,42 @@ func main() {
 
 	// Copy static files from public folder
 	// List all files in public folder
-	files, err = os.ReadDir("public")
+	copyDir("public")
+}
+
+func copyDir(dir string) {
+	// List all files in directory
+	files, err := os.ReadDir(dir)
 	if err != nil {
-		fmt.Println("Error reading public directory:", err)
+		fmt.Println("Error reading directory:", err)
 		os.Exit(1)
+	}
+	// Create directory in build directory
+	if dir != "public" {
+		err = os.Mkdir("build/" + dir[7:], 0755)
+		if err != nil {
+			fmt.Println("Error creating directory:", err)
+			os.Exit(1)
+		}
 	}
 	// Copy each file to build directory
 	for _, file := range files {
-		data, err := os.ReadFile("public/" + file.Name())
+		if file.IsDir() {
+			copyDir(dir + "/" + file.Name())
+			continue
+		}
+		data, err := os.ReadFile(dir + "/" + file.Name())
 		if err != nil {
 			fmt.Println("Error reading file:", err)
 			os.Exit(1)
 		}
-
-		err = os.WriteFile("build/" + file.Name(), data, 0644)
+		// Remove public from path
+		path := dir[6:]
+		// add slash if not present and length is not 0
+		if len(path) != 0 && path[len(path)-1] != '/' {
+			path += "/"
+		}
+		err = os.WriteFile("build/" + path + file.Name(), data, 0644)
 		if err != nil {
 			fmt.Println("Error copying file:", err)
 			os.Exit(1)
