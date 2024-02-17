@@ -18,6 +18,7 @@ type Config struct {
 	Achievements []achievement `yaml:"achievements"`
 	GoogleCalendarAPIKey string `yaml:"googleCalendarAPIKey"`
 	GoogleCalendarID string `yaml:"googleCalendarID"`
+	GoogleCalendarURL string `yaml:"googleCalendarURL"`
 }
 
 type execMember struct {
