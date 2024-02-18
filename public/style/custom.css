@@ -237,7 +237,6 @@ section {
 }
 
 #hamburger {
-	display: none;
 	min-width: 100vw;
 	position: sticky;
 	top: 0;
@@ -267,6 +266,7 @@ section {
 }
 
 #hamburgerContainer {
+	display: none;
 	position: fixed;
 	top: 0;
 	left: 0;
@@ -277,6 +277,7 @@ section {
 #hamburgerContainer[data-open="true"]{
 	background-color: var(--bg-color)/0.5;
 	backdrop-filter: blur(4px);
+	-webkit-backdrop-filter: blur(4px);
 }
 
 
@@ -332,7 +333,7 @@ section {
 		display: none;
 	}
 
-	#hamburger {
+	#hamburgerContainer {
 		display: block;
 	}
 
