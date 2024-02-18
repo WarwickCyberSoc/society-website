@@ -148,6 +148,7 @@ body {
 	margin-right: 0;
 	width: 100vw;
 	flex-basis: 100%;
+	z-index: 100;
 }
 
 #navbar ul {
@@ -213,6 +214,7 @@ section {
 	justify-content: space-between;
 	flex-direction: row;
 	min-width: 100vw;
+	z-index: 100;
 }
 
 #footer a {
@@ -262,6 +264,14 @@ section {
 	min-width: 100vw;
 	z-index: 100;
 	padding-left: 1rem;
+}
+
+#hamburgerContainer {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	z-index: 100;
 }
 
 #hamburgerContainer[data-open="true"]{
