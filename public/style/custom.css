@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 body {
 	--bg-color: rgb(15 23 42);
 	--bg-1: rgb(30 41 59);
@@ -8,10 +10,15 @@ body {
 	--font-size: 16px;
 	background-color: var(--bg-color);
 	color: rgb(203 213 225);
-	font-family: 'Inter', sans-serif;
+	font-family: 'Fira Sans', sans-serif;
   padding: 0;
   margin: 0;
 	max-width: 100vw;
+}
+
+h1, h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
 }
 
 .alt-bg {
@@ -252,8 +259,7 @@ section {
 #hamburger a {
 	color: #cbd5e1;
 	text-decoration: none;
-	font-size: 4rem;
-	padding-left: 1rem;
+	font-size: 2rem;
 }
 
 #hamburger a:hover {
@@ -268,15 +274,18 @@ section {
 	flex-direction: column;
 	min-width: 100vw;
 	z-index: 100;
-	padding-left: 1rem;
+	padding-top: 0;
+	padding-left: inherit;
 }
 
 #hamburgerContainer {
 	display: none;
+	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100vw;
 	z-index: 100;
+	padding-left: 1rem;
 }
 
 #hamburgerContainer[data-open="true"]{
@@ -289,7 +298,7 @@ section {
 #hamburgerPopout a {
 	color: #cbd5e1;
 	text-decoration: none;
-	font-size: 4rem;
+	font-size: 2rem;
 }
 
 #hamburgerPopout a:hover {
