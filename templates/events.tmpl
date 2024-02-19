@@ -1,0 +1,32 @@
+{{define "head"}}
+<script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.10/index.global.js'></script>
+<script src='/js/google-calendar.js'></script>
+<script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+				let calendar = new FullCalendar.Calendar(calendarEl, {
+					googleCalendarApiKey: '{{.GoogleCalendarAPIKey}}',
+					initialView: 'dayGridMonth',
+					events: {
+						googleCalendarId: '{{.GoogleCalendarID}}'
+						}
+				});
+        calendar.render();
+      });
+</script>
+{{end}}
+{{define "content"}}
+<section>
+	<div class=container id=head>
+		<h1>Events</h1>
+		<p>Here at Warwick Cyber Security Society we have a range of events, from socials to workshops.</p>
+		<p>Our events are open to everyone, regardless of experience or background. We aim to provide a welcoming and inclusive environment for all.</p>		
+		<p>You can find information about all our events here, on our <a href={{ .InstagramURL }} target="_blank">Instagram</a> and on our <a href={{ .DiscordURL}} target="_blank">Discord</a> </p>
+		<p>We also have a calendar which you can subscribe to <a href="{{.GoogleCalendarURL}}" target="_blank">here</a>.</p>
+	</div>
+	<div class="container">
+		<h1>Calendar</h1>
+		<div id="calendar"></div>
+	</div>
+</section>
+{{end}}

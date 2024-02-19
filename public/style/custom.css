@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+	--bg-color: rgb(15 23 42);
+	--bg-1: rgb(30 41 59);
+	--text-color: rgb(203 213 225);
+	--text-1: gray;
+	--achievement-columns: 2;
+	--exec-columns: 3;
+	--font-size: 16px;
+	background-color: var(--bg-color);
+	color: rgb(203 213 225);
+	font-family: 'Fira Sans', sans-serif;
+  padding: 0;
+  margin: 0;
+	max-width: 100vw;
+}
+
+#page {
+	position: relative;
+	min-height: 100vh;
+}
+
+h1, h2 {
+	font-family: 'Montserrat', sans-serif;
+	font-weight: 700;
+}
+
+.alt-bg {
+	background-color: var(--bg-1);
+}
+
+.bg {
+	background-color: var(--bg-color);
+}
+
+.execContainer {
+	display: grid;
+	grid-template-columns: repeat(var(--exec-columns), minmax(0.2vw, 1fr));
+	grid-gap: 20px;
+	align-items: stretch;
+	place-items: center;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+}
+
+.execMember {
+	display: flex;
+	flex-direction: column;
+	border-radius: 6px;
+	padding: 20px;
+	height: 100%;
+	min-width: 100%;
+}
+
+.execMember img {
+	max-width: 100%;
+	min-width: 100%;
+	height: auto;
+}
+
+.execMember .name {
+	font-size: 1.5rem;
+	font-weight: 600;
+	margin-top: 1rem;
+}
+
+.execMember .role {
+	font-size: 1.25rem;
+	margin-top: 0.5rem;
+	color: var(--text-1);
+	max-width: fit-content;
+	white-space: initial;
+}
+
+.contentContainer {
+	max-width: 80vw;
+}
+
+.container {
+	margin: 0 auto;
+	padding: 25px;
+}
+
+.subTitle {
+	text-align: center;
+	font-size: 2rem;
+	font-weight: 700;
+	margin-top: 3rem;
+	margin-bottom: 1.5rem;
+}
+
+.achievementContainer {
+	display: grid;
+	grid-template-columns: repeat(var(--achievement-columns), minmax(0, 1fr));
+	grid-gap: 20px;
+	align-items: stretch;
+	place-items: center;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+	gap: 1.5rem;
+}
+
+.achievement {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	padding: 20px;
+	width: 100%;
+}
+
+.achievement .icon {
+	font-size: 3rem;
+	margin-right: 1rem;
+	margin-bottom: 1rem;
+	color: rgb(30 60 175);
+}
+
+.achievement .title {
+	font-size: 1.25rem;
+	margin-bottom: 0.75rem;
+}
+
+.bold {
+	font-weight: 600;
+}
+
+.inline {
+	display: inline;
+}
+
+#mainHeader {
+	text-align: center;
+	align-items: center;
+	font-size: 1.5rem;
+	min-height: 60vh;
+}
+
+.headerImage {
+	height: auto;
+	max-width: 100%;
+}
+
+#navbar {
+	position: sticky;
+	min-width: 100vw;
+	top: 0;
+	background-color: #0f172a;
+	padding: 1rem 0;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	align-items: stretch;
+	font-weight: 500;
+	font-size: 1.25rem;
+	background-color: var(--bg-color)/0.2;
+	backdrop-filter: blur(4px);
+	text-shadow: rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0) 0px 0px 0px 0px, rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.1) 0px 4px 6px -4px;
+	margin-left: 0;
+	margin-right: 0;
+	width: 100vw;
+	flex-basis: 100%;
+	z-index: 100;
+}
+
+#navbar ul {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	width: 100%;
+}
+
+nav ul li {
+	margin-left: 1rem;
+}
+
+#navbar a {
+	color: #cbd5e1;
+	text-decoration: none;
+}
+
+#navbar a:hover {
+	color: #ffffff;
+}
+
+.left {
+	float: left;
+}
+
+.right {
+	float: right;
+}
+
+.right span
+{
+	padding-right: 1rem;
+}
+
+.right a 
+{
+	margin-right: 1rem;
+}
+
+.left a
+{
+	padding-left: 1rem;
+}
+
+.left span 
+{
+	padding-left: 1rem;
+}
+
+#resouces {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	grid-gap: 20px;
+	align-items: stretch;
+	place-items: center;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+}
+
+.resource {
+	border-radius: 6px;
+	background-color: var(--bg-1);
+	text-align: center;
+}
+
+.resourceTitle {
+	font-size: 1.5rem;
+	font-weight: 300;
+	margin-top: 1rem;
+	margin-bottom: 0;
+}
+
+section {
+	width: 100vw;
+	padding: 0;
+	margin: 0;
+
+}
+
+#footerPadding {
+	height: 3rem;
+	margin-bottom: 1rem;
+	margin-top: 1rem;
+}
+
+#footer {
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	min-width: 100vw;
+	z-index: 100;
+	position: absolute;
+	bottom: 1rem;
+	height: 3rem;
+	margin-top: 1rem;
+}
+
+#footer a {
+	color: #cbd5e1;
+	text-decoration: none;
+}
+
+#footer div {
+	display: flex;
+	flex-direction: row;
+}
+
+
+.button {
+	background-color: #4a5568;
+	color: #cbd5e1;
+	border: none;
+	border-radius: 4px;
+	padding: 0.5rem 1rem;
+	font-size: 1rem;
+	cursor: pointer;
+}
+
+.button:hover {
+	background-color: #2d3748;
+}
+
+#hamburger {
+	min-width: 100vw;
+	top: 0;
+	z-index: 100;
+}
+
+#hamburger a {
+	color: #cbd5e1;
+	text-decoration: none;
+	font-size: 2rem;
+}
+
+#hamburger a:hover {
+	color: #ffffff;
+}
+
+#hamburgerPopout {
+	left: 0;
+	display: flex;
+	flex-direction: column;
+	min-width: 100vw;
+	z-index: 100;
+	padding-top: 0;
+	padding-left: 3.5rem;
+}
+
+#hamburgerContainer {
+	display: none;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	z-index: 100;
+}
+
+#hamburgerContainer[data-open="true"]{
+	background-color: var(--bg-color)/0.5;
+	backdrop-filter: blur(4px);
+	-webkit-backdrop-filter: blur(4px);
+}
+
+
+#hamburgerPopout a {
+	color: #cbd5e1;
+	text-decoration: none;
+	font-size: 2rem;
+}
+
+#hamburgerPopout a:hover {
+	color: #ffffff;
+}
+
+#hamburgerPopout li {
+	list-style: none;
+	min-width: 100vw;
+}
+
+#hamburgerPopout ul {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+}
+
+@media (max-width: 850px) {
+	body {
+		--achievement-columns: 1;
+	}
+
+	#footer .socials {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		grid-gap: 1rem;
+		padding-right: 1rem;
+	}
+}
+
+@media (max-width: 1024px) {
+	body {
+		--exec-columns: 1;
+		--achievement-columns: 1;
+	}
+
+	#navbar {
+		display: none;
+	}
+
+	.contentContainer {
+		padding-top: 2.5rem;
+	}
+
+	#hamburgerContainer {
+		display: block;
+	}
+
+	.contentContainer {
+		z-index: 1;
+	}
+}
+
