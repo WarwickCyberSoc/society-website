@@ -6,7 +6,7 @@ body {
 	--text-color: rgb(203 213 225);
 	--text-1: gray;
 	--achievement-columns: 2;
-	--exec-columns: auto-fit;
+	--exec-columns: 3;
 	--font-size: 16px;
 	background-color: var(--bg-color);
 	color: rgb(203 213 225);
