@@ -4,6 +4,8 @@
 <head>
 	<meta charset="UTF-8">
 	<title>{{.Title}}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="{{.Description}}">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 	<link rel="stylesheet" href="/style/custom.css">
 	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
@@ -27,6 +29,7 @@
 			{{range .Navbar}}
 				<li><a href="{{.Link}}">{{.Name}}</a></li>
 			{{end}}
+			<li><a href={{.SocietyURL}} target="_blank">Join</a></li>
 		</ul>
 	</nav>
 </div>
@@ -46,7 +49,7 @@
 		<a href={{.GithubURL}} target="_blank" ><span class="fab fa-github"></span></a>
 		<a href={{.DiscordURL}} target="_blank" ><span class="fab fa-discord"></span></a>
 		<a href="mailto:{{.Email}}" target="_blank"><span class="fas fa-envelope"></span></a>
-		<a href={{.SocietyURL}} target="_blank" class="button" >Join the society</a>
+		<a href={{.SocietyURL}} target="_blank" class="" >Join the society</a>
 	</div>
 </div>
 
@@ -59,10 +62,12 @@
 		<p>© 2024 Warwick Cyber Security Society. All rights reserved.</p>
 	</div>
 	<div class="right">
-		<a href={{.InstagramURL}} target="_blank" ><span class="fab fa-instagram"></span></a>
-		<a href={{.GithubURL}} target="_blank" ><span class="fab fa-github"></span></a>
-		<a href={{.DiscordURL}} target="_blank" ><span class="fab fa-discord"></span></a>
-		<a href="mailto:{{.Email}}" target="_blank"><span class="fas fa-envelope"></span></a>
+		<div class="socials">
+			<a href={{.InstagramURL}} target="_blank" ><span class="fab fa-instagram"></span></a>
+			<a href={{.GithubURL}} target="_blank" ><span class="fab fa-github"></span></a>
+			<a href={{.DiscordURL}} target="_blank" ><span class="fab fa-discord"></span></a>
+			<a href="mailto:{{.Email}}" target="_blank"><span class="fas fa-envelope"></span></a>
+		</div>
 		<a href={{.SocietyURL}} target="_blank" >Join the society</a>
 	</div>
 </div>

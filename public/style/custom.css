@@ -222,6 +222,12 @@ section {
 	text-decoration: none;
 }
 
+#footer div {
+	display: flex;
+	flex-direction: row;
+}
+
+
 .button {
 	background-color: #4a5568;
 	color: #cbd5e1;
@@ -267,7 +273,6 @@ section {
 
 #hamburgerContainer {
 	display: none;
-	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100vw;
@@ -309,6 +314,13 @@ section {
 	body {
 		--achievement-columns: 1;
 	}
+
+	#footer .socials {
+		display: grid;
+		grid-template-columns: repeat(2, minmax(0, 1fr));
+		grid-gap: 1rem;
+		padding-right: 1rem;
+	}
 }
 
 @media (max-width: 1024px) {
@@ -317,16 +329,7 @@ section {
 		--achievement-columns: 1;
 	}
 
-	#mainHeader {
-		font-size: 3rem;
-	}
-
-	.subTitle {
-		font-size: 5rem;
-	}
-
 	.container {
-		padding: 10px;
 	}
 
 	#navbar {
@@ -338,8 +341,6 @@ section {
 	}
 
 	.contentContainer {
-		position: relative;
-		top:0;
 		z-index: 1;
 	}
 }

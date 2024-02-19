@@ -7,6 +7,7 @@ import (
 type Config struct {
 	templates map[string]*template.Template
 	Title string `yaml:"title"`
+	Description string `yaml:"description"`
 	DiscordURL string `yaml:"discordURL"`
 	InstagramURL string `yaml:"instagramURL"`
 	TwitterURL string `yaml:"twitterURL"`
