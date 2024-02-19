@@ -1,0 +1,38 @@
+{{ define "head" }}
+{{ end }}
+{{define "content"}}
+<section>
+	<div class="container" id="mainHeader">
+		<img src="/images/headerImage.png" alt="Warwick Cyber Security Society"	class="headerImage" loading="eager" width="828" />
+		<p>
+		Hello and welcome to the <span class="bold inline">Warwick Cyber Security Society!</span> We're a friendly and inclusive community centred around our love of Cyber Security. From competing in CTFs to hosting talks and great socials, we're definitely the place to be if you love all things cyber, want to get involved with an up and coming discipline, or just want to have some fun!</p>
+	</div>
+</section>
+<section>
+	<div class="container" id="Achievements">
+	<h2 class="subTitle" id="Achievements">Society Achievements</h2>
+	<div class="achievementContainer">
+	{{ range .Achievements }}
+		<div class="achievement">
+			<span class="fa fa-circle-chevron-right icon"></span>
+			<p class="title" >{{.Title}}</p>
+		</div>
+	{{end}}
+	</div>
+	</div>
+</section>
+<section class="alt-bg">
+	<div id="exec" class="container">
+	<h2 class="subTitle">Meet the Exec</h2>
+	<div class="execContainer">
+	{{ range .Exec }}
+			<div class="execMember bg">
+				<img src="images/{{.Image}}" alt="{{.Name}}" class="execImage" loading="lazy" width="300" />
+				<p class="name" >{{.Name}}</p>
+				<p class="role" >{{.Role}}</p>
+			</div>
+	{{end}}
+	</div>
+	</div>
+</section>
+{{end}}
