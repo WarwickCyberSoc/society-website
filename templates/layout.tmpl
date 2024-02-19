@@ -16,6 +16,7 @@
 	{{template "head" .}}
 </head>
 <body>
+<div id="page">
 <div id="hamburgerContainer">
 <div class="container" id="hamburger">
 		<a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
@@ -57,6 +58,8 @@
 	{{template "content" .}}
 </div>
 
+<div id="footerPadding"></div>
+
 <div class="container" id="footer">
 	<div class="left">
 		<p>© 2024 Warwick Cyber Security Society. All rights reserved.</p>
@@ -70,6 +73,7 @@
 		</div>
 		<a href={{.SocietyURL}} target="_blank" >Join the society</a>
 	</div>
+</div>
 </div>
 </body>
 </html>

@@ -20,6 +20,20 @@ type Config struct {
 	GoogleCalendarAPIKey string `yaml:"googleCalendarAPIKey"`
 	GoogleCalendarID string `yaml:"googleCalendarID"`
 	GoogleCalendarURL string `yaml:"googleCalendarURL"`
+	Posts []post `yaml:"posts"`
+	Resources []resource `yaml:"resources"`
+}
+
+type post struct {
+	Title string `yaml:"title"`
+	Author string `yaml:"author"`
+	Link string `yaml:"link"`
+}
+
+type resource struct {
+	Title string `yaml:"title"`
+	Link string `yaml:"link"`
+	Description string `yaml:"description"`
 }
 
 type execMember struct {

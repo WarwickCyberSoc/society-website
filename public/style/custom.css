@@ -6,7 +6,7 @@ body {
 	--text-color: rgb(203 213 225);
 	--text-1: gray;
 	--achievement-columns: 2;
-	--exec-columns: 3;
+	--exec-columns: auto-fit;
 	--font-size: 16px;
 	background-color: var(--bg-color);
 	color: rgb(203 213 225);
@@ -14,6 +14,11 @@ body {
   padding: 0;
   margin: 0;
 	max-width: 100vw;
+}
+
+#page {
+	position: relative;
+	min-height: 100vh;
 }
 
 h1, h2 {
@@ -31,7 +36,7 @@ h1, h2 {
 
 .execContainer {
 	display: grid;
-	grid-template-columns: repeat(var(--exec-columns), minmax(0, 1fr));
+	grid-template-columns: repeat(var(--exec-columns), minmax(0.2vw, 1fr));
 	grid-gap: 20px;
 	align-items: stretch;
 	place-items: center;
@@ -209,11 +214,40 @@ nav ul li {
 	padding-left: 1rem;
 }
 
+#resouces {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+	grid-gap: 20px;
+	align-items: stretch;
+	place-items: center;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+}
+
+.resource {
+	border-radius: 6px;
+	background-color: var(--bg-1);
+	text-align: center;
+}
+
+.resourceTitle {
+	font-size: 1.5rem;
+	font-weight: 300;
+	margin-top: 1rem;
+	margin-bottom: 0;
+}
+
 section {
 	width: 100vw;
 	padding: 0;
 	margin: 0;
 
+}
+
+#footerPadding {
+	height: 3rem;
+	margin-bottom: 1rem;
+	margin-top: 1rem;
 }
 
 #footer {
@@ -222,6 +256,10 @@ section {
 	flex-direction: row;
 	min-width: 100vw;
 	z-index: 100;
+	position: absolute;
+	bottom: 1rem;
+	height: 3rem;
+	margin-top: 1rem;
 }
 
 #footer a {
@@ -251,7 +289,6 @@ section {
 
 #hamburger {
 	min-width: 100vw;
-	position: sticky;
 	top: 0;
 	z-index: 100;
 }
@@ -267,25 +304,22 @@ section {
 }
 
 #hamburgerPopout {
-	position: sticky;
-	top: 0;
 	left: 0;
 	display: flex;
 	flex-direction: column;
 	min-width: 100vw;
 	z-index: 100;
 	padding-top: 0;
-	padding-left: inherit;
+	padding-left: 3.5rem;
 }
 
 #hamburgerContainer {
 	display: none;
-	position: fixed;
+	position: absolute;
 	top: 0;
 	left: 0;
 	width: 100vw;
 	z-index: 100;
-	padding-left: 1rem;
 }
 
 #hamburgerContainer[data-open="true"]{
@@ -338,11 +372,12 @@ section {
 		--achievement-columns: 1;
 	}
 
-	.container {
-	}
-
 	#navbar {
 		display: none;
+	}
+
+	.contentContainer {
+		padding-top: 2.5rem;
 	}
 
 	#hamburgerContainer {
@@ -354,8 +389,3 @@ section {
 	}
 }
 
-@media (max-width: 
-	.execMember {
-		min-width: 100%;
-	}
-}
