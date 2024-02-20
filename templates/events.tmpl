@@ -1,15 +1,14 @@
 {{define "head"}}
 <script src='https://cdn.jsdelivr.net/npm/fullcalendar@6.1.10/index.global.js'></script>
-<script src='/js/ical.min.js'></script>
-<script src='/js/icalendar.js'></script>
+<script src='/js/google-calendar.js'></script>
 <script>
       document.addEventListener('DOMContentLoaded', function() {
         var calendarEl = document.getElementById('calendar');
 				let calendar = new FullCalendar.Calendar(calendarEl, {
+					googleCalendarApiKey: '{{.GoogleCalendarAPIKey}}',
 					initialView: 'dayGridMonth',
 					events: {
-							url: "{{ .IcalURL }}",
-							format: 'ics'
+						googleCalendarId: '{{.GoogleCalendarID}}'
 						}
 				});
         calendar.render();
