@@ -22,7 +22,6 @@ type Config struct {
 	GoogleCalendarURL string `yaml:"googleCalendarURL"`
 	Posts []post `yaml:"posts"`
 	Resources []resource `yaml:"resources"`
-	IcalURL string `yaml:"icalURL"`
 }
 
 type post struct {
