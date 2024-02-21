@@ -19,7 +19,7 @@ exec:
     image: george.jpg
     role: Welfare Officer
   - name: Tom Steer
-    image: toms.png
+    image: toms.jpg
     role: Technician
   - name: Keerthana Tharuvara Kallottil
     image: ktk.png
