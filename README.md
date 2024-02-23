@@ -44,7 +44,7 @@ There is a github action set to automatically build and publish the site when pu
 
 
 ### Troublshooting
-#### <variable> is an unexported field
+#### variable is an unexported field
 Variables in structs need to start with a capital letter to be exported
 
 
