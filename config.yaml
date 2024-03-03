@@ -25,7 +25,7 @@ exec:
   - name: Abi Lowrie
     image: blank.png
     role: Women's Officer
-  - name: Petwe Walker
+  - name: Peter Walker
     image: blank.png
     role: External Communications Officer
 navbar:
