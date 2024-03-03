@@ -66,6 +66,7 @@ h1, h2 {
 	max-width: 100%;
 	min-width: 100%;
 	height: auto;
+	margin: auto;
 }
 
 .execMember .name {
