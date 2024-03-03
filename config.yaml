@@ -7,30 +7,27 @@ githubURL: https://www.github.com/warwickcybersoc/
 email: contact@warwickcybersoc.com
 societyURL: https://www.warwicksu.com/societies-sports/societies/61481/
 exec:
-  - name: Ana Vijay
-    image: ana-pres.png
+  - name: Ellis Trisk-Grove
+    image: ellis.jpg
     role: President
   - name: Oscar Sharpe
     image: oscars.jpg
-    role: Secretary
-  - name: Ellis Trisk-Grove
-    image: ellis.jpg
+    role: Vice President
+  - name: Jamie Madden
+    image: blank.png
     role: Treasurer
-  - name: George Liddell
-    image: george.jpg
+  - name: Oscar Innes
+    image: blank.png
     role: Welfare Officer
   - name: Tom Steer
     image: toms.jpg
     role: Technician
-  - name: Keerthana Tharuvara Kallottil
-    image: ktk.png
-    role: Postgrad Officer & Women's Officer
-  - name: Rosie Marlton
+  - name: Abi Lowrie
     image: blank.png
-    role: Social Secretary
-  - name: Harry Houlberg
+    role: Women's Officer
+  - name: Petwe Walker
     image: blank.png
-    role: "Social Secretary"
+    role: External Communications Officer
 navbar:
   - name: Home
     link: /
