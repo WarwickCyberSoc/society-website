@@ -53,9 +53,12 @@ googleCalendarURL: "https://calendar.google.com/calendar/embed?src=cb123093dad94
 resources:
   - title: "Warwick Cyber Security Society GitHub"
     description: "Our GitHub repository, where we store all of our resources and write-ups."
-    link: "https://github.com"
+    link: "https://github.com/WarwickCyberSoc"
 
 posts:
   - title: "Intake CTF 2023"
     author: "Tom Steer"
     link: "https://tomsteer.com/posts/intakectf/"
+  - title: "Intake 2023 Writeups"
+    author: "Oscar Sharpe"
+    link: "https://oscarsharpe.me/posts/intake-writeup"
