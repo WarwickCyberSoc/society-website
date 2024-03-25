@@ -17,7 +17,7 @@ exec:
     image: blank.png
     role: Treasurer
   - name: Oscar Innes
-    image: blank.png
+    image: oscari.jpg
     role: Welfare Officer
   - name: Tom Steer
     image: toms.jpg
@@ -26,7 +26,7 @@ exec:
     image: blank.png
     role: Women's Officer
   - name: Peter Walker
-    image: blank.png
+    image: peterw.jpg
     role: External Communications Officer
 navbar:
   - name: Home
@@ -37,13 +37,13 @@ navbar:
     link: /resources
 
 achievements:
+  - title: "#2 - pwnEd5 CTF (2024)"
+    year: 2024
   - title: "#1 - pwnEd2 CTF (2021)"
     year: 2021
   - title: "#1 - HTB x UNI CTF Qualifiers (2021)"
     year: 2021
   - title: "#1 - Veracode The Hacker Games (2021)"
-    year: 2021
-  - title: "#1 - BAESystems & University of Warwick Computing Society (2021)"
     year: 2021
  
 googleCalendarAPIKey: "AIzaSyB4zs2Pj-03aUlL5CHiRwU-PYVZR8glej0"
