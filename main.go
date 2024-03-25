@@ -50,7 +50,7 @@ func init() {
 
 
 	// Save the config to a file
-	file, err = os.Create("build/config.yaml")
+	file, err = os.Create("parsedConfig.yaml")
 	if err != nil {
 		fmt.Println("Error creating config file:", err)
 		os.Exit(1)
