@@ -28,6 +28,15 @@ exec:
   - name: Peter Walker
     image: peterw.jpg
     role: External Communications Officer
+  - name: Peter Tooher
+    image: blank.png
+    role: Social Secretary
+  - name: Dean Benson
+    image: blank.png
+    role: Social Secretary
+  - name: Harmony Bouabid
+    image: blank.png
+    role: Marketing Officer
 navbar:
   - name: Home
     link: /
@@ -38,6 +47,8 @@ navbar:
 
 achievements:
   - title: "#2 - pwnEd5 CTF (2024)"
+    year: 2024
+  - title: "#1 - SAT UK&TR International CTF (2024)"
     year: 2024
   - title: "#1 - pwnEd2 CTF (2021)"
     year: 2021

@@ -40,7 +40,6 @@ type execMember struct {
 	Name string `yaml:"name"`
 	Image string `yaml:"image"`
 	Role string `yaml:"role"`
-	Enabled bool `yaml:"enabled"`
 }
 
 type navbarLink struct {
