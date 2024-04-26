@@ -38,7 +38,6 @@ type resource struct {
 
 type execMember struct {
 	Name string `yaml:"name"`
-	Image string `yaml:"image"`
 	Role string `yaml:"role"`
 }
 
