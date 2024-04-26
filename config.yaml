@@ -8,34 +8,24 @@ email: contact@warwickcybersoc.com
 societyURL: https://www.warwicksu.com/societies-sports/societies/61481/
 exec:
   - name: Ellis Trisk-Grove
-    image: ellis.jpg
     role: President
   - name: Oscar Sharpe
-    image: oscars.jpg
     role: Vice President
   - name: Jamie Madden
-    image: blank.png
     role: Treasurer
   - name: Oscar Innes
-    image: oscari.jpg
     role: Welfare Officer
   - name: Tom Steer
-    image: toms.jpg
     role: Technician
   - name: Abi Lowrie
-    image: blank.png
     role: Women's Officer
   - name: Peter Walker
-    image: peterw.jpg
     role: External Communications Officer
   - name: Peter Tooher
-    image: blank.png
     role: Social Secretary
   - name: Dean Benson
-    image: blank.png
     role: Social Secretary
   - name: Harmony Bouabid
-    image: blank.png
     role: Marketing Officer
 navbar:
   - name: Home
