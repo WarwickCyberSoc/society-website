@@ -59,7 +59,7 @@ resources:
 posts:
   - title: "Intake CTF 2023"
     author: "Tom Steer"
-    link: "https://tomsteer.com/posts/intakectf/"
+    link: "https://tomsteer.com/posts/intakectf23/"
   - title: "Intake 2023 Writeups"
     author: "Oscar Sharpe"
     link: "https://oscarsharpe.me/posts/intake-writeup"

@@ -22,6 +22,7 @@ type Config struct {
 	GoogleCalendarURL string `yaml:"googleCalendarURL"`
 	Posts []post `yaml:"posts"`
 	Resources []resource `yaml:"resources"`
+	Sponsors []sponsor `yaml:"sponsors"`
 }
 
 type post struct {
@@ -49,4 +50,11 @@ type navbarLink struct {
 type achievement struct {
 	Title string `yaml:"title"`
 	Year string `yaml:"year"`
+}
+
+type sponsor struct {
+	Name string `yaml:"name"`
+	Link string `yaml:"link"`
+	Image string `yaml:"image"`
+	Description string `yaml:"description"`
 }
