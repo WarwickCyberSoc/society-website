@@ -7,6 +7,7 @@
 				let calendar = new FullCalendar.Calendar(calendarEl, {
 					googleCalendarApiKey: '{{.GoogleCalendarAPIKey}}',
 					initialView: 'dayGridMonth',
+					firstDay: 1,
 					events: {
 						googleCalendarId: '{{.GoogleCalendarID}}'
 						}
