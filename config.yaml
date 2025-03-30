@@ -7,25 +7,25 @@ githubURL: https://www.github.com/warwickcybersoc/
 email: contact@warwickcybersoc.com
 societyURL: https://www.warwicksu.com/societies-sports/societies/61481/
 exec:
-  - name: Ellis Trisk-Grove
+  - name: Peter Walker
     role: President
-  - name: Oscar Sharpe
+  - name: Oscar Topliss
     role: Vice President
-  - name: Jamie Madden
+  - name: Ellie Baxter
     role: Treasurer
   - name: Oscar Innes
     role: Welfare Officer
-  - name: Tom Steer
+  - name: Samuel Kamas
     role: Technician
   - name: Abi Lowrie
     role: Women's Officer
-  - name: Peter Walker
+  - name: Artem Polovnev
     role: External Communications Officer
-  - name: Peter Tooher
+  - name: Jamie Madden
     role: Social Secretary
-  - name: Dean Benson
+  - name: Tom Slater
     role: Social Secretary
-  - name: Harmony Bouabid
+  - name: Samuel Kamas
     role: Marketing Officer
 navbar:
   - name: Home
@@ -36,6 +36,8 @@ navbar:
     link: /resources
 
 achievements:
+  - title: "#1 - pwnEd6 CTF Qualifiers (2025)"
+    year: 2025
   - title: "#2 - pwnEd5 CTF (2024)"
     year: 2024
   - title: "#1 - SAT UK&TR International CTF (2024)"
