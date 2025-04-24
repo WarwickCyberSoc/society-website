@@ -463,7 +463,8 @@ section {
 }
 
 .misc0grad {
-	background-image: linear-gradient(to bottom right, #182333 , #a7b1c2);
+	background-image: linear-gradient(to bottom right, #182333 , #717e96);
+	width: 100vw;
 }
 
 #misc0nfigLogo {
