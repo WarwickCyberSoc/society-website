@@ -158,7 +158,8 @@ h1, h2 {
 	text-align: center;
 	align-items: center;
 	font-size: 1.5rem;
-	width: 100vw;
+	min-width: 100vw;
+	background-image: linear-gradient(to bottom right, #182333 , #717e96);
 }
 
 .headerImage {
@@ -469,12 +470,6 @@ section {
 	cursor: pointer;
 }
 
-.misc0grad {
-	background-image: linear-gradient(to bottom right, #182333 , #717e96);
-	width: 100vw;
-	margin: 0;
-}
-
 #misc0nfigLogo {
 	margin: 20px;
 	min-height: 0;
@@ -488,8 +483,9 @@ section {
 	height: auto;
 }
 
-.flex-parent{
+.fill-parent{
 	display: flex;
 	bottom: 0;
 	height: auto;
+	position: absolute;
 }
