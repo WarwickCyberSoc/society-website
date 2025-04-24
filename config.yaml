@@ -36,9 +36,11 @@ navbar:
     link: /resources
   - name: Sponsors
     link: /sponsors
+  - name: misc0nfig
+    link: /misc0nfig
 
 achievements:
-  - title: "#1 - pwnEd6 CTF Qualifiers (2025)"
+  - title: "#1 - pwnEd6 CTF (2025)"
     year: 2025
   - title: "#2 - pwnEd5 CTF (2024)"
     year: 2024

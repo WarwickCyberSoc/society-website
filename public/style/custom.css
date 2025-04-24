@@ -461,3 +461,7 @@ section {
 .clickable {
 	cursor: pointer;
 }
+
+.misc0grad {
+	background-color: linear-gradient(to bottom right, #182333 , #a7b1c2);
+}

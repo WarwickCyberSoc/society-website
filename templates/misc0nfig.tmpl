@@ -1,0 +1,25 @@
+{{ define "head" }}
+{{ end }}
+{{define "content"}}
+<section class="bg">
+	<div class="container misc0grad" id="mainHeader">
+		<img src="/images/misc0nfig_banner_transparent.png" alt="misc0nfig"	class="headerImage" loading="eager" width="828" />
+		<p>
+		misc0nfig 
+        </p>
+	</div>
+</section>
+<section class="alt-bg">
+	<div id="sponsors" class="container">
+	<div class="sponsorContainer">
+	{{range .Sponsors}}
+		<div class="sponsor">
+            <img src="{{.Image}}" class="image" />
+			<a href="{{.Link}}" target="_blank" class="link clickable">{{.Name}}</a>
+			<p class="description" >{{.Description}}</p>
+		</div>
+	{{end}}
+	</div>
+	</div>
+</section>
+{{end}}
