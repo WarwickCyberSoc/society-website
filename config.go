@@ -23,7 +23,7 @@ type Config struct {
 	Posts []post `yaml:"posts"`
 	Resources []resource `yaml:"resources"`
 	Sponsors []sponsor `yaml:"sponsors"`
-	ConfSponsors []confsponsor `yaml:"confsponsors"`
+	ConfSponsors []confsponsor `yaml:"confSponsors"`
 	ConferenceEvents []conferenceEvent `yaml:"conferenceEvents"`
 }
 
