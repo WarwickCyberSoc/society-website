@@ -154,6 +154,12 @@ h1, h2 {
 	min-height: 60vh;
 }
 
+#mainHeaderMisc {
+	text-align: center;
+	align-items: center;
+	font-size: 1.5rem;
+}
+
 .headerImage {
 	height: auto;
 	max-width: 100%;
@@ -478,8 +484,11 @@ section {
 	align-items: center;
 	font-size: 1.25rem;
 	flex-grow: 1;
+	height: auto;
 }
 
 .flex-parent{
 	display: flex;
+	bottom: 0;
+	height: auto;
 }
