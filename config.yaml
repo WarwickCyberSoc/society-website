@@ -30,14 +30,13 @@ exec:
 navbar:
   - name: Home
     link: /
-  - name: Events
-    link: /events
-  - name: Resources
-    link: /resources
   - name: Sponsors
     link: /sponsors
   - name: misc0nfig
     link: /misc0nfig
+  - name: Resources
+    link: /resources
+
 
 achievements:
   - title: "#1 - pwnEd6 CTF (2025)"
