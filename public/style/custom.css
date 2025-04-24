@@ -483,3 +483,9 @@ h1 {
 	margin-top: 50px;
 	margin-bottom: 50px;
 }
+
+.fixed-size {
+	max-height: 300px;
+	align-items: center;
+	text-align: center;
+}
