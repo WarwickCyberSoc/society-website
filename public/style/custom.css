@@ -479,14 +479,13 @@ section {
 	text-align: center;
 	align-items: center;
 	font-size: 1.25rem;
-	flex-grow: 1;
-	height: auto;
+	position: absolute;
+  	top: 0;
+  	bottom: 0;
 }
 
 .fill-parent{
 	display: flex;
 	height: auto;
-	position: absolute;
-  	top: 0;
-  	bottom: 0;
+	position: relative;
 }
