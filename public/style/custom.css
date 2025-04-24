@@ -488,4 +488,5 @@ h1 {
 	max-height: 300px;
 	align-items: center;
 	text-align: center;
+	display: grid;
 }
