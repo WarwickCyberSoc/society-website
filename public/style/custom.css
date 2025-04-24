@@ -474,3 +474,7 @@ section {
 	margin: 20px;
 	min-height: 0;
 }
+
+h1 {
+	text-align: center;
+}
