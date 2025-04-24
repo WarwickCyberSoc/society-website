@@ -10,9 +10,9 @@
 	<div id="sponsors" class="container">
 	<div class="sponsorContainer">
 	{{range .Sponsors}}
-		<div class="sponsor clickable">
+		<div class="sponsor">
             <img src="{{.Image}}" class="image" />
-			<a href="{{.Link}}" target="_blank" class="link">{{.Name}}</a>
+			<a href="{{.Link}}" target="_blank" class="link clickable">{{.Name}}</a>
 			<p class="description" >{{.Description}}</p>
 		</div>
 	{{end}}
