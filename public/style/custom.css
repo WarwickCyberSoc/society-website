@@ -3,6 +3,7 @@
 body {
 	--bg-color: rgb(15 23 42);
 	--bg-1: rgb(30 41 59);
+	--bg-2: rgb(49, 63, 86);
 	--text-color: rgb(203 213 225);
 	--text-1: gray;
 	--achievement-columns: 2;
@@ -36,6 +37,10 @@ h1, h2 {
 	font-weight: 700;
 }
 
+.alt-2-bg {
+	background-color: var(--bg-2);
+}
+
 .alt-bg {
 	background-color: var(--bg-1);
 }
@@ -62,6 +67,7 @@ h1, h2 {
 	height: 100%;
 	min-width: 100%;
 	align-items: center;
+	text-align: center;
 }
 
 .execMember img {
