@@ -8,7 +8,7 @@
 To add new static assets add them to the public folder.
 To add new templated pages create a new template in the templates folder with the base file of:
 ```template
-{{defeine "head"}}
+{{define "head"}}
 # This can be left empty but is needed to prevent errors
 {{end}}
 {{define "content"}}
