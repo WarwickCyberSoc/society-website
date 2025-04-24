@@ -1,0 +1,22 @@
+{{ define "head" }}
+{{ end }}
+{{define "content"}}
+<section>
+	<div class=container id=head>
+		<h1>Sponsors</h1>
+    </div>
+</section>
+<section class="bg">
+	<div id="sponsors" class="container">
+	<div class="sponsorContainer">
+	{{range .Sponsors}}
+		<div class="sponsor clickable">
+            <img src="{{.Image}}" class="image" />
+			<a href="{{.Link}}" target="_blank" class="link">{{.Name}}</a>
+			<p class="description" >{{.Description}}</p>
+		</div>
+	{{end}}
+	</div>
+	</div>
+</section>
+{{end}}

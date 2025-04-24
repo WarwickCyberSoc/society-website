@@ -7,6 +7,7 @@ body {
 	--text-1: gray;
 	--achievement-columns: 2;
 	--exec-columns: 3;
+	--sponsor-columns: 2;
 	--font-size: 16px;
 	background-color: var(--bg-color);
 	color: rgb(203 213 225);
@@ -400,3 +401,55 @@ section {
 	}
 }
 
+.sponsorContainer {
+	display: grid;
+	grid-template-columns: repeat(var(--sponsor-columns), minmax(0.2vw, 1fr));
+	grid-gap: 20px;
+	align-items: stretch;
+	place-items: center;
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+}
+
+.sponsor {
+	display: flex;
+	flex-direction: column;
+	border-radius: 6px;
+	padding: 20px;
+	height: 100%;
+	min-width: 100%;
+	align-items: center;
+	flex-grow: 1;
+}
+
+.sponsor img {
+	max-width: 100%;
+	min-width: 100%;
+	height: auto;
+	margin: auto;
+}
+
+.sponsor .link {
+	font-size: 1.5rem;
+	font-weight: 600;
+	margin-top: 1rem;
+	color: var(--text-color);
+	cursor: pointer;
+	transition: .3s ease;
+}
+
+.sponsor .link:hover{
+	color: var(--text-1);
+}
+
+.sponsor .description {
+	font-size: 1.25rem;
+	margin-top: 0.5rem;
+	color: var(--text-color);
+	max-width: fit-content;
+	white-space: initial;
+}
+
+.clickable {
+	cursor: pointer;
+}
