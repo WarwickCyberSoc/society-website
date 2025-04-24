@@ -10,9 +10,18 @@
 
 	</div>
 </section>
-<section class="alt-bg fill-parent">
-    <div class="fill">
-	    <p>You can book your tickets for 2025 <a href="https://www.warwicksu.com/venues-events/events/61481/26830/">here!</a></p>
-    </div>
+<section class="alt-bg">
+	<div class="container" id="Sponsors">
+    <h1>You can book your tickets for 2025 <a href="https://www.warwicksu.com/venues-events/events/61481/26830/">here!</a></h1>
+    <br><br>
+	<h2 class="subTitle" id="Sponsors">Society Sponsors</h2>
+	<div class="sponsorContainer clickable">
+	{{ range .Sponsors }}
+		<div class="sponsor" onclick="openSponsors()">
+			<img src="{{.Image}}" class="image" />
+		</div>
+	{{end}}
+	</div>
+	</div>
 </section>
 {{end}}

@@ -474,18 +474,3 @@ section {
 	margin: 20px;
 	min-height: 0;
 }
-
-.fill {
-	text-align: center;
-	align-items: center;
-	font-size: 1.25rem;
-	position: absolute;
-  	top: 0;
-  	bottom: 0;
-}
-
-.fill-parent{
-	display: flex;
-	height: auto;
-	position: relative;
-}
