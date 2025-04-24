@@ -464,6 +464,7 @@ section {
 	color: var(--text-color);
 	max-width: fit-content;
 	white-space: initial;
+	text-align: justify;
 }
 
 .clickable {
