@@ -8,14 +8,13 @@
 		Hello and welcome to the <span class="bold inline">Warwick Cyber Security Society!</span> We're a friendly and inclusive community centred around our love of Cyber Security. From competing in CTFs to hosting talks and great socials, we're definitely the place to be if you love all things cyber, want to get involved with an up and coming discipline, or just want to have some fun!</p>
 	</div>
 </section>
-<section class="alt-2-bg">
+<section class="alt-bg">
 	<div class="container" id="Sponsors">
 	<h2 class="subTitle" id="Sponsors">Society Sponsors</h2>
 	<div class="sponsorContainer">
 	{{ range .Sponsors }}
 		<div class="sponsor" onclick="openSponsors()">
 			<img src="{{.Image}}" class="image" />
-			<a href="{{.Link}}" target="_blank" class="link">{{.Name}}</a>
 		</div>
 	{{end}}
 	</div>

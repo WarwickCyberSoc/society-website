@@ -419,7 +419,7 @@ section {
 
 .sponsor {
 	display: flex;
-	flex-direction: column;
+	flex-direction: row;
 	border-radius: 6px;
 	padding: 20px;
 	height: 100%;
