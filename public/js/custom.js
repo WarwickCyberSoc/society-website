@@ -9,3 +9,8 @@ function toggleMenu() {
 		y.dataset.open = "true";
 	}
 }
+
+
+function openSponsors(){
+	window.location.href= "/sponsors";
+}

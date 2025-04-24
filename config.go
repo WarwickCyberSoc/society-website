@@ -23,6 +23,8 @@ type Config struct {
 	Posts []post `yaml:"posts"`
 	Resources []resource `yaml:"resources"`
 	Sponsors []sponsor `yaml:"sponsors"`
+	ConfSponsors []confsponsor `yaml:"confSponsors"`
+	ConferenceEvents []conferenceEvent `yaml:"conferenceEvents"`
 }
 
 type post struct {
@@ -56,5 +58,19 @@ type sponsor struct {
 	Name string `yaml:"name"`
 	Link string `yaml:"link"`
 	Image string `yaml:"image"`
+	Description string `yaml:"description"`
+}
+
+type confsponsor struct {
+	Name string `yaml:"name"`
+	Link string `yaml:"link"`
+	Image string `yaml:"image"`
+	Description string `yaml:"description"`
+}
+
+type conferenceEvent struct {
+	Title string `yaml:"title"`
+	Speaker string `yaml:"speaker"`
+	Company string `yaml:"company"`
 	Description string `yaml:"description"`
 }
