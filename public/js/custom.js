@@ -12,5 +12,5 @@ function toggleMenu() {
 
 
 function openSponsors(){
-	window.location.href("/sponsors/");
+	window.location.href= "/sponsors/";
 }
