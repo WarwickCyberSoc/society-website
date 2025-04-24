@@ -375,7 +375,6 @@ section {
 @media (max-width: 850px) {
 	body {
 		--achievement-columns: 1;
-		--sponsor-columns: 1;
 	}
 
 	#footer .socials {
@@ -390,6 +389,7 @@ section {
 	body {
 		--exec-columns: 1;
 		--achievement-columns: 1;
+		--sponsor-columns: 1;
 	}
 
 	#navbar {
