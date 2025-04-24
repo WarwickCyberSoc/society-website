@@ -469,11 +469,11 @@ section {
 
 #misc0nfigLogo {
 	margin: 20px;
-	min-height: 40vh;
+	min-height: none;
 }
 
 .fill {
-	display: flex;
+	display: inline-flex;
 	text-align: center;
 	align-items: center;
 	font-size: 1.25rem;
