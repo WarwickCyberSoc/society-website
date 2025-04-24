@@ -333,11 +333,12 @@ section {
 
 #hamburgerContainer {
 	display: none;
-	position: absolute;
+	position: fixed;
 	top: 0;
 	left: 0;
 	width: 100vw;
 	z-index: 100;
+	height: 100%;
 }
 
 #hamburgerContainer[data-open="true"]{
@@ -374,6 +375,7 @@ section {
 @media (max-width: 850px) {
 	body {
 		--achievement-columns: 1;
+		--sponsor-columns: 1;
 	}
 
 	#footer .socials {
