@@ -168,7 +168,7 @@ func prepareSchedule(schedule *conferenceSchedule) map[string]bool {
         endIdx := timeToIndex[event.End]
 
         if endIdx > startIdx {
-            schedule.Events[i].RowSpan = endIdx - startIdx
+            *schedule.Events[i].RowSpan = endIdx - startIdx
 
             // Mark skip slots
             for t := startIdx + 1; t < endIdx; t++ {
@@ -176,7 +176,7 @@ func prepareSchedule(schedule *conferenceSchedule) map[string]bool {
                 skipMap[key] = true
             }
         } else {
-            schedule.Events[i].RowSpan = 1
+            *schedule.Events[i].RowSpan = 1
         }
     }
 
