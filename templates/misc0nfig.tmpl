@@ -27,6 +27,8 @@
 </section>
 <section>
 
+{{ $occupied := dict }} {{/* create an empty map to track filled cells */}}
+
 <table>
   <thead>
     <tr>
@@ -43,17 +45,9 @@
         <td>{{ $time }}</td>
         {{ range $schedule.Rooms }}
           {{ $room := . }}
-          {{ $skip := false }}
-          {{ range $schedule.Events }}
-            {{ if and (eq .Room $room) (lt (index $schedule.Timeslots $i) .End) (ge (index $schedule.Timeslots $i) .Start) }}
-              {{ if ne (index $schedule.Timeslots $i) .Start }}
-                {{ $skip = true }}
-              {{ end }}
-            {{ end }}
-          {{ end }}
-          
-          {{ if not $skip }}
-            {{/* Find the event starting now, if any */}}
+          {{ $key := printf "%s|%s" $room $time }}
+          {{ if not (index $occupied $key) }}
+            {{/* Check if an event starts now */}}
             {{ $found := false }}
             {{ range $schedule.Events }}
               {{ if and (eq .Start $time) (eq .Room $room) }}
@@ -62,18 +56,26 @@
                   {{ .Speaker }} ({{ .Company }})
                 </td>
                 {{ $found = true }}
+                
+                {{/* Mark upcoming times as occupied */}}
+                {{ $startIdx := index $schedule.Timeslots $i }}
+                {{ range $j, $nextTime := $schedule.Timeslots }}
+                  {{ if and (ge $j $i) (lt $j (add $i .RowSpan)) }}
+                    {{ $_ := set $occupied (printf "%s|%s" $room $nextTime) true }}
+                  {{ end }}
+                {{ end }}
               {{ end }}
             {{ end }}
             {{ if not $found }}
               <td></td>
             {{ end }}
           {{ end }}
-          
         {{ end }}
       </tr>
     {{ end }}
   </tbody>
 </table>
+
 
 
 
