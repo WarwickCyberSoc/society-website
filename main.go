@@ -159,7 +159,6 @@ func calculateRowSpans(schedule *conferenceSchedule) {
         if ok1 && ok2 {
             schedule.Events[i].RowSpan = endIdx - startIdx
         } else {
-            log.Printf("WARNING: Event %s has start or end time not matching any timeslot!", schedule.Events[i].Title)
             schedule.Events[i].RowSpan = 1
         }
     }
