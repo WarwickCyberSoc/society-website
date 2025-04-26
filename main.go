@@ -95,7 +95,10 @@ func main() {
 	if file.IsDir() {
 			continue	
 		}
-		if file.Name() == "layout.tmpl" || file.Name() == "layout_misc0nfig.tmpl" {
+		if file.Name() == "layout.tmpl" {
+			continue
+		}
+		if file.Name() == "layout_misc0nfig.tmpl" {
 			continue
 		}
 
@@ -114,7 +117,7 @@ func main() {
 			fmt.Println("Error creating file:", err)
 			os.Exit(1)
 		}
-		if file.Name() == "misc0nfig.tmpl"{
+		if file.Name() == "misc0nfig.tmpl" {
 			err = templates[file.Name()].ExecuteTemplate(outFile, "layout_misc0nfig", templateData)
 		} else {
 			err = templates[file.Name()].ExecuteTemplate(outFile, "layout", config)
