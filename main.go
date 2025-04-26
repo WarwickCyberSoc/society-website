@@ -94,7 +94,7 @@ func main() {
 		templates[file.Name()] = template.Must(templates[file.Name()].ParseFiles("templates/" + file.Name()))
 	
 		if file.Name() == "misc0nfig.tmpl" {
-			skipMap := config.prepareSchedule(&Schedule)
+			skipMap := prepareSchedule(&Schedule)
 			Schedule.SkipMap = skipMap
 		}
 
