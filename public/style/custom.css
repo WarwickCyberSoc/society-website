@@ -491,3 +491,44 @@ h1 {
 	text-align: center;
 	display: grid;
 }
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: center;
+    vertical-align: top;
+}
+
+th {
+    background-color: #f5f5f5;
+    font-weight: bold;
+}
+
+td {
+    background-color: #fff;
+}
+
+td[rowspan] {
+    background-color: #e9f5ff; /* Light blue background for spanning talks */
+    font-weight: bold;
+}
+
+tr:nth-child(even) td {
+    background-color: #fafafa;
+}
+
+tr:hover td {
+    background-color: #f1f1f1;
+}
+
+strong {
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 4px;
+}
