@@ -69,6 +69,7 @@ func main() {
 	// Load every template
 	// layout
 	templates["layout"] = template.Must(template.ParseFiles("templates/layout.tmpl"))
+	templates["layout_misc0nfig"] = template.Must(template.ParseFiles("templates/layout_misc0nfig.tmpl"))
 	
 	// Load every file in templates folder
 	files, err := os.ReadDir("templates")
@@ -91,7 +92,7 @@ func main() {
 	}
 
 	for _, file := range files {
-		if file.IsDir() {
+	if file.IsDir() {
 			continue	
 		}
 		if file.Name() == "layout.tmpl" || file.Name() == "layout_misc0nfig.tmpl" {
