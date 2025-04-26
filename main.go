@@ -94,7 +94,7 @@ func main() {
 		if file.IsDir() {
 			continue	
 		}
-		if file.Name() == "layout.tmpl" {
+		if file.Name() == "layout.tmpl" || file.Name() == "layout_misc0nfig.tmpl" {
 			continue
 		}
 
