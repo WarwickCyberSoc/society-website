@@ -24,10 +24,10 @@ type Config struct {
 	Resources []resource `yaml:"resources"`
 	Sponsors []sponsor `yaml:"sponsors"`
 	ConfSponsors []confsponsor `yaml:"confSponsors"`
-	ConferenceSchedule []conferenceSchedule `yaml:"Schedule"`
+	Schedule []conferenceSchedule `yaml:"-"`
 	Rooms []string `yaml:"rooms"`
 	Timeslots []string `yaml:"timeslots"`
-
+	Events    []conferenceEvent  `yaml:"events"`
 }
 
 type post struct {
