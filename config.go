@@ -28,7 +28,7 @@ type Config struct {
 	Rooms []string `yaml:"rooms"`
 	Timeslots []string `yaml:"timeslots"`
 	Events []conferenceEvent  `yaml:"events"`
-	SkipMap []skipKey `yaml:"-"`
+	SkipMap map[string]bool `yaml:"-"`
 }
 
 type post struct {
