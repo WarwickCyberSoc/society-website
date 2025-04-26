@@ -99,7 +99,7 @@ rooms:
   - "IMC 0.04"
   - "IMC 2.46"
 
-Timeslots:
+timeslots:
   - "10:00"
   - "10:15"
   - "10:30"
