@@ -99,6 +99,7 @@ func main() {
 		}
 		// Generate the template
 		templates[file.Name()] = template.Must(templates["layout"].Clone())
+		templates[file.Name()] = template.Must(templates["layout_misc0nfig"].Clone())
 		templates[file.Name()] = template.Must(templates[file.Name()].ParseFiles("templates/" + file.Name()))
 
 		// Execute the template (swap tmpl with html)
@@ -108,7 +109,7 @@ func main() {
 			os.Exit(1)
 		}
 		if file.Name() == "misc0nfig.tmpl"{
-			err = templates[file.Name()].ExecuteTemplate(outFile, "layout", templateData)
+			err = templates[file.Name()].ExecuteTemplate(outFile, "layout_misc0nfig", templateData)
 		} else {
 			err = templates[file.Name()].ExecuteTemplate(outFile, "layout", config)
 		}
