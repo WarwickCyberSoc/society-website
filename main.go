@@ -76,7 +76,7 @@ func main() {
 		Events:    config.Events,
 	}	
 	skipMap := prepareSchedule(&Schedule)
-	Schedule.SkipMap = skipMap
+	Schedule.SkipMap := skipMap
 	
 	// Load every file in templates folder
 	files, err := os.ReadDir("templates")
