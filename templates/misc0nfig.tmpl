@@ -53,13 +53,13 @@
               {{ if and (eq .Room $room) (eq .Start $time) }}
                 <td rowspan="{{ .RowSpan }}">
                   <strong>{{ .Title }}</strong><br>
-                  {{ .Speaker }}
+                  {{ .Speaker }} ({{ .Company }})
                 </td>
-                {{ $found = true }}
+                {{ $found := true }}
               {{ end }}
             {{ end }}
 
-            {{ if and (eq $found false) }}
+            {{ if not $found }}
               <td></td>
             {{ end }}
           {{ end }}
