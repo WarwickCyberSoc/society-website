@@ -24,7 +24,9 @@ type Config struct {
 	Resources []resource `yaml:"resources"`
 	Sponsors []sponsor `yaml:"sponsors"`
 	ConfSponsors []confsponsor `yaml:"confSponsors"`
-	ConferenceSchedule []conferenceSchedule `yaml:"conferenceSchedule"`
+	ConferenceSchedule []conferenceSchedule `yaml:"Schedule"`
+	Rooms []string `yaml:"rooms"`
+	Timeslots []string `yaml:"timeslots"`
 
 }
 
