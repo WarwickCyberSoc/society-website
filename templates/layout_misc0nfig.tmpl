@@ -28,7 +28,7 @@
 	<nav>
 		<ul>
 			{{range .Config.Navbar}}
-				<li><a href="{{.Link}}">{{.Config.Name}}</a></li>
+				<li><a href="{{.Link}}">{{.Name}}</a></li>
 			{{end}}
 			<li><a href={{.Config.SocietyURL}} target="_blank">Join</a></li>
 		</ul>
@@ -41,7 +41,7 @@
 		<nav>
 			<ul>
 				{{range .Config.Navbar}}
-					<li><a href="{{.Config.Link}}">{{.Config.Name}}</a></li>
+					<li><a href="{{.Link}}">{{.Name}}</a></li>
 				{{end}}
 			</ul>
 	</div>
