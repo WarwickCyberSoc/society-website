@@ -37,41 +37,34 @@
     </tr>
   </thead>
   <tbody>
-    {{/* Loop over timeslots */}}
     {{ range $timeIdx, $time := .Timeslots }}
       <tr>
         <td>{{ $time }}</td>
 
-        {{/* Loop over rooms */}}
         {{ range $roomIdx, $room := $.Rooms }}
-          {{/* Look for an event that starts now in this room */}}
-          {{ $event := "" }}
-          {{ $rowspan := 0 }}
+          {{/* Search for an event starting at this time in this room */}}
+          {{ $found := false }}
           {{ range $.Events }}
             {{ if and (eq .Room $room) (eq .Start $time) }}
-              {{ $event = .Title }}
-              {{ $rowspan = .RowSpan }}
+              {{/* FOUND EVENT STARTING NOW! */}}
+              {{ $found = true }}
+              <td rowspan="{{ .RowSpan }}">
+                <strong>{{ .Title }}</strong><br>
+                {{ .Speaker }} ({{ .Company }})
+              </td>
             {{ end }}
           {{ end }}
 
-          {{/* Check if this cell should be skipped because it's under an active rowspan event */}}
-          {{ $skip := false }}
-          {{ if not $rowspan }}
-            {{/* Look if any event is spanning here from a previous start */}}
+          {{/* If not found, check if this timeslot is covered by an ongoing event */}}
+          {{ if not $found }}
+            {{ $covered := false }}
             {{ range $.Events }}
               {{ if and (eq .Room $room) (lt .Start $time) (gt .End $time) }}
-                {{ $skip = true }}
+                {{ $covered = true }}
               {{ end }}
             {{ end }}
-          {{ end }}
 
-          {{/* Now render the cell if it's not skipped */}}
-          {{ if not $skip }}
-            {{ if $rowspan }}
-              <td rowspan="{{ $rowspan }}">
-                <strong>{{ $event }}</strong>
-              </td>
-            {{ else }}
+            {{ if not $covered }}
               <td></td>
             {{ end }}
           {{ end }}
@@ -81,6 +74,7 @@
     {{ end }}
   </tbody>
 </table>
+
 
 
 
