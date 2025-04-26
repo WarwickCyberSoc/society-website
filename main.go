@@ -163,7 +163,6 @@ func calculateRowSpans(schedule *conferenceSchedule) {
 		if okStart && okEnd && endIdx > startIdx {
 			schedule.Events[i].RowSpan = endIdx - startIdx
 		} else {
-			log.Printf("WARNING: event '%s' has bad start or end time (%s -> %s)", event.Title, event.Start, event.End)
 			schedule.Events[i].RowSpan = 1
 		}
 	}
