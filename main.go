@@ -70,10 +70,10 @@ func main() {
 	// layout
 	templates["layout"] = template.Must(template.ParseFiles("templates/layout.tmpl"))
 
-	Schedule := Config.Schedule{
+	Schedule := config.Schedule{
         Rooms:     []string,
         Timeslots: []string,
-        Events:    []Config.Events,  
+        Events:    []config.Events,  
     }
 	
 	// Load every file in templates folder
