@@ -137,7 +137,6 @@ events:
     company: "N/A"
     start: "10:00"
     end: "10:45"
-    company: ""
 
   - room: "IMC 0.02"
     title: "Welcome"

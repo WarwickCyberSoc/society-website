@@ -148,20 +148,23 @@ func copyDir(dir string) {
 }
 
 func calculateRowSpans(schedule *conferenceSchedule) {
-    timeToIndex := make(map[string]int)
-    for idx, t := range schedule.Timeslots {
-        timeToIndex[t] = idx
-    }
-    
-    for i := range schedule.Events {
-        startIdx, ok1 := timeToIndex[schedule.Events[i].Start]
-        endIdx, ok2 := timeToIndex[schedule.Events[i].End]
-        if ok1 && ok2 {
-            schedule.Events[i].RowSpan = endIdx - startIdx
-        } else {
-            schedule.Events[i].RowSpan = 1
-        }
-    }
+	layout := "15:04" // 24h format
+
+	// Build lookup map: time string -> index
+	timeToIndex := make(map[string]int)
+	for idx, t := range schedule.Timeslots {
+		timeToIndex[t] = idx
+	}
+
+	for i, event := range schedule.Events {
+		startIdx, okStart := timeToIndex[event.Start]
+		endIdx, okEnd := timeToIndex[event.End]
+
+		if okStart && okEnd && endIdx > startIdx {
+			schedule.Events[i].RowSpan = endIdx - startIdx
+		} else {
+			log.Printf("WARNING: event '%s' has bad start or end time (%s -> %s)", event.Title, event.Start, event.End)
+			schedule.Events[i].RowSpan = 1
+		}
+	}
 }
-
-
