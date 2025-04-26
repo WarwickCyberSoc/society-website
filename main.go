@@ -73,7 +73,7 @@ func main() {
 	Schedule := Config.Schedule{
         Rooms:     []string,
         Timeslots: []string,
-        Events:    Config.Events[],  
+        Events:    []Config.Events,  
     }
 	
 	// Load every file in templates folder
