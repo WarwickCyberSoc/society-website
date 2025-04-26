@@ -115,7 +115,7 @@ timeslots:
   - "16:00"
   - "16:30"
 
-schedule:
+events:
   - room: "Recharge"
     title: "Arrival"
     speaker: ""
