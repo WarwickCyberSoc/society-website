@@ -164,10 +164,10 @@ func prepareSchedule(schedule *conferenceSchedule) map[string]bool {
     skipMap := make(map[string]bool)
 
     for i, event := range schedule.Events {
-        startIdx, okStart := timeToIndex[event.Start]
-        endIdx, okEnd := timeToIndex[event.End]
+        startIdx := timeToIndex[event.Start]
+        endIdx := timeToIndex[event.End]
 
-        if okStart && okEnd && endIdx > startIdx {
+        if endIdx > startIdx {
             schedule.Events[i].RowSpan = endIdx - startIdx
 
             // Mark skip slots
