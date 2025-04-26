@@ -147,12 +147,14 @@ func copyDir(dir string) {
 	}
 }
 
-func calculateRowSpans(schedule *conferenceSchedule) {
+func prepareSchedule(schedule *conferenceSchedule) map[skipKey]bool {
     // Build lookup map: time string -> index
     timeToIndex := make(map[string]int)
     for idx, t := range schedule.Timeslots {
         timeToIndex[t] = idx
     }
+
+    skipMap := make(map[skipKey]bool)
 
     for i, event := range schedule.Events {
         startIdx, okStart := timeToIndex[event.Start]
@@ -160,10 +162,20 @@ func calculateRowSpans(schedule *conferenceSchedule) {
 
         if okStart && okEnd && endIdx > startIdx {
             schedule.Events[i].RowSpan = endIdx - startIdx
+
+            // Mark skip slots
+            for t := startIdx + 1; t < endIdx; t++ {
+                key := skipKey{Room: event.Room, Time: schedule.Timeslots[t]}
+                skipMap[key] = true
+            }
         } else {
+            log.Printf("WARNING: bad event timings %s", event.Title)
             schedule.Events[i].RowSpan = 1
         }
     }
+
+    return skipMap
 }
+
 
 

@@ -42,38 +42,34 @@
         <td>{{ $time }}</td>
 
         {{ range $roomIdx, $room := $.Rooms }}
-          {{/* Search for an event starting at this time in this room */}}
-          {{ $found := false }}
-          {{ range $.Events }}
-            {{ if and (eq .Room $room) (eq .Start $time) }}
-              {{/* FOUND EVENT STARTING NOW! */}}
-              {{ $found = true }}
-              <td rowspan="{{ .RowSpan }}">
-                <strong>{{ .Title }}</strong><br>
-                {{ .Speaker }} ({{ .Company }})
-              </td>
-            {{ end }}
-          {{ end }}
-
-          {{/* If not found, check if this timeslot is covered by an ongoing event */}}
-          {{ if not $found }}
-            {{ $covered := false }}
+          {{/* Should we skip this cell? */}}
+          {{ $key := printf "%s|%s" $room $time }}
+          {{ if index $.SkipMap $key }}
+            {{/* Do nothing, cell is hidden by rowspan above */}}
+          {{ else }}
+            {{/* Look for event starting now */}}
+            {{ $found := false }}
             {{ range $.Events }}
-              {{ if and (eq .Room $room) (lt .Start $time) (gt .End $time) }}
-                {{ $covered = true }}
+              {{ if and (eq .Room $room) (eq .Start $time) }}
+                <td rowspan="{{ .RowSpan }}">
+                  <strong>{{ .Title }}</strong><br>
+                  {{ .Speaker }}
+                </td>
+                {{ $found = true }}
               {{ end }}
             {{ end }}
 
-            {{ if not $covered }}
+            {{ if not $found }}
               <td></td>
             {{ end }}
           {{ end }}
-
         {{ end }}
+
       </tr>
     {{ end }}
   </tbody>
 </table>
+
 
 
 
