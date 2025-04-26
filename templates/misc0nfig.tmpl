@@ -45,7 +45,7 @@
           {{/* Should we skip this cell? */}}
           {{ $key := printf "%s|%s" $room $time }}
           {{ if index $.SkipMap $key }}
-            {{/* Do nothing, cell is hidden by rowspan above */}}
+            {{ $found = true }}
           {{ else }}
             {{/* Look for event starting now */}}
             {{ $found := false }}
@@ -60,7 +60,7 @@
             {{ end }}
 
             {{ if not $found }}
-              <!--<td></td>-->
+              <td></td>
             {{ end }}
           {{ end }}
         {{ end }}
