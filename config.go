@@ -87,7 +87,7 @@ type conferenceSchedule struct {
 	Rooms     []string           `yaml:"rooms"`
 	Timeslots []string           `yaml:"timeslots"`
 	Events    []conferenceEvent  `yaml:"events"`
-	SkipMap   map[string]bool 
+	SkipMap   map[skipKey]bool
 }
 
 type skipKey struct {
