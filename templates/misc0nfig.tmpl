@@ -46,7 +46,7 @@
     {{ range $roomIdx, $room := $.Rooms }}
       {{ $key := printf "%s|%s" $room $time }}
 	  {{ $key }}
-      {{ if index $.SkipMap $key }}
+      {{ with index $.SkipMap $key }}
         {{/* Skip, because covered by rowspan */}}
       {{ else }}
         {{ $found := false }}
