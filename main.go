@@ -71,7 +71,7 @@ func main() {
 	// layout
 	templates["layout"] = template.Must(template.ParseFiles("templates/layout.tmpl"))
 
-	Schedule := Schedule{
+	Schedule := config.Schedule{
         Rooms:     []string,
         Timeslots: []string,
         Events:    []Events,  
@@ -95,7 +95,7 @@ func main() {
 		templates[file.Name()] = template.Must(templates[file.Name()].ParseFiles("templates/" + file.Name()))
 	
 		if file.Name() == "misc0nfig.tmpl" {
-			skipMap := prepareSchedule(&Schedule)
+			skipMap := config.prepareSchedule(&Schedule)
 			Schedule.SkipMap = skipMap
 		}
 
