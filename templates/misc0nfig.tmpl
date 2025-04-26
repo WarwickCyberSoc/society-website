@@ -39,14 +39,14 @@
     </tr>
   </thead>
   <tbody>
-    {{ range $timeIdx, $time := .Timeslots }}
+    {{ range $timeIdx, $time := $.Timeslots }}
   <tr>
     <td>{{ $time }}</td>
 
     {{ range $roomIdx, $room := $.Rooms }}
       {{ $key := printf "%s|%s" $room $time }}
 	  {{ $key }}
-      {{ if index .SkipMap $key }}
+      {{ if index $.SkipMap $key }}
         {{/* Skip, because covered by rowspan */}}
       {{ else }}
         {{ $found := false }}
