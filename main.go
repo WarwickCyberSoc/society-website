@@ -69,14 +69,6 @@ func main() {
 	// Load every template
 	// layout
 	templates["layout"] = template.Must(template.ParseFiles("templates/layout.tmpl"))
-
-	Schedule := conferenceSchedule{
-		Rooms:     config.Rooms,
-		Timeslots: config.Timeslots,
-		Events:    config.Events,
-	}	
-	skipMap := prepareSchedule(&Schedule)
-	Schedule.SkipMap := skipMap
 	
 	// Load every file in templates folder
 	files, err := os.ReadDir("templates")
@@ -84,6 +76,15 @@ func main() {
 		fmt.Println("Error reading templates directory:", err)
 		os.Exit(1)
 	}
+
+	Schedule := conferenceSchedule{
+		Rooms:     config.Rooms,
+		Timeslots: config.Timeslots,
+		Events:    config.Events,
+	}	
+	skipMap := prepareSchedule(&Schedule)
+	Schedule.SkipMap = skipMap
+
 	for _, file := range files {
 		if file.IsDir() {
 			continue	
@@ -109,7 +110,6 @@ func main() {
 		outFile.Close()
 	}
 	
-
 	// Copy static files from public folder
 	// List all files in public folder
 	copyDir("public")
