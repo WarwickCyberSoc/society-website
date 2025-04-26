@@ -97,9 +97,14 @@ func main() {
 		if file.Name() == "layout.tmpl" {
 			continue
 		}
+
+		if file.Name() == "misc0nfig.tmpl" {
+			templates[file.Name()] = template.Must(templates["layout_misc0nfig"].Clone())
+		} else {
+			templates[file.Name()] = template.Must(templates["layout"].Clone())
+		}
+
 		// Generate the template
-		templates[file.Name()] = template.Must(templates["layout"].Clone())
-		templates[file.Name()] = template.Must(templates["layout_misc0nfig"].Clone())
 		templates[file.Name()] = template.Must(templates[file.Name()].ParseFiles("templates/" + file.Name()))
 
 		// Execute the template (swap tmpl with html)
