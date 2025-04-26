@@ -5,6 +5,7 @@ import (
 	"html/template"
 	"os"
 	"gopkg.in/yaml.v2"
+	"config"
 )
 
 var templates map[string]*template.Template
