@@ -74,6 +74,7 @@ type confsponsor struct {
 type conferenceEvent struct {
 	Title       string `yaml:"title"`
 	Speaker     string `yaml:"speaker"`
+	Company     string `yaml:"company"`
 	Room        string `yaml:"room"`
 	Start       string `yaml:"start"`
 	End         string `yaml:"end"`
