@@ -17,7 +17,7 @@
 	<div class="container" id="Sponsors">
 	<h2 class="subTitle" id="Sponsors">Conference Sponsors</h2>
 	<div class="sponsorContainer clickable">
-	{{ range .ConfSponsors }}
+	{{ range .Config.ConfSponsors }}
 		<div class="sponsor" onclick="openSponsors()">
 			<img src="{{.Image}}" class="image" />
 		</div>
@@ -27,33 +27,28 @@
 </section>
 <section>
 
-{{ $.Schedule }}
-{{range $key, $value := $.SkipMap}}
-	{{ $key }}: {{ $value }}
-{{end}}
-
 <table>
   <thead>
     <tr>
       <th>Time</th>
-      {{ range .Rooms }}
+      {{ range .Schedule.Rooms }}
         <th>{{ . }}</th>
       {{ end }}
     </tr>
   </thead>
   <tbody>
-    {{ range $timeIdx, $time := $.Timeslots }}
+    {{ range $timeIdx, $time := $.Schedule.Timeslots }}
   <tr>
     <td>{{ $time }}</td>
 
-    {{ range $roomIdx, $room := $.Rooms }}
+    {{ range $roomIdx, $room := $.Schedule.Rooms }}
       {{ $key := printf "%s|%s" $room $time }}
 	  {{ $key }}
-      {{ if index $.SkipMap $key }}
+      {{ if index $.Schedule.SkipMap $key }}
         {{/* Skip, because covered by rowspan */}}
       {{ else }}
         {{ $found := false }}
-        {{ range $.Events }}
+        {{ range $.Schedule.Events }}
           {{ if and (eq .Room $room) (eq .Start $time) }}
             <td rowspan="{{ .RowSpan }}">
               <strong>{{ .Title }}</strong><br>

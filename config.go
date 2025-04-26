@@ -88,3 +88,8 @@ type conferenceSchedule struct {
 	Events    []conferenceEvent  `yaml:"events"`
 	SkipMap   map[string]bool
 }
+
+type TemplateData struct {
+	Config   Config
+	Schedule conferenceSchedule
+}

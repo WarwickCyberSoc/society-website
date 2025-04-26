@@ -85,6 +85,11 @@ func main() {
 	skipMap := prepareSchedule(&Schedule)
 	Schedule.SkipMap = skipMap
 
+	templateData := TemplateData{
+		Config: config,
+		Schedule: Schedule,
+	}
+
 	for _, file := range files {
 		if file.IsDir() {
 			continue	
@@ -102,7 +107,11 @@ func main() {
 			fmt.Println("Error creating file:", err)
 			os.Exit(1)
 		}
-		err = templates[file.Name()].ExecuteTemplate(outFile, "layout", config)
+		if file.Name() == "misc0nfig.tmpl"{
+			err = templates[file.Name()].ExecuteTemplate(outFile, "layout", templateData)
+		} else {
+			err = templates[file.Name()].ExecuteTemplate(outFile, "layout", config)
+		}
 		if err != nil {
 			fmt.Println("Error executing template:", err)
 			os.Exit(1)
