@@ -27,8 +27,6 @@
 </section>
 <section>
 
-{{ $occupied := dict }} {{/* create an empty map to track filled cells */}}
-
 <table>
   <thead>
     <tr>
@@ -39,42 +37,51 @@
     </tr>
   </thead>
   <tbody>
-    {{ $schedule := . }}
-    {{ range $i, $time := .Timeslots }}
+    {{/* Loop over timeslots */}}
+    {{ range $timeIdx, $time := .Timeslots }}
       <tr>
         <td>{{ $time }}</td>
-        {{ range $schedule.Rooms }}
-          {{ $room := . }}
-          {{ $key := printf "%s|%s" $room $time }}
-          {{ if not (index $occupied $key) }}
-            {{/* Check if an event starts now */}}
-            {{ $found := false }}
-            {{ range $schedule.Events }}
-              {{ if and (eq .Start $time) (eq .Room $room) }}
-                <td rowspan="{{ .RowSpan }}">
-                  <strong>{{ .Title }}</strong><br>
-                  {{ .Speaker }} ({{ .Company }})
-                </td>
-                {{ $found = true }}
-                
-                {{/* Mark upcoming times as occupied */}}
-                {{ $startIdx := index $schedule.Timeslots $i }}
-                {{ range $j, $nextTime := $schedule.Timeslots }}
-                  {{ if and (ge $j $i) (lt $j (add $i .RowSpan)) }}
-                    {{ $_ := set $occupied (printf "%s|%s" $room $nextTime) true }}
-                  {{ end }}
-                {{ end }}
+
+        {{/* Loop over rooms */}}
+        {{ range $roomIdx, $room := $.Rooms }}
+          {{/* Look for an event that starts now in this room */}}
+          {{ $event := "" }}
+          {{ $rowspan := 0 }}
+          {{ range $.Events }}
+            {{ if and (eq .Room $room) (eq .Start $time) }}
+              {{ $event = .Title }}
+              {{ $rowspan = .RowSpan }}
+            {{ end }}
+          {{ end }}
+
+          {{/* Check if this cell should be skipped because it's under an active rowspan event */}}
+          {{ $skip := false }}
+          {{ if not $rowspan }}
+            {{/* Look if any event is spanning here from a previous start */}}
+            {{ range $.Events }}
+              {{ if and (eq .Room $room) (lt .Start $time) (gt .End $time) }}
+                {{ $skip = true }}
               {{ end }}
             {{ end }}
-            {{ if not $found }}
+          {{ end }}
+
+          {{/* Now render the cell if it's not skipped */}}
+          {{ if not $skip }}
+            {{ if $rowspan }}
+              <td rowspan="{{ $rowspan }}">
+                <strong>{{ $event }}</strong>
+              </td>
+            {{ else }}
               <td></td>
             {{ end }}
           {{ end }}
+
         {{ end }}
       </tr>
     {{ end }}
   </tbody>
 </table>
+
 
 
 
