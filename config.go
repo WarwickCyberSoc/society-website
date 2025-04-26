@@ -24,7 +24,8 @@ type Config struct {
 	Resources []resource `yaml:"resources"`
 	Sponsors []sponsor `yaml:"sponsors"`
 	ConfSponsors []confsponsor `yaml:"confSponsors"`
-	ConferenceEvents []conferenceEvent `yaml:"conferenceEvents"`
+	ConferenceSchedule []conferenceSchedule `yaml:"conferenceSchedule"`
+
 }
 
 type post struct {
@@ -69,8 +70,16 @@ type confsponsor struct {
 }
 
 type conferenceEvent struct {
-	Title string `yaml:"title"`
-	Speaker string `yaml:"speaker"`
-	Company string `yaml:"company"`
-	Description string `yaml:"description"`
+	Title       string `yaml:"title"`
+	Speaker     string `yaml:"speaker"`
+	Room        string `yaml:"room"`
+	Start       string `yaml:"start"`
+	End         string `yaml:"end"`
+}
+
+
+type conferenceSchedule struct {
+	Rooms     []string           `yaml:"rooms"`
+	Timeslots []string           `yaml:"timeslots"`
+	Events    []conferenceEvent  `yaml:"events"`
 }
