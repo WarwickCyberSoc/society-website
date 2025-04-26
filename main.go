@@ -74,8 +74,9 @@ func main() {
 		Rooms:     config.Rooms,
 		Timeslots: config.Timeslots,
 		Events:    config.Events,
-		SkipMap:   prepareSchedule(&Schedule),
 	}	
+	skipMap := prepareSchedule(&Schedule)
+	Schedule.SkipMap = skipMap
 	
 	// Load every file in templates folder
 	files, err := os.ReadDir("templates")
@@ -93,11 +94,6 @@ func main() {
 		// Generate the template
 		templates[file.Name()] = template.Must(templates["layout"].Clone())
 		templates[file.Name()] = template.Must(templates[file.Name()].ParseFiles("templates/" + file.Name()))
-	
-		if file.Name() == "misc0nfig.tmpl" {
-			skipMap := prepareSchedule(&Schedule)
-			Schedule.SkipMap = skipMap
-		}
 
 		// Execute the template (swap tmpl with html)
 		outFile, err := os.Create("build/" + file.Name()[:len(file.Name())-5] + ".html")
@@ -159,14 +155,13 @@ func copyDir(dir string) {
 	}
 }
 
-func prepareSchedule(schedule *conferenceSchedule) map[skipKey]bool {
-    // Build lookup map: time string -> index
+func prepareSchedule(schedule *conferenceSchedule) map[string]bool {
     timeToIndex := make(map[string]int)
     for idx, t := range schedule.Timeslots {
         timeToIndex[t] = idx
     }
 
-    skipMap := make(map[skipKey]bool)
+    skipMap := make(map[string]bool)
 
     for i, event := range schedule.Events {
         startIdx, okStart := timeToIndex[event.Start]
@@ -177,7 +172,7 @@ func prepareSchedule(schedule *conferenceSchedule) map[skipKey]bool {
 
             // Mark skip slots
             for t := startIdx + 1; t < endIdx; t++ {
-                key := skipKey{Room: event.Room, Time: schedule.Timeslots[t]}
+                key := event.Room + "|" + schedule.Timeslots[t]
                 skipMap[key] = true
             }
         } else {
@@ -187,6 +182,3 @@ func prepareSchedule(schedule *conferenceSchedule) map[skipKey]bool {
 
     return skipMap
 }
-
-
-
