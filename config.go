@@ -2,7 +2,6 @@ package main
 
 import (
 	"html/template"
-	"github.com/Masterminds/sprig/v3"
 )
 
 type Config struct {
@@ -85,8 +84,4 @@ type conferenceSchedule struct {
 	Events    []conferenceEvent  `yaml:"events"`
 }
 
-tmpl := template.New("misc0nfig.tmpl").Funcs(sprig.FuncMap())
-tmpl, err := tmpl.ParseFiles("misc0nfig.tmpl")
-if err != nil {
-    log.Fatal(err)
-}
+

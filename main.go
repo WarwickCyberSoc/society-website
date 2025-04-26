@@ -83,9 +83,16 @@ func main() {
 		if file.Name() == "layout.tmpl" {
 			continue
 		}
-		// Generate the templa
+		
+		// Generate the template
 		templates[file.Name()] = template.Must(templates["layout"].Clone())
 		templates[file.Name()] = template.Must(templates[file.Name()].ParseFiles("templates/" + file.Name()))
+		if file.Name() == "misc0nfig.tmpl" {
+			tmpl := template.New("misc0nfig.tmpl").Funcs(template.FuncMap{
+				"dict": dict,
+			})
+		}
+		
 		// Execute the template (swap tmpl with html)
 		outFile, err := os.Create("build/" + file.Name()[:len(file.Name())-5] + ".html")
 		if err != nil {
@@ -100,7 +107,10 @@ func main() {
 		outFile.Close()
 	}
 
-
+	tmpl := template.New("misc0nfig.tmpl").Funcs(template.FuncMap{
+		"dict": dict,
+	})
+	
 
 	// Copy static files from public folder
 	// List all files in public folder
@@ -145,4 +155,19 @@ func copyDir(dir string) {
 			os.Exit(1)
 		}
 	}
+}
+
+func dict(values ...interface{}) (map[string]interface{}, error) {
+    if len(values)%2 != 0 {
+        return nil, fmt.Errorf("invalid dict call: uneven number of args")
+    }
+    dict := make(map[string]interface{}, len(values)/2)
+    for i := 0; i < len(values); i += 2 {
+        key, ok := values[i].(string)
+        if !ok {
+            return nil, fmt.Errorf("dict keys must be strings")
+        }
+        dict[key] = values[i+1]
+    }
+    return dict, nil
 }
