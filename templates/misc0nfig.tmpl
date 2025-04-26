@@ -59,7 +59,7 @@
               {{ end }}
             {{ end }}
 
-            {{ if not $found }}
+            {{ if and (eq $found false) }}
               <td></td>
             {{ end }}
           {{ end }}
