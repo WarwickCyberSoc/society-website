@@ -100,10 +100,6 @@ func main() {
 		}
 		outFile.Close()
 	}
-
-	tmpl := template.New("misc0nfig.tmpl").Funcs(template.FuncMap{
-		"dict": dict,
-	})
 	
 
 	// Copy static files from public folder
