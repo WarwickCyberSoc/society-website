@@ -82,15 +82,14 @@ type conferenceEvent struct {
 	RowSpan     int    `yaml:"-"`
 }
 
+type skipKey struct {
+    Room string
+    Time string
+}
 
 type conferenceSchedule struct {
 	Rooms     []string           `yaml:"rooms"`
 	Timeslots []string           `yaml:"timeslots"`
 	Events    []conferenceEvent  `yaml:"events"`
 	SkipMap   map[skipKey]bool
-}
-
-type skipKey struct {
-    Room string
-    Time string
 }
