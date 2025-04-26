@@ -5,7 +5,6 @@ import (
 	"html/template"
 	"os"
 	"gopkg.in/yaml.v2"
-	"./config"
 )
 
 var templates map[string]*template.Template
@@ -71,11 +70,11 @@ func main() {
 	// layout
 	templates["layout"] = template.Must(template.ParseFiles("templates/layout.tmpl"))
 
-	Schedule := config.Schedule{
-        Rooms:     []string,
-        Timeslots: []string,
-        Events:    []Events,  
-    }
+	Schedule := conferenceSchedule{
+		Rooms:     config.Rooms,
+		Timeslots: config.Timeslots,
+		Events:    config.Events,
+	}	
 	
 	// Load every file in templates folder
 	files, err := os.ReadDir("templates")
