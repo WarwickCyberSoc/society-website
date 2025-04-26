@@ -169,7 +169,6 @@ func prepareSchedule(schedule *conferenceSchedule) map[skipKey]bool {
                 skipMap[key] = true
             }
         } else {
-            log.Printf("WARNING: bad event timings %s", event.Title)
             schedule.Events[i].RowSpan = 1
         }
     }
