@@ -74,7 +74,7 @@ func main() {
 		Rooms:     config.Rooms,
 		Timeslots: config.Timeslots,
 		Events:    config.Events,
-		SkipMap:   prepareSchedule(&Schedule)
+		SkipMap:   prepareSchedule(&Schedule),
 	}	
 	
 	// Load every file in templates folder
