@@ -83,16 +83,10 @@ func main() {
 		if file.Name() == "layout.tmpl" {
 			continue
 		}
-		
 		// Generate the template
 		templates[file.Name()] = template.Must(templates["layout"].Clone())
 		templates[file.Name()] = template.Must(templates[file.Name()].ParseFiles("templates/" + file.Name()))
-		if file.Name() == "misc0nfig.tmpl" {
-			tmpl := template.New("misc0nfig.tmpl").Funcs(template.FuncMap{
-				"dict": dict,
-			})
-		}
-		
+	
 		// Execute the template (swap tmpl with html)
 		outFile, err := os.Create("build/" + file.Name()[:len(file.Name())-5] + ".html")
 		if err != nil {
@@ -157,17 +151,16 @@ func copyDir(dir string) {
 	}
 }
 
-func dict(values ...interface{}) (map[string]interface{}, error) {
-    if len(values)%2 != 0 {
-        return nil, fmt.Errorf("invalid dict call: uneven number of args")
+func calculateRowSpans(schedule *conferenceSchedule) {
+    timeToIndex := make(map[string]int)
+    for idx, t := range schedule.Timeslots {
+        timeToIndex[t] = idx
     }
-    dict := make(map[string]interface{}, len(values)/2)
-    for i := 0; i < len(values); i += 2 {
-        key, ok := values[i].(string)
-        if !ok {
-            return nil, fmt.Errorf("dict keys must be strings")
-        }
-        dict[key] = values[i+1]
+    
+    for i := range schedule.Events {
+        startIdx := timeToIndex[schedule.Events[i].Start]
+        endIdx := timeToIndex[schedule.Events[i].End]
+        schedule.Events[i].RowSpan = endIdx - startIdx
     }
-    return dict, nil
 }
+

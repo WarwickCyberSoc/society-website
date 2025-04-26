@@ -75,6 +75,7 @@ type conferenceEvent struct {
 	Room        string `yaml:"room"`
 	Start       string `yaml:"start"`
 	End         string `yaml:"end"`
+	RowSpan     int    `yaml:"-"`
 }
 
 

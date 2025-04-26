@@ -26,10 +26,6 @@
 	</div>
 </section>
 <section>
-{{ $roomOccupancy := dict }}
-{{ range .Rooms }}
-  {{ $roomOccupancy = merge $roomOccupancy (dict . 0) }}
-{{ end }}
 
 <table>
   <thead>
@@ -41,43 +37,34 @@
     </tr>
   </thead>
   <tbody>
-    {{ range $i, $timeslot := .Timeslots }}
+    {{ $schedule := . }}
+    {{ range $i, $time := .Timeslots }}
       <tr>
-        <td>{{ $timeslot }}</td>
-        {{ range $.Rooms }}
+        <td>{{ $time }}</td>
+        {{ range $schedule.Rooms }}
           {{ $room := . }}
-          
-          {{/* Check if room is occupied by rowspan from earlier event */}}
-          {{ $occupancy := index $roomOccupancy $room }}
-          
-          {{ if gt $occupancy 0 }}
-            {{/* Skip rendering a <td> because this timeslot is already covered */}}
-            {{ $roomOccupancy = merge $roomOccupancy (dict $room (sub $occupancy 1)) }}
-          {{ else }}
-            {{/* Look for a new event starting now at this room */}}
-            {{ $event := "" }}
-            {{ range $.Schedule }}
-              {{ if and (eq .Room $room) (eq .Start $timeslot) }}
-                {{ $event = . }}
+          {{ $skip := false }}
+          {{ range $schedule.Events }}
+            {{ if and (eq .Room $room) (lt (index $schedule.Timeslots $i) .End) (ge (index $schedule.Timeslots $i) .Start) }}
+              {{ if ne (index $schedule.Timeslots $i) .Start }}
+                {{ $skip = true }}
               {{ end }}
             {{ end }}
-
-            {{ if $event }}
-              {{/* Calculate rowspan for this event based on how many timeslots it covers */}}
-              {{ $rowspan := 1 }}
-              {{ range $.Timeslots }}
-                {{ if and (gt . $timeslot) (lt . $event.End) }}
-                  {{ $rowspan = add $rowspan 1 }}
-                {{ end }}
+          {{ end }}
+          
+          {{ if not $skip }}
+            {{/* Find the event starting now, if any */}}
+            {{ $found := false }}
+            {{ range $schedule.Events }}
+              {{ if and (eq .Start $time) (eq .Room $room) }}
+                <td rowspan="{{ .RowSpan }}">
+                  <strong>{{ .Title }}</strong><br>
+                  {{ .Speaker }} ({{ .Company }})
+                </td>
+                {{ $found = true }}
               {{ end }}
-              {{/* Set occupancy counter so we skip this many next rows */}}
-              {{ $roomOccupancy = merge $roomOccupancy (dict $room (sub $rowspan 1)) }}
-
-              <td rowspan="{{ $rowspan }}">
-                <strong>{{ $event.Title }}</strong><br><small>{{ $event.Speaker }}</small>
-              </td>
-            {{ else }}
-              {{/* No event starting and not occupied: render empty cell */}}
+            {{ end }}
+            {{ if not $found }}
               <td></td>
             {{ end }}
           {{ end }}
@@ -87,6 +74,8 @@
     {{ end }}
   </tbody>
 </table>
+
+
 
 </section>
 
