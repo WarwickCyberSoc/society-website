@@ -135,7 +135,7 @@ events:
   - room: "Recharge"
     title: "Arrival"
     speaker: ""
-    company: "N/A"
+    company: ""
     start: "10:00"
     end: "10:45"
 
@@ -177,14 +177,14 @@ events:
   - room: "Recharge"
     title: "Lunch & Networking"
     speaker: ""
-    company: "N/A"
+    company: ""
     start: "13:00"
     end: "14:00"
     
   - room: "IMC 0.02"
     title: "Unveiling Dark Pink - An In-Depth Analysis of APAC's Covert APT Threat"
     speaker: "Pol Thill"
-    company: "N/A"
+    company: ""
     start: "14:00"
     end: "15:00"
 
@@ -219,7 +219,7 @@ events:
   - room: "IMC 0.02"
     title: "The Practical Application Of Indirect Prompt Injection Attacks: From Academia to Industry"
     speaker: "David Willis-Owen"
-    company: "N/A"
+    company: ""
     start: "16:00"
     end: "17:00"
 
