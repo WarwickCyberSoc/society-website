@@ -26,7 +26,7 @@
 	</div>
 </section>
 <section>
-
+<div id="timetable">
 <table>
   <thead>
     <tr>
@@ -43,14 +43,13 @@
 
     {{ range $roomIdx, $room := $.Schedule.Rooms }}
       {{ $key := printf "%s|%s" $room $time }}
-	  {{ $key }}
       {{ if index $.Schedule.SkipMap $key }}
         {{/* Skip, because covered by rowspan */}}
       {{ else }}
         {{ $found := false }}
         {{ range $.Schedule.Events }}
           {{ if and (eq .Room $room) (eq .Start $time) }}
-            <td rowspan="{{ .RowSpan }}">
+            <td rowspan="{{ .RowSpan }}" class="highlightCell">
               <strong>{{ .Title }}</strong><br>
               {{ .Speaker }} ({{ .Company }})
             </td>
@@ -68,13 +67,7 @@
 
   </tbody>
 </table>
-
-
-
-
-
-
-
+</div>
 </section>
 
 {{end}}

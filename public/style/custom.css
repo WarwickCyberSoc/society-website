@@ -496,39 +496,42 @@ table {
     width: 100%;
     border-collapse: collapse;
     table-layout: fixed;
+	color: whitesmoke;
 }
 
 th, td {
-    border: 1px solid #ccc;
+    border: 2px solid #cfcfcf;
     padding: 8px;
     text-align: center;
     vertical-align: top;
 }
 
 th {
-    background-color: #f5f5f5;
+    background-color: var(--bg-color);
     font-weight: bold;
 }
 
 td {
-    background-color: #fff;
+    background-color: var(--bg-1);
 }
 
-td[rowspan] {
-    background-color: #e9f5ff; /* Light blue background for spanning talks */
+.highlightCell {
+    background-color: var(--bg-2);
     font-weight: bold;
 }
 
 tr:nth-child(even) td {
-    background-color: #fafafa;
-}
-
-tr:hover td {
-    background-color: #f1f1f1;
+    background-color: #2b394e;
 }
 
 strong {
     display: block;
     font-size: 1.1em;
     margin-bottom: 4px;
+}
+
+#timetable {
+	width: 80%;
+	margin: 30px auto 30px auto;
+	position: relative;
 }
