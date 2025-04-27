@@ -415,12 +415,6 @@ section {
 	.contentContainer {
 		z-index: 1;
 	}
-
-	#timetable {
-		max-width: 100%;
-		width: 100%;
-	}
-
 	
 }
 
@@ -501,10 +495,9 @@ h1 {
 
 table {
     border-collapse: collapse;
-    table-layout: fixed;
+    table-layout: auto;
 	color: whitesmoke;
 	width: fit-content;
-	overflow-x: scroll;
 	display: block;
 }
 
@@ -550,5 +543,6 @@ strong {
 	width: 80%;
 	margin: 30px auto 30px auto;
 	position: relative;
+	overflow-x: scroll;
 	-webkit-overflow-scrolling: touch;
 }
