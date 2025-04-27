@@ -514,14 +514,11 @@ th {
 
 td {
     background-color: var(--bg-1);
+	word-wrap: break-word;
 }
 
 tr:nth-child(even) td {
     background-color: #2b394e;
-}
-
-td:nth-child(1) {
-	width: fit-content;
 }
 
 .highlightCell {
@@ -541,5 +538,4 @@ strong {
 	position: relative;
 	overflow-x: scroll;
 	min-width: 1200px;
-	-webkit-overflow-scrolling: touch;
 }
