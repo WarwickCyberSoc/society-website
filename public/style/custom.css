@@ -418,13 +418,12 @@ section {
 
 	#timetable {
 		width: 100% !important;
-		overflow-x: scroll;
 	}
 
 	table {
 		table-layout: auto !important;
 		display: block;
-		width: fit-content;
+		width: 100%;
 	}
 	
 }
