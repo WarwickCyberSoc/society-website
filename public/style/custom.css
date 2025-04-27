@@ -415,6 +415,10 @@ section {
 	.contentContainer {
 		z-index: 1;
 	}
+
+	#timetable {
+		width: 100%;
+	}
 	
 }
 
@@ -537,5 +541,4 @@ strong {
 	margin: 30px auto 30px auto;
 	position: relative;
 	overflow-x: scroll;
-	min-width: 1200px;
 }
