@@ -494,10 +494,10 @@ h1 {
 }
 
 table {
+	width: 100%;
     border-collapse: collapse;
     table-layout: auto;
 	color: whitesmoke;
-	min-width: fit-content;
 	display: block;
 }
 
@@ -539,10 +539,10 @@ strong {
 }
 
 #timetable {
-	max-width: 80%;
 	width: 80%;
 	margin: 30px auto 30px auto;
 	position: relative;
 	overflow-x: scroll;
+	min-width: 1200px;
 	-webkit-overflow-scrolling: touch;
 }
