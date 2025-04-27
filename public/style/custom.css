@@ -513,7 +513,7 @@ th {
 
 td {
     background-color: var(--bg-1);
-	min-width: fit-content;
+	min-width: max-content;
 	word-wrap: break-word;
 }
 

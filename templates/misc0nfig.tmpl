@@ -27,7 +27,7 @@
 </section>
 <section>
 <div id="timetable">
-<table class="horizontal-scroll">
+<table>
   <thead>
     <tr>
       <th>Time</th>
@@ -51,7 +51,7 @@
           {{ if and (eq .Room $room) (eq .Start $time) }}
             <td rowspan="{{ .RowSpan }}" class="highlightCell">
               <strong>{{ .Title }}</strong><br>
-              {{ .Speaker }}<br>{{ .Company }}
+              {{ .Speaker }}<br><br>{{ .Company }}
             </td>
             {{ $found = true }}
           {{ end }}
