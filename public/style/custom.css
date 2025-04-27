@@ -419,12 +419,6 @@ section {
 	#timetable {
 		width: 100% !important;
 	}
-
-	table {
-		table-layout: auto !important;
-		display: block;
-		width: 100%;
-	}
 	
 }
 
