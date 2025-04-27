@@ -17,7 +17,7 @@
 	<div class="container" id="Sponsors">
 	<h2 class="subTitle" id="Sponsors">Conference Sponsors</h2>
 	<div class="sponsorContainer clickable">
-	{{ range .ConfSponsors }}
+	{{ range .Config.ConfSponsors }}
 		<div class="sponsor" onclick="openSponsors()">
 			<img src="{{.Image}}" class="image" />
 		</div>
@@ -25,4 +25,49 @@
 	</div>
 	</div>
 </section>
+<section>
+<div id="timetable">
+<table>
+  <thead>
+    <tr>
+      <th>Time</th>
+      {{ range .Schedule.Rooms }}
+        <th>{{ . }}</th>
+      {{ end }}
+    </tr>
+  </thead>
+  <tbody>
+    {{ range $timeIdx, $time := $.Schedule.Timeslots }}
+  <tr>
+    <td>{{ $time }}</td>
+
+    {{ range $roomIdx, $room := $.Schedule.Rooms }}
+      {{ $key := printf "%s|%s" $room $time }}
+      {{ if index $.Schedule.SkipMap $key }}
+        {{/* Skip, because covered by rowspan */}}
+      {{ else }}
+        {{ $found := false }}
+        {{ range $.Schedule.Events }}
+          {{ if and (eq .Room $room) (eq .Start $time) }}
+            <td rowspan="{{ .RowSpan }}" class="highlightCell">
+              <strong>{{ .Title }}</strong><br>
+              {{ .Speaker }}<br><br>{{ .Company }}
+            </td>
+            {{ $found = true }}
+          {{ end }}
+        {{ end }}
+        {{ if not $found }}
+          <td></td>
+        {{ end }}
+      {{ end }}
+    {{ end }}
+
+  </tr>
+{{ end }}
+
+  </tbody>
+</table>
+</div>
+</section>
+
 {{end}}

@@ -415,6 +415,11 @@ section {
 	.contentContainer {
 		z-index: 1;
 	}
+
+	#timetable {
+		width: 100% !important;
+	}
+	
 }
 
 .sponsorContainer {
@@ -490,4 +495,50 @@ h1 {
 	align-items: center;
 	text-align: center;
 	display: grid;
+}
+
+table {
+	width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+	color: whitesmoke;
+}
+
+th, td {
+    border: 2px solid #cfcfcf;
+    padding: 8px;
+    text-align: center;
+    vertical-align: top;
+}
+
+th {
+    background-color: var(--bg-color);
+    font-weight: bold;
+}
+
+td {
+    background-color: var(--bg-1);
+	word-wrap: break-word;
+}
+
+tr:nth-child(even) td {
+    background-color: #2b394e;
+}
+
+.highlightCell {
+    background-color: var(--bg-2) !important;
+    font-weight: bold;
+}
+
+strong {
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 4px;
+}
+
+#timetable {
+	width: 80%;
+	margin: 30px auto 30px auto;
+	position: relative;
+	overflow-x: scroll;
 }

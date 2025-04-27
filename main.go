@@ -69,6 +69,7 @@ func main() {
 	// Load every template
 	// layout
 	templates["layout"] = template.Must(template.ParseFiles("templates/layout.tmpl"))
+	templates["layout_misc0nfig"] = template.Must(template.ParseFiles("templates/layout_misc0nfig.tmpl"))
 	
 	// Load every file in templates folder
 	files, err := os.ReadDir("templates")
@@ -76,32 +77,58 @@ func main() {
 		fmt.Println("Error reading templates directory:", err)
 		os.Exit(1)
 	}
+
+	Schedule := conferenceSchedule{
+		Rooms:     config.Rooms,
+		Timeslots: config.Timeslots,
+		Events:    config.Events,
+	}	
+	skipMap := prepareSchedule(&Schedule)
+	Schedule.SkipMap = skipMap
+
+	templateData := TemplateData{
+		Config: config,
+		Schedule: Schedule,
+	}
+
 	for _, file := range files {
-		if file.IsDir() {
+	if file.IsDir() {
 			continue	
 		}
 		if file.Name() == "layout.tmpl" {
 			continue
 		}
-		// Generate the templa
-		templates[file.Name()] = template.Must(templates["layout"].Clone())
+		if file.Name() == "layout_misc0nfig.tmpl" {
+			continue
+		}
+
+		if file.Name() == "misc0nfig.tmpl" {
+			templates[file.Name()] = template.Must(templates["layout_misc0nfig"].Clone())
+		} else {
+			templates[file.Name()] = template.Must(templates["layout"].Clone())
+		}
+
+		// Generate the template
 		templates[file.Name()] = template.Must(templates[file.Name()].ParseFiles("templates/" + file.Name()))
+
 		// Execute the template (swap tmpl with html)
 		outFile, err := os.Create("build/" + file.Name()[:len(file.Name())-5] + ".html")
 		if err != nil {
 			fmt.Println("Error creating file:", err)
 			os.Exit(1)
 		}
-		err = templates[file.Name()].ExecuteTemplate(outFile, "layout", config)
+		if file.Name() == "misc0nfig.tmpl" {
+			err = templates[file.Name()].ExecuteTemplate(outFile, "layout_misc0nfig", templateData)
+		} else {
+			err = templates[file.Name()].ExecuteTemplate(outFile, "layout", config)
+		}
 		if err != nil {
 			fmt.Println("Error executing template:", err)
 			os.Exit(1)
 		}
 		outFile.Close()
 	}
-
-
-
+	
 	// Copy static files from public folder
 	// List all files in public folder
 	copyDir("public")
@@ -145,4 +172,32 @@ func copyDir(dir string) {
 			os.Exit(1)
 		}
 	}
+}
+
+func prepareSchedule(schedule *conferenceSchedule) map[string]bool {
+    timeToIndex := make(map[string]int)
+    for idx, t := range schedule.Timeslots {
+        timeToIndex[t] = idx
+    }
+
+    skipMap := make(map[string]bool)
+
+    for i, event := range schedule.Events {
+        startIdx := timeToIndex[event.Start]
+        endIdx := timeToIndex[event.End]
+
+        if endIdx > startIdx {
+            schedule.Events[i].RowSpan = endIdx - startIdx
+
+            // Mark skip slots
+            for t := startIdx + 1; t < endIdx; t++ {
+                key := event.Room + "|" + schedule.Timeslots[t]
+                skipMap[key] = true
+            }
+        } else {
+            schedule.Events[i].RowSpan = 1
+        }
+    }
+	skipMap["poo"] = true
+    return skipMap
 }

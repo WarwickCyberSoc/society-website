@@ -24,7 +24,11 @@ type Config struct {
 	Resources []resource `yaml:"resources"`
 	Sponsors []sponsor `yaml:"sponsors"`
 	ConfSponsors []confsponsor `yaml:"confSponsors"`
-	ConferenceEvents []conferenceEvent `yaml:"conferenceEvents"`
+	Schedule []conferenceSchedule `yaml:"-"`
+	Rooms []string `yaml:"rooms"`
+	Timeslots []string `yaml:"timeslots"`
+	Events []conferenceEvent  `yaml:"events"`
+	SkipMap map[string]bool `yaml:"-"`
 }
 
 type post struct {
@@ -69,8 +73,23 @@ type confsponsor struct {
 }
 
 type conferenceEvent struct {
-	Title string `yaml:"title"`
-	Speaker string `yaml:"speaker"`
-	Company string `yaml:"company"`
-	Description string `yaml:"description"`
+	Title       string `yaml:"title"`
+	Speaker     string `yaml:"speaker"`
+	Company     string `yaml:"company"`
+	Room        string `yaml:"room"`
+	Start       string `yaml:"start"`
+	End         string `yaml:"end"`
+	RowSpan     int    `yaml:"-"`
+}
+
+type conferenceSchedule struct {
+	Rooms     []string           `yaml:"rooms"`
+	Timeslots []string           `yaml:"timeslots"`
+	Events    []conferenceEvent  `yaml:"events"`
+	SkipMap   map[string]bool
+}
+
+type TemplateData struct {
+	Config   Config
+	Schedule conferenceSchedule
 }

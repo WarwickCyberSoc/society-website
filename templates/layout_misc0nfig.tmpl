@@ -1,0 +1,81 @@
+{{define "layout_misc0nfig"}}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>{{.Config.Title}}</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="{{.Config.Description}}">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+	<link rel="stylesheet" href="/style/custom.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/f7133d9001.js" crossorigin="anonymous"></script>
+<script src="/js/custom.js"></script>
+	{{template "head" .}}
+</head>
+<body>
+<div id="page">
+<div id="hamburgerContainer">
+<div class="container" id="hamburger">
+		<a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+			<i class="fa fa-bars"></i>
+		</a>
+</div>
+
+<div class="container" id="hamburgerPopout" style="display: none;">
+	<nav>
+		<ul>
+			{{range .Config.Navbar}}
+				<li><a href="{{.Link}}">{{.Name}}</a></li>
+			{{end}}
+			<li><a href={{.Config.SocietyURL}} target="_blank">Join</a></li>
+		</ul>
+	</nav>
+</div>
+</div>
+
+<div class="container" id="navbar">
+	<div class="left">
+		<nav>
+			<ul>
+				{{range .Config.Navbar}}
+					<li><a href="{{.Link}}">{{.Name}}</a></li>
+				{{end}}
+			</ul>
+	</div>
+	<div class="right">
+		<a href={{.Config.InstagramURL}} target="_blank"  ><span class="fab fa-instagram"></span></a>
+		<a href={{.Config.GithubURL}} target="_blank" ><span class="fab fa-github"></span></a>
+		<a href={{.Config.DiscordURL}} target="_blank" ><span class="fab fa-discord"></span></a>
+		<a href="mailto:{{.Config.Email}}" target="_blank"><span class="fas fa-envelope"></span></a>
+		<a href={{.Config.SocietyURL}} target="_blank" class="" >Join the society</a>
+	</div>
+</div>
+
+<div class="contentContainer" id="content">
+	{{template "content" .}}
+</div>
+
+<div id="footerPadding"></div>
+
+<div class="container" id="footer">
+	<div class="left">
+		<p>© <script>document.write(new Date().getFullYear())</script> Warwick Cyber Security Society. All rights reserved.</p>
+	</div>
+	<div class="right">
+		<div class="socials">
+			<a href={{.Config.InstagramURL}} target="_blank" ><span class="fab fa-instagram"></span></a>
+			<a href={{.Config.GithubURL}} target="_blank" ><span class="fab fa-github"></span></a>
+			<a href={{.Config.DiscordURL}} target="_blank" ><span class="fab fa-discord"></span></a>
+			<a href="mailto:{{.Config.Email}}" target="_blank"><span class="fas fa-envelope"></span></a>
+		</div>
+		<a href={{.Config.SocietyURL}} target="_blank" >Join the society</a>
+	</div>
+</div>
+</div>
+</body>
+</html>
+{{end}}
+
