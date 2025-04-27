@@ -497,7 +497,7 @@ table {
     border-collapse: collapse;
     table-layout: auto;
 	color: whitesmoke;
-	width: fit-content;
+	min-width: fit-content;
 	display: block;
 }
 
