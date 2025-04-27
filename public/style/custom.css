@@ -536,14 +536,10 @@ strong {
 
 #timetable {
 	max-width: 80%;
+	width: 80%;
 	margin: 30px auto 30px auto;
 	position: relative;
 	min-width: 1200px;
-	overflow-x: auto;
+	overflow-x: scroll;
 	-webkit-overflow-scrolling: touch;
 }
-
-.horizontal-scroll {
-	position: relative;  
-	overflow-x: auto !important;
-	}
