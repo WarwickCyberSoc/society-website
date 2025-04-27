@@ -539,6 +539,6 @@ strong {
 	width: 80%;
 	margin: 30px auto 30px auto;
 	position: relative;
-	min-width: 1200px;
+	min-width: 1200px !important;
 	overflow-x: auto;
 }
