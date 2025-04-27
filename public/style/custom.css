@@ -524,7 +524,7 @@ td:nth-child(1) {
 }
 
 .highlightCell {
-    background-color: var(--bg-2);
+    background-color: var(--bg-2) !important;
     font-weight: bold;
 }
 
@@ -538,5 +538,5 @@ strong {
 	width: 80%;
 	margin: 30px auto 30px auto;
 	position: relative;
-	min-width: 1000px;
+	min-width: 1200px;
 }
