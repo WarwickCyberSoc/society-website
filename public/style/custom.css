@@ -493,12 +493,11 @@ h1 {
 }
 
 table {
-    width: 100%;
+    width: auto;
     border-collapse: collapse;
     table-layout: fixed;
 	color: whitesmoke;
 	width: fit-content;
-	overflow-x: scroll;
 }
 
 th, td {
