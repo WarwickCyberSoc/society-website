@@ -419,6 +419,7 @@ section {
 	#timetable {
 		width: 100% !important;
 		overflow-x: scroll;
+		overflow: visible;
 	}
 
 	table {
