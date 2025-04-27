@@ -198,6 +198,5 @@ func prepareSchedule(schedule *conferenceSchedule) map[string]bool {
             schedule.Events[i].RowSpan = 1
         }
     }
-	skipMap["poo"] = true
     return skipMap
 }
