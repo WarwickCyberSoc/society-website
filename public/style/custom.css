@@ -415,6 +415,13 @@ section {
 	.contentContainer {
 		z-index: 1;
 	}
+
+	#timetable {
+		max-width: 100%;
+		width: 100%;
+	}
+
+	
 }
 
 .sponsorContainer {
@@ -543,6 +550,5 @@ strong {
 	width: 80%;
 	margin: 30px auto 30px auto;
 	position: relative;
-	overflow-x: scroll;
 	-webkit-overflow-scrolling: touch;
 }
