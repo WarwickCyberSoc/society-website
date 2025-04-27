@@ -15,7 +15,7 @@ body {
 	font-family: 'Fira Sans', sans-serif;
   padding: 0;
   margin: 0;
-	/*max-width: 100vw;*/
+	max-width: 100vw;
 	overflow-x: hidden;
   -ms-overflow-style: none;  /* IE and Edge */
 }
@@ -421,7 +421,7 @@ section {
 	}
 
 	table {
-		table-layout: auto;
+		table-layout: auto !important;
 	}
 	
 }
