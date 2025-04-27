@@ -497,8 +497,6 @@ table {
     table-layout: fixed;
 	color: whitesmoke;
 	width: fit-content;
-	display: block;
-	overflow-x: auto;
 }
 
 th, td {
