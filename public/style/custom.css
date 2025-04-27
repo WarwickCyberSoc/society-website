@@ -513,6 +513,8 @@ th {
 
 td {
     background-color: var(--bg-1);
+	min-width: fit-content;
+	word-wrap: break-word;
 }
 
 tr:nth-child(even) td {
