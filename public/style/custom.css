@@ -516,17 +516,17 @@ td {
 	min-width: 100px;
 }
 
-.highlightCell {
-    background-color: var(--bg-2);
-    font-weight: bold;
-}
-
 tr:nth-child(even) td {
     background-color: #2b394e;
 }
 
 td:nth-child(1) {
 	width: fit-content;
+}
+
+.highlightCell {
+    background-color: var(--bg-2);
+    font-weight: bold;
 }
 
 strong {
