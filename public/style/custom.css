@@ -497,7 +497,7 @@ table {
     border-collapse: collapse;
     table-layout: fixed;
 	color: whitesmoke;
-	width: max-content;
+	/*width: max-content;*/
 	overflow-x: scroll;
 }
 
