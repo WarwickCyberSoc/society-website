@@ -163,7 +163,7 @@ events:
   - room: "IMC 0.02"
     title: '"Open, Sesame!" - unlocking Bluetooth padlocks with polite requests'
     speaker: "Miłosz Gaczkowski, Alex Pettifer"
-    company: "Reversec"
+    company: "WithSecure"
     start: "12:00"
     end: "13:00"
 
