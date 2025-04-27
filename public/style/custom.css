@@ -493,7 +493,6 @@ h1 {
 }
 
 table {
-    width: auto;
     border-collapse: collapse;
     table-layout: fixed;
 	color: whitesmoke;
@@ -541,4 +540,5 @@ strong {
 	position: relative;
 	min-width: 1200px !important;
 	overflow-x: auto;
+	-webkit-overflow-scrolling: touch;
 }
