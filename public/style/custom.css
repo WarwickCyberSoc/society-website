@@ -513,7 +513,6 @@ th {
 
 td {
     background-color: var(--bg-1);
-	min-width: 100px;
 }
 
 tr:nth-child(even) td {
@@ -539,4 +538,5 @@ strong {
 	width: 80%;
 	margin: 30px auto 30px auto;
 	position: relative;
+	min-width: 1000px;
 }
