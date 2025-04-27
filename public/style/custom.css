@@ -513,6 +513,9 @@ th {
 
 td {
     background-color: var(--bg-1);
+	min-width: 100px;
+	text-overflow: ellipsis;
+  	white-space: nowrap;
 }
 
 .highlightCell {
@@ -522,6 +525,10 @@ td {
 
 tr:nth-child(even) td {
     background-color: #2b394e;
+}
+
+td:nth-child(1) {
+	width: fit-content;
 }
 
 strong {

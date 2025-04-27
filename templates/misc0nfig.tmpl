@@ -51,7 +51,7 @@
           {{ if and (eq .Room $room) (eq .Start $time) }}
             <td rowspan="{{ .RowSpan }}" class="highlightCell">
               <strong>{{ .Title }}</strong><br>
-              {{ .Speaker }} ({{ .Company }})
+              {{ .Speaker }}<br>{{ .Company }}
             </td>
             {{ $found = true }}
           {{ end }}

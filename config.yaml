@@ -154,7 +154,7 @@ events:
     end: "12:00"
 
   - room: "IMC 2.46"
-    title: "What's the worst that can happen? The red team mindset at work."
+    title: "What's the worst that can happen? The red team mindset at work"
     speaker: "Andrew Peck"
     company: "Loughborough University"
     start: "11:00"
