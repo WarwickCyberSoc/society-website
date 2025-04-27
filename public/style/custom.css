@@ -419,11 +419,12 @@ section {
 	#timetable {
 		width: 100% !important;
 		overflow-x: scroll;
-		display: block;
 	}
 
 	table {
 		table-layout: auto !important;
+		display: block;
+		width: auto;
 	}
 	
 }
