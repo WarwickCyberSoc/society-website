@@ -496,9 +496,8 @@ h1 {
 table {
 	width: 100%;
     border-collapse: collapse;
-    table-layout: auto;
+    table-layout: fixed;
 	color: whitesmoke;
-	display: block;
 }
 
 th, td {
