@@ -55,7 +55,15 @@
 </div>
 
 <div class="contentContainer" id="content">
-	{{template "content" .}}
+    {{template "contentTop" .}}
+</div>
+
+<div id="fullwidthContent">
+    {{template "contentWide" .}}
+</div>
+
+<div class="contentContainer" id="contentBottom">
+    {{template "contentBottom" .}}
 </div>
 
 <div id="footerPadding"></div>
