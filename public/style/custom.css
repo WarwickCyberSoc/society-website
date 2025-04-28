@@ -545,7 +545,6 @@ strong {
   .table-scroll-wrapper {
 	width: 100%;
 	overflow-x: auto; /* Allow horizontal scrolling on the wrapper */
-	-webkit-overflow-scrolling: touch;
   }
   
   .table-scroll-wrapper table {
