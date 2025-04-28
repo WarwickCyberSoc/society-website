@@ -92,7 +92,8 @@ h1, h2 {
 }
 
 .contentContainer {
-	max-width: 80vw;
+	max-width: 100%;
+	overflow-x: visible;
 }
 
 .container {
@@ -264,7 +265,7 @@ nav ul li {
 }
 
 section {
-	width: 100vw;
+	width: 100%;
 	padding: 0;
 	margin: 0;
 
@@ -314,7 +315,7 @@ section {
 }
 
 #hamburger {
-	min-width: 100vw;
+	min-width: 100%;
 	top: 0;
 	z-index: 100;
 }
@@ -344,15 +345,15 @@ section {
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 100vw;
 	z-index: 100;
-	height: 100%;
 }
 
 #hamburgerContainer[data-open="true"]{
 	background-color: var(--bg-color)/0.5;
 	backdrop-filter: blur(4px);
 	-webkit-backdrop-filter: blur(4px);
+	width: 100%;
+	height: 100%;
 }
 
 
@@ -417,8 +418,8 @@ section {
 	}
 
 	#timetable {
-		width: 100% !important;
-	}
+		max-width: 100% !important;
+	  }
 	
 }
 
@@ -477,7 +478,7 @@ section {
 }
 
 #misc0nfigLogo {
-	margin: 20px;
+	margin: 20px auto;
 	min-height: 0;
 }
 
@@ -500,7 +501,6 @@ h1 {
 table {
 	width: 100%;
     border-collapse: collapse;
-    table-layout: fixed;
 	color: whitesmoke;
 }
 
@@ -509,6 +509,7 @@ th, td {
     padding: 8px;
     text-align: center;
     vertical-align: top;
+	max-width: 150px;
 }
 
 th {
@@ -518,7 +519,6 @@ th {
 
 td {
     background-color: var(--bg-1);
-	word-wrap: break-word;
 }
 
 tr:nth-child(even) td {
@@ -537,8 +537,22 @@ strong {
 }
 
 #timetable {
-	width: 80%;
-	margin: 30px auto 30px auto;
-	position: relative;
-	overflow-x: scroll;
-}
+	max-width: 80%;
+	overflow: hidden;  /* Hide any overflow on the parent container */
+	margin: 30px auto;
+  }
+  
+  .table-scroll-wrapper {
+	width: 100%;
+	overflow-x: auto; /* Allow horizontal scrolling on the wrapper */
+  }
+  
+  .table-scroll-wrapper table {
+	min-width: 1000px; /* Set a minimum width to force scrolling */
+	width: 100%; /* Ensure the table takes up full width of its wrapper */
+	table-layout: auto; /* Optional: ensures consistent column sizing */
+  }
+  
+  
+  
+  
