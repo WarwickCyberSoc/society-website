@@ -538,7 +538,7 @@ strong {
 }
 
 #timetable {
-	width: 80%;
+	width: 100%;
 	overflow-x: auto;
 	margin: 30px auto;
   }
@@ -552,4 +552,5 @@ strong {
   .table-scroll-wrapper table {
 	min-width: 1200px;
   }
+  
   
