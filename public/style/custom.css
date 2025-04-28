@@ -518,7 +518,7 @@ th {
 
 td {
     background-color: var(--bg-1);
-	max-width: 200px;
+	max-width: 150px;
 }
 
 tr:nth-child(even) td {
@@ -537,7 +537,7 @@ strong {
 }
 
 #timetable {
-	width: 80%;
+	max-width: 80%;
 	overflow: hidden;  /* Hide any overflow on the parent container */
 	margin: 30px auto;
   }
