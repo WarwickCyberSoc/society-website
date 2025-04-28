@@ -501,7 +501,6 @@ h1 {
 table {
 	width: 100%;
     border-collapse: collapse;
-    table-layout: fixed;
 	color: whitesmoke;
 }
 
@@ -552,7 +551,7 @@ strong {
   .table-scroll-wrapper table {
 	min-width: 1000px; /* Set a minimum width to force scrolling */
 	width: 100%; /* Ensure the table takes up full width of its wrapper */
-	table-layout: fixed; /* Optional: ensures consistent column sizing */
+	table-layout: auto; /* Optional: ensures consistent column sizing */
   }
   
   
