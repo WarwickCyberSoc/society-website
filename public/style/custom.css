@@ -542,3 +542,12 @@ strong {
 	position: relative;
 	overflow-x: scroll;
 }
+
+.table-scroll-wrapper {
+	width: 100%;
+	overflow-x: auto;
+  }
+  
+#timetable table {
+	min-width: 1200px;
+}
