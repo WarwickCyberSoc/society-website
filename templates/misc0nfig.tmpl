@@ -1,10 +1,11 @@
 {{ define "head" }}
 {{ end }}
-{{define "contentTop"}}
+
+{{ define "contentTop" }}
 <section>
   <div class="container misc0grad" id="mainHeaderMisc">
     <img src="/images/misc0nfig_banner_transparent.png" alt="misc0nfig" class="headerImage" loading="eager" id="misc0nfigLogo"/>
-    <p>misc0nfig is the annual Warwick Cyber Security Society conference, started in 2025!We host a series of talks and workshops for all levels of cyber knowledge.</p>
+    <p>misc0nfig is the annual Warwick Cyber Security Society conference, started in 2025! We host a series of talks and workshops for all levels of cyber knowledge.</p>
   </div>
 </section>
 
@@ -17,58 +18,58 @@
     <h2 class="subTitle">Conference Sponsors</h2>
     <div class="sponsorContainer clickable">
       {{ range .Config.ConfSponsors }}
-      <div class="sponsor" onclick="openSponsors()">
-        <img src="{{.Image}}" class="image" />
-      </div>
-      {{end}}
+        <div class="sponsor" onclick="openSponsors()">
+          <img src="{{.Image}}" class="image" />
+        </div>
+      {{ end }}
     </div>
   </div>
 </section>
-{{end}}
-{{define "contentWide"}}
+{{ end }}
+
+{{ define "contentWide" }}
 <section style="width: 100%;">
-<div id="timetable">
-  <div class="table-scroll-wrapper">
-    <table>
-    <thead>
-      <tr>
-        <th>Time</th>
-        {{ range .Schedule.Rooms }}
-          <th>{{ . }}</th>
-        {{ end }}
-      </tr>
-    </thead>
-    <tbody>
-      {{ range $timeIdx, $time := $.Schedule.Timeslots }}
-    <tr>
-      <td>{{ $time }}</td>
-
-      {{ range $roomIdx, $room := $.Schedule.Rooms }}
-        {{ $key := printf "%s|%s" $room $time }}
-        {{ if index $.Schedule.SkipMap $key }}
-          {{/* Skip, because covered by rowspan */}}
-        {{ else }}
-          {{ $found := false }}
-          {{ range $.Schedule.Events }}
-            {{ if and (eq .Room $room) (eq .Start $time) }}
-              <td rowspan="{{ .RowSpan }}" class="highlightCell">
-                <strong>{{ .Title }}</strong><br>
-                {{ .Speaker }}<br><br>{{ .Company }}
-              </td>
-              {{ $found = true }}
+  <div id="timetable">
+    <div class="table-scroll-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Time</th>
+            {{ range .Schedule.Rooms }}
+              <th>{{ . }}</th>
             {{ end }}
-          {{ end }}
-          {{ if not $found }}
-            <td></td>
-          {{ end }}
-        {{ end }}
-      {{ end }}
+          </tr>
+        </thead>
+        <tbody>
+          {{ range $timeIdx, $time := $.Schedule.Timeslots }}
+            <tr>
+              <td>{{ $time }}</td>
 
-    </tr>
-    </tbody>
-  </table>
+              {{ range $roomIdx, $room := $.Schedule.Rooms }}
+                {{ $key := printf "%s|%s" $room $time }}
+                {{ if index $.Schedule.SkipMap $key }}
+                  {{/* Skip, because covered by rowspan */}}
+                {{ else }}
+                  {{ $found := false }}
+                  {{ range $.Schedule.Events }}
+                    {{ if and (eq .Room $room) (eq .Start $time) }}
+                      <td rowspan="{{ .RowSpan }}" class="highlightCell">
+                        <strong>{{ .Title }}</strong><br>
+                        {{ .Speaker }}<br><br>{{ .Company }}
+                      </td>
+                      {{ $found = true }}
+                    {{ end }}
+                  {{ end }}
+                  {{ if not $found }}
+                    <td></td>
+                  {{ end }}
+                {{ end }}
+              {{ end }}
+            </tr>
+          {{ end }}
+        </tbody>
+      </table>
+    </div>
   </div>
-</div>
 </section>
-
-{{end}}
+{{ end }}
