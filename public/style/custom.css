@@ -518,7 +518,7 @@ th {
 
 td {
     background-color: var(--bg-1);
-	word-wrap: break-word;
+	max-width: 200px;
 }
 
 tr:nth-child(even) td {
