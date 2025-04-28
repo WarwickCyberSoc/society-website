@@ -93,6 +93,7 @@ h1, h2 {
 
 .contentContainer {
 	max-width: 100%;
+	overflow-x: visible;
 }
 
 .container {
