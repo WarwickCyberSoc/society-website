@@ -315,7 +315,7 @@ section {
 }
 
 #hamburger {
-	min-width: 100vw;
+	min-width: 100%;
 	top: 0;
 	z-index: 100;
 }
@@ -345,15 +345,15 @@ section {
 	position: fixed;
 	top: 0;
 	left: 0;
-	width: 100vw;
 	z-index: 100;
-	height: 100%;
 }
 
 #hamburgerContainer[data-open="true"]{
 	background-color: var(--bg-color)/0.5;
 	backdrop-filter: blur(4px);
 	-webkit-backdrop-filter: blur(4px);
+	width: 100%;
+	height: 100%;
 }
 
 
