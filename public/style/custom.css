@@ -509,6 +509,7 @@ th, td {
     padding: 8px;
     text-align: center;
     vertical-align: top;
+	max-width: 150px;
 }
 
 th {
@@ -518,7 +519,6 @@ th {
 
 td {
     background-color: var(--bg-1);
-	max-width: 150px;
 }
 
 tr:nth-child(even) td {
