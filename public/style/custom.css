@@ -264,7 +264,7 @@ nav ul li {
 }
 
 section {
-	width: 100vw;
+	width: 100%;
 	padding: 0;
 	margin: 0;
 
@@ -537,17 +537,18 @@ strong {
 }
 
 #timetable {
-	width: 80%;
-	margin: 30px auto 30px auto;
-	position: relative;
-	overflow-x: scroll;
-}
-
-.table-scroll-wrapper {
 	width: 100%;
 	overflow-x: auto;
+	margin: 30px auto;
   }
   
-#timetable table {
+  .table-scroll-wrapper {
+	overflow-x: auto;
+	width: 100%;
+	-webkit-overflow-scrolling: touch;
+  }
+  
+  .table-scroll-wrapper table {
 	min-width: 1200px;
-}
+  }
+  
