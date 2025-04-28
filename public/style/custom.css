@@ -538,7 +538,7 @@ strong {
 }
 
 #timetable {
-	width: 100%;
+	width: 80%;
 	overflow-x: auto;
 	margin: 30px auto;
   }
