@@ -539,22 +539,22 @@ strong {
 
 #timetable {
 	width: 100%;
-	overflow-x: auto;
+	overflow: hidden;  /* Hide any overflow on the parent container */
 	margin: 30px auto;
   }
   
   .table-scroll-wrapper {
 	width: 100%;
-	overflow-x: auto; /* Enable horizontal scrolling */
+	overflow-x: auto; /* Allow horizontal scrolling on the wrapper */
 	-webkit-overflow-scrolling: touch;
-	/* Ensure the wrapper does not clip the content */
   }
   
   .table-scroll-wrapper table {
-	width: 100%; /* Make table occupy the full width of its container */
 	min-width: 1200px; /* Set a minimum width to force scrolling */
-	table-layout: fixed; /* Optional: makes sure the table columns have a consistent width */
+	width: 100%; /* Ensure the table takes up full width of its wrapper */
+	table-layout: fixed; /* Optional: ensures consistent column sizing */
   }
+  
   
   
   
