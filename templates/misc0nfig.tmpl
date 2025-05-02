@@ -19,7 +19,7 @@
     <h2 class="subTitle">Conference Sponsors</h2>
     <div class="sponsorContainer clickable">
       {{ range .Config.ConfSponsors }}
-        <div class="sponsor" onclick="openSponsors()">
+        <div class="sponsor" <!--onclick="openSponsors()"-->>
           <img src="{{.Image}}" class="image" />
         </div>
       {{ end }}
