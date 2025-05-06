@@ -160,7 +160,7 @@ h1, h2 {
 	align-items: center;
 	font-size: 1.5rem;
 	min-width: 100vw;
-	background-image: linear-gradient(to bottom right, #182333 , #717e96);
+	background: none;
 }
 
 .headerImage {
