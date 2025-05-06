@@ -488,6 +488,7 @@ h1 {
 
 #announcement{
 	padding: 50px 0;
+	margin: 0;
 }
 
 .fixed-size {
@@ -538,7 +539,7 @@ strong {
 #timetable {
 	max-width: 80%;
 	overflow: hidden;  /* Hide any overflow on the parent container */
-	margin: 30px auto;
+	margin: 0 auto;
   }
   
   .table-scroll-wrapper {
@@ -551,6 +552,10 @@ strong {
 	width: 100%; /* Ensure the table takes up full width of its wrapper */
 	table-layout: auto; /* Optional: ensures consistent column sizing */
   }
+
+#countdown {
+	font-size: 2rem;
+}
   
   
   
