@@ -487,8 +487,7 @@ h1 {
 }
 
 #announcement{
-	margin-top: 50px;
-	margin-bottom: 50px;
+	padding: 50px 0;
 }
 
 .fixed-size {
