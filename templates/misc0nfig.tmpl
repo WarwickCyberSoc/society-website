@@ -11,8 +11,7 @@
 </section>
 
 <section class="bg">
-  <h1 id="announcement">You can book your tickets for 2025 <a href="https://www.warwicksu.com/venues-events/events/61481/26830/">here!</a></h1>
-	<h1 id="announcement">Join the CTF <a href="https://goosectf.lilypadd.com">here!</a></h1>
+  <h1 id="announcement">You can access the misc0nfig 2025 CTF at <a href="https://goosectf.lilypadd.com/" style="word-wrap: break-word;" >https://goosectf.lilypadd.com/</a><br><p id="countdown"></p></h1>
 </section>
 
 <section class="alt-bg">
@@ -30,7 +29,7 @@
 {{ end }}
 
 {{ define "contentWide" }}
-<section style="width: 100%;">
+<section style="width: 100%; padding: 2.5% 0;" class="bg">
   <div id="timetable">
     <div class="table-scroll-wrapper">
       <table>
@@ -74,4 +73,5 @@
     </div>
   </div>
 </section>
+<script>createCountDown()</script>
 {{ end }}

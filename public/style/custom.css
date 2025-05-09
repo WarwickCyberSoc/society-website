@@ -160,7 +160,7 @@ h1, h2 {
 	align-items: center;
 	font-size: 1.5rem;
 	min-width: 100vw;
-	background-image: linear-gradient(to bottom right, #182333 , #717e96);
+	background: none;
 }
 
 .headerImage {
@@ -272,9 +272,9 @@ section {
 }
 
 #footerPadding {
-	height: 3rem;
+	height: 5rem;
 	margin-bottom: 1rem;
-	margin-top: 1rem;
+	padding-top: 1rem;
 }
 
 #footer {
@@ -285,8 +285,8 @@ section {
 	z-index: 100;
 	position: absolute;
 	bottom: 1rem;
-	height: 3rem;
-	margin-top: 1rem;
+	height: 5rem;
+	padding-top: 1rem;
 }
 
 #footer a {
@@ -487,8 +487,8 @@ h1 {
 }
 
 #announcement{
-	margin-top: 50px;
-	margin-bottom: 50px;
+	padding: 50px 0;
+	margin: 0;
 }
 
 .fixed-size {
@@ -539,7 +539,7 @@ strong {
 #timetable {
 	max-width: 80%;
 	overflow: hidden;  /* Hide any overflow on the parent container */
-	margin: 30px auto;
+	margin: 0 auto;
   }
   
   .table-scroll-wrapper {
@@ -552,6 +552,10 @@ strong {
 	width: 100%; /* Ensure the table takes up full width of its wrapper */
 	table-layout: auto; /* Optional: ensures consistent column sizing */
   }
+
+#countdown {
+	font-size: 60px;
+}
   
   
   
