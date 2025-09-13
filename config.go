@@ -71,14 +71,14 @@ type goldSponsor struct {
 	Name string `yaml:"name"`
 	Link string `yaml:"link"`
 	Image string `yaml:"image"`
-	// Description string `yaml:"description"`
+	Description string `yaml:"description"`
 }
 
 type silverSponsor struct {
 	Name string `yaml:"name"`
 	Link string `yaml:"link"`
 	Image string `yaml:"image"`
-	// Description string `yaml:"description"`
+	Description string `yaml:"description"`
 }
 
 
