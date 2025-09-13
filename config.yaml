@@ -69,6 +69,20 @@ posts:
     author: "Oscar Sharpe"
     link: "https://oscarsharpe.me/posts/intake-writeup"
 
+sponsors:
+  - name: "Bending Spoons"
+    link: "https://jobs.bendingspoons.com/"
+    image: "/images/Bending-Spoons.png"
+    description: ""
+  - name: "Crowdstrike"
+    link: "https://www.crowdstrike.com/en-gb/careers/university-interns/"
+    image: "/images/Crowdstrike_Recolor.png"
+    description: "#WeAreCrowdStrike and our mission is to stop breaches. As a global leader in cybersecurity, our team has changed the game. Since our inception in 2011, our market leading cloud-native platform has offered unparalleled protection against the most sophisticated cyberattacks. It combines the most advanced endpoint protection with expert intelligence to pinpoint the adversaries perpetrating the attacks, not just the malware."
+  - name: "Reversec"
+    link: "https://reversec.com/careers/"
+    image: "/images/reversec_logo.png"
+    description: ""
+
 goldSponsors:
   - name: "Bending Spoons"
     link: "https://jobs.bendingspoons.com/"
