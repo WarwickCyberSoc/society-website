@@ -74,6 +74,7 @@ goldSponsors:
     link: "https://jobs.bendingspoons.com/"
     image: "/images/Bending-Spoons.png
     description: ""
+    
 silverSponsors:
   - name: "Crowdstrike"
     link: "https://www.crowdstrike.com/en-gb/careers/university-interns/"
