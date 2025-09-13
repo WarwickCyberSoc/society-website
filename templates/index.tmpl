@@ -11,8 +11,15 @@
 <section class="alt-bg">
 	<div class="container" id="Sponsors">
 	<h2 class="subTitle" id="Sponsors">Society Sponsors</h2>
+	<div class="goldSponsorContainer">
+	{{ range .GoldSponsors }}
+		<div class="sponsor" onclick="openSponsors()">
+			<img src="{{.Image}}" class="image" />
+		</div>
+	{{end}}
+	</div>
 	<div class="sponsorContainer clickable">
-	{{ range .Sponsors }}
+	{{ range .SilverSponsors }}
 		<div class="sponsor" onclick="openSponsors()">
 			<img src="{{.Image}}" class="image" />
 		</div>
