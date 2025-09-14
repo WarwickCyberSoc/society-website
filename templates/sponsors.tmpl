@@ -1,18 +1,27 @@
 {{ define "head" }}
 {{ end }}
 {{define "content"}}
-<section class="alt-bg">
-	<div class=container id=head>
-		<h1>Sponsors</h1>
-    </div>
-</section>
-<section class="alt-bg">
+<section>
+<h2 class="subTitle text-warning" id="Sponsors">Gold Sponsors</h2>
 	<div id="sponsors" class="container">
-	<div class="sponsorContainer">
-	{{range .Sponsors}}
+	<div class="goldSponsorContainer">
+	{{range .GoldSponsors}}
 		<div class="sponsor">
             <a href="{{.Link}}" target="_blank" class="clickable fixed-size"><img src="{{.Image}}" class="image clickable" /></a>
 			<p class="description" >{{.Description}}</p>
+		</div>
+	{{end}}
+	</div>
+	</div>
+</section>
+<section class="alt-bg pt-5">
+<h2 class="subTitle" id="Sponsors">Silver Sponsors</h2>
+	<div id="sponsors" class="container">
+	<div class="sponsorContainer">
+	{{range .SilverSponsors}}
+		<div class="sponsor">
+            <a href="{{.Link}}" target="_blank" class="clickable fixed-size"><img src="{{.Image}}" class="image clickable" /></a>
+			<!--<p class="description" >{{.Description}}</p>-->
 		</div>
 	{{end}}
 	</div>
