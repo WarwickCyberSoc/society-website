@@ -89,7 +89,7 @@ func main() {
 	templateData := TemplateData{
 		Config: config,
 		Schedule: Schedule,
-		Timetable: config.Timetable
+		Timetable: config.Timetable,
 	}
 
 	for _, file := range files {
