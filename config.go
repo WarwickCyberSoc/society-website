@@ -111,6 +111,7 @@ type conferenceSchedule struct {
 type TemplateData struct {
 	Config   Config
 	Schedule conferenceSchedule
+	Timetable timetable
 }
 
 type timetable struct {
