@@ -26,14 +26,14 @@
         <tbody>
           {{ range $weekIdx, $week := $.Timetable.Weeks }}
             <tr>
-              <td>Week {{ $week.Index }}<br>w/c {{ $week.Date }}</td>
+              <td>Week <b>{{ $week.Index }}</b><br>w/c <b>{{ $week.Date }}</b></td>
 
               {{ range $dayIdx, $day := $.Timetable.Days }}
                   <td>
                     {{ range $.Timetable.CurrentEvents }}
                       {{ if and (eq .Day $day) (eq .Week $week.Index) }}
-                          <strong>{{ .Title }}</strong><br>
-                          {{ .Room }}<br>{{ .Start }} - {{ .End }}
+                          <strong>{{ .Title }}</strong>
+                          {{ .Room }}<br><b>{{ .Start }} - {{ .End }}</b>
                       {{ end }}
                     {{ end }}
                   </td>
