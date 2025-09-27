@@ -31,7 +31,6 @@ type Config struct {
 	Timeslots []string `yaml:"timeslots"`
 	Events []conferenceEvent  `yaml:"events"`
 	SkipMap map[string]bool `yaml:"-"`
-	Timetable []timetable `yaml:"-"`
 }
 
 type post struct {
