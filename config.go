@@ -31,6 +31,7 @@ type Config struct {
 	Timeslots []string `yaml:"timeslots"`
 	Events []conferenceEvent  `yaml:"events"`
 	SkipMap map[string]bool `yaml:"-"`
+	Timetable []timetable `yaml:"-"`
 }
 
 type post struct {
@@ -110,4 +111,10 @@ type conferenceSchedule struct {
 type TemplateData struct {
 	Config   Config
 	Schedule conferenceSchedule
+}
+
+type timetable struct {
+	Weeks			[]string		`yaml:"weeks_term1_25"`
+	CurrentEvents	[]string		`yaml:"current_events"`
+	Days			[]string		`yaml:"days_of_the_week"`
 }

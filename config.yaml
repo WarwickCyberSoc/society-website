@@ -36,6 +36,8 @@ navbar:
     link: /misc0nfig
   - name: Resources
     link: /resources
+  - name: Timetable
+    link: /timetable
 
 
 achievements:
@@ -249,3 +251,37 @@ events:
     company: "Loughborough University"
     start: "16:00"
     end: "16:30"
+
+
+weeks_term1_25:
+  - index: 1
+    date: 06/10/2025
+  - index: 2
+    date: 13/10/2025
+  - index: 3
+    date: 20/10/2025
+  - index: 4
+    date: 27/10/2025
+  - index: 5
+    date: 03/11/2025
+  - index: 6
+    date: 10/11/2025
+  - index: 7
+    date: 17/11/2025
+  - index: 8
+    date: 24/11/2025
+  - index: 9
+    date: 01/12/2025
+  - index: 10
+    date: 08/12/2025
+
+days_of_the_week:
+  - Mon
+  - Tues
+  - Wed
+  - Thurs
+  - Fri
+  - Sat
+  - Sun
+
+current_events:

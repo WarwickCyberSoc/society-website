@@ -1,0 +1,58 @@
+{{ define "head" }}
+{{ end }}
+
+{{ define "contentTop" }}
+<section>
+  <div class="container" id="mainHeaderMisc">
+    <h2>Society Calendar</h2>
+  </div>
+</section>
+
+{{ end }}
+
+{{ define "contentWide" }}
+<section style="width: 100%; padding: 2.5% 0;" class="bg">
+  <div id="timetable">
+    <div class="table-scroll-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Week</th>
+            {{ range .Timetable.Days }}
+              <th>{{ . }}</th>
+            {{ end }}
+          </tr>
+        </thead>
+        <tbody>
+          {{ range $weekIdx, $week := $.Timetable.Weeks }}
+            <tr>
+              <td>{{ $week.Index }}<br>w/c {{ $week.date }}</td>
+
+              {{ range $roomIdx, $room := $.Schedule.Rooms }}
+                {{ $key := printf "%s|%s" $room $time }}
+                {{ if index $.Schedule.SkipMap $key }}
+                  {{/* Skip, because covered by rowspan */}}
+                {{ else }}
+                  {{ $found := false }}
+                  {{ range $.Schedule.Events }}
+                    {{ if and (eq .Room $room) (eq .Start $time) }}
+                      <td rowspan="{{ .RowSpan }}" class="highlightCell">
+                        <strong>{{ .Title }}</strong><br>
+                        {{ .Speaker }}<br><br>{{ .Company }}
+                      </td>
+                      {{ $found = true }}
+                    {{ end }}
+                  {{ end }}
+                  {{ if not $found }}
+                    <td></td>
+                  {{ end }}
+                {{ end }}
+              {{ end }}
+            </tr>
+          {{ end }}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+{{ end }}
