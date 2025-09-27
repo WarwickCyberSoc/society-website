@@ -112,8 +112,8 @@ type conferenceSchedule struct {
 }
 
 type Week struct {
-	Index		string `yaml:"title"`
-	Date 		string `yaml:"date"`
+	Index		int		`yaml:"index"`
+	Date 		string	`yaml:"date"`
 }
 
 type currentEvent struct {
