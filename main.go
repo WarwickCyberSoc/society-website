@@ -117,7 +117,7 @@ func main() {
 			fmt.Println("Error creating file:", err)
 			os.Exit(1)
 		}
-		if file.Name() == "misc0nfig.tmpl" {
+		if file.Name() == "misc0nfig.tmpl" or file.Name() == "timetable.tmpl" {
 			err = templates[file.Name()].ExecuteTemplate(outFile, "layout_misc0nfig", templateData)
 		} else {
 			err = templates[file.Name()].ExecuteTemplate(outFile, "layout", config)
