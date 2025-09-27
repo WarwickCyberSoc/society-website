@@ -33,7 +33,7 @@
                   {{ $found := false }}
                   <td class="highlightCell">
                   {{ range $.Timetable.CurrentEvents }}
-                    {{ if and (eq .Day $day) (eq .Week $week) }}
+                    {{ if and (eq .Day $day) (eq .Week $week.Index) }}
                       
                         <strong>{{ .Title }}</strong><br>
                         {{ .Room }}<br>{{ .Start }} - {{ .End }}
