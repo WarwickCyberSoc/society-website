@@ -29,13 +29,13 @@
               <td>{{ $week.Index }}<br>w/c {{ $week.date }}</td>
 
               {{ range $roomIdx, $room := $.Schedule.Rooms }}
-                {{ $key := printf "%s|%s" $room $time }}
+                {{ $key := printf "%s|%s" $room $week }}
                 {{ if index $.Schedule.SkipMap $key }}
                   {{/* Skip, because covered by rowspan */}}
                 {{ else }}
                   {{ $found := false }}
                   {{ range $.Schedule.Events }}
-                    {{ if and (eq .Room $room) (eq .Start $time) }}
+                    {{ if and (eq .Room $room) (eq .Start $week) }}
                       <td rowspan="{{ .RowSpan }}" class="highlightCell">
                         <strong>{{ .Title }}</strong><br>
                         {{ .Speaker }}<br><br>{{ .Company }}
