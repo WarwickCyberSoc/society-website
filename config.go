@@ -32,9 +32,9 @@ type Config struct {
 	Events []conferenceEvent  `yaml:"events"`
 	SkipMap map[string]bool `yaml:"-"`
 	Timetable timetable `yaml:"-"`
-	timetableDays []string `yaml:"days_of_the_week"`
-	timetableWeeks []Week `yaml:"weeks_term1_25"`
-	timetableCurrentEvents []currentEvent `yaml:"current_events"`
+	TimetableDays []string `yaml:"days_of_the_week"`
+	TimetableWeeks []Week `yaml:"weeks_term1_25"`
+	TimetableCurrentEvents []currentEvent `yaml:"current_events"`
 }
 
 type post struct {
@@ -128,9 +128,9 @@ type currentEvent struct {
 }
 
 type timetable struct {
-	Weeks			[]Week				`yaml:"weeks_term1_25"`
-	CurrentEvents	[]currentEvent		`yaml:"current_events"`
-	Days			[]string			`yaml:"days_of_the_week"`
+	Weeks			[]Week				`yaml:"-"`
+	CurrentEvents	[]currentEvent		`yaml:"-"`
+	Days			[]string			`yaml:"-"`
 }
 
 type TemplateData struct {

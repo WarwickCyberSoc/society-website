@@ -88,9 +88,9 @@ func main() {
 
 
 	Timetable := timetable{
-		Days:			config.timetableDays,
-		Weeks:			config.timetableWeeks,
-		CurrentEvents:	config.timetableCurrentEvents,
+		Days:			config.TimetableDays,
+		Weeks:			config.TimetableWeeks,
+		CurrentEvents:	config.TimetableCurrentEvents,
 	}
 
 	yamlData, err := yaml.Marshal(&Timetable)
