@@ -93,6 +93,15 @@ func main() {
 		CurrentEvents:	config.timetableCurrentEvents,
 	}
 
+	yamlData, err := yaml.Marshal(&Timetable)
+	if err != nil {
+		fmt.Println("Error marshaling Timetable to YAML:", err)
+	}
+	fmt.Println("--- Parsed Timetable Data ---")
+	fmt.Println(string(yamlData))
+	fmt.Println("-----------------------------")
+
+
 	templateData := TemplateData{
 		Config: config,
 		Schedule: Schedule,

@@ -26,7 +26,7 @@
         <tbody>
           {{ range $weekIdx, $week := $.Timetable.Weeks }}
             <tr>
-              <td>{{ $week.Index }}<br>w/c {{ $week.date }}</td>
+              <td>Week {{ $week.Index }}<br>w/c {{ $week.date }}</td>
 
               {{ range $dayIdx, $day := $.Timetable.Days }}
                   <td>
