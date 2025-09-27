@@ -285,3 +285,12 @@ days_of_the_week:
   - Sun
 
 current_events:
+  - room: Curiositea
+    title: "Meet & Greet with the exec"
+    type: social
+    sober: true
+    week: 1
+    day: Mon
+    start: 14:00
+    end: 15:30
+    

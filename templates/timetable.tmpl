@@ -28,25 +28,22 @@
             <tr>
               <td>{{ $week.Index }}<br>w/c {{ $week.date }}</td>
 
-              {{ range $roomIdx, $room := $.Schedule.Rooms }}
-                {{ $key := printf "%s|%s" $room $week }}
-                {{ if index $.Schedule.SkipMap $key }}
-                  {{/* Skip, because covered by rowspan */}}
-                {{ else }}
+              {{ range $dayIdx, $day := $.Timetable.Days }}
+                {{ $key := printf "%s|%s" $day $week }}
                   {{ $found := false }}
-                  {{ range $.Schedule.Events }}
-                    {{ if and (eq .Room $room) (eq .Start $week) }}
-                      <td rowspan="{{ .RowSpan }}" class="highlightCell">
+                  <td class="highlightCell">
+                  {{ range $.Timetable.CurrentEvents }}
+                    {{ if and (eq .Day $day) (eq .Week $week) }}
+                      
                         <strong>{{ .Title }}</strong><br>
-                        {{ .Speaker }}<br><br>{{ .Company }}
-                      </td>
+                        {{ .Room }}<br>{{ .Start }} - {{ .End }}
                       {{ $found = true }}
                     {{ end }}
                   {{ end }}
+                  </td>
                   {{ if not $found }}
                     <td></td>
                   {{ end }}
-                {{ end }}
               {{ end }}
             </tr>
           {{ end }}
