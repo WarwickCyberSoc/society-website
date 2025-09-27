@@ -452,11 +452,11 @@ section {
 }
 
 .sponsor .gold {
-	filter: drop-shadow(5px 5px 5px #454500);
+	filter: drop-shadow(5px 5px 5px #a4a400);
 }
 
 .sponsor .silver {
-	filter: drop-shadow(5px 5px 5px #525252);
+	filter: drop-shadow(5px 5px 5px #979797);
 }
 
 .sponsor .link {
