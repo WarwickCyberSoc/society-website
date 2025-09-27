@@ -451,6 +451,14 @@ section {
 	margin: auto;
 }
 
+.sponsor .gold {
+	filter: drop-shadow(5px 5px 5px #454500);
+}
+
+.sponsor .silver {
+	filter: drop-shadow(5px 5px 5px #525252);
+}
+
 .sponsor .link {
 	font-size: 1.5rem;
 	font-weight: 600;

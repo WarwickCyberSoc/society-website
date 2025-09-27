@@ -14,14 +14,14 @@
 	<div class="goldSponsorContainer">
 	{{ range .GoldSponsors }}
 		<div class="sponsor" onclick="openSponsors()">
-			<img src="{{.Image}}" class="image" />
+			<img src="{{.Image}}" class="image gold" />
 		</div>
 	{{end}}
 	</div>
 	<div class="sponsorContainer clickable">
 	{{ range .SilverSponsors }}
 		<div class="sponsor" onclick="openSponsors()">
-			<img src="{{.Image}}" class="image" />
+			<img src="{{.Image}}" class="image silver" />
 		</div>
 	{{end}}
 	</div>
