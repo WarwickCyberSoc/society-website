@@ -32,6 +32,9 @@ type Config struct {
 	Events []conferenceEvent  `yaml:"events"`
 	SkipMap map[string]bool `yaml:"-"`
 	Timetable timetable `yaml:"-"`
+	timetableDays []string `yaml:"days_of_the_week"`
+	timetableWeeks []Week `yaml:"weeks_term1_25"`
+	timetableCurrentEvents []currentEvent `yaml:"current_events"`
 }
 
 type post struct {

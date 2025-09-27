@@ -86,10 +86,17 @@ func main() {
 	skipMap := prepareSchedule(&Schedule)
 	Schedule.SkipMap = skipMap
 
+
+	Timetable := timetable{
+		Days:			config.timetableDays,
+		Weeks:			config.timetableWeeks,
+		CurrentEvents:	config.timetableCurrentEvents,
+	}
+
 	templateData := TemplateData{
 		Config: config,
 		Schedule: Schedule,
-		Timetable: config.Timetable,
+		Timetable: Timetable
 	}
 
 	for _, file := range files {
