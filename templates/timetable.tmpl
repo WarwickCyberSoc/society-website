@@ -29,21 +29,14 @@
               <td>{{ $week.Index }}<br>w/c {{ $week.date }}</td>
 
               {{ range $dayIdx, $day := $.Timetable.Days }}
-                {{ $key := printf "%s|%s" $day $week }}
-                  {{ $found := false }}
-                  <td class="highlightCell">
-                  {{ range $.Timetable.CurrentEvents }}
-                    {{ if and (eq .Day $day) (eq .Week $week.Index) }}
-                      
-                        <strong>{{ .Title }}</strong><br>
-                        {{ .Room }}<br>{{ .Start }} - {{ .End }}
-                      {{ $found = true }}
+                  <td>
+                    {{ range $.Timetable.CurrentEvents }}
+                      {{ if and (eq .Day $day) (eq .Week $week.Index) }}
+                          <strong>{{ .Title }}</strong><br>
+                          {{ .Room }}<br>{{ .Start }} - {{ .End }}
+                      {{ end }}
                     {{ end }}
-                  {{ end }}
                   </td>
-                  {{ if not $found }}
-                    <td></td>
-                  {{ end }}
               {{ end }}
             </tr>
           {{ end }}
