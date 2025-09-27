@@ -108,14 +108,14 @@ type conferenceSchedule struct {
 	SkipMap   map[string]bool
 }
 
-type TemplateData struct {
-	Config   Config
-	Schedule conferenceSchedule
-	Timetable timetable
-}
-
 type timetable struct {
 	Weeks			[]string		`yaml:"weeks_term1_25"`
 	CurrentEvents	[]string		`yaml:"current_events"`
 	Days			[]string		`yaml:"days_of_the_week"`
+}
+
+type TemplateData struct {
+	Config   Config
+	Schedule conferenceSchedule
+	Timetable timetable
 }
