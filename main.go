@@ -95,14 +95,11 @@ func main() {
 	if file.IsDir() {
 			continue	
 		}
-		if file.Name() == "layout.tmpl" {
-			continue
-		}
-		if file.Name() == "layout_misc0nfig.tmpl" {
+		if file.Name() == "layout.tmpl" || file.Name() == "layout_misc0nfig.tmpl" {
 			continue
 		}
 
-		if file.Name() == "misc0nfig.tmpl" {
+		if file.Name() == "misc0nfig.tmpl" || file.Name() == "timetable.tmpl" {
 			templates[file.Name()] = template.Must(templates["layout_misc0nfig"].Clone())
 		} else {
 			templates[file.Name()] = template.Must(templates["layout"].Clone())
