@@ -108,10 +108,26 @@ type conferenceSchedule struct {
 	SkipMap   map[string]bool
 }
 
+type Week struct {
+	Index		string `yaml:"title"`
+	Date 		string `yaml:"date"`
+}
+
+type currentEvent struct {
+	Title       string 	`yaml:"title"`
+	Room        string 	`yaml:"room"`
+	Start       string 	`yaml:"start"`
+	End         string	`yaml:"end"`
+	Type		string	`yaml:"type"`
+	Sober		bool	`yaml:"sober"`
+	Week		int		`yaml:"week"`
+	Day			string	`yaml:"day"`
+}
+
 type timetable struct {
-	Weeks			[]string		`yaml:"weeks_term1_25"`
-	CurrentEvents	[]string		`yaml:"current_events"`
-	Days			[]string		`yaml:"days_of_the_week"`
+	Weeks			[]Week				`yaml:"weeks_term1_25"`
+	CurrentEvents	[]currentEvent		`yaml:"current_events"`
+	Days			[]string			`yaml:"days_of_the_week"`
 }
 
 type TemplateData struct {
