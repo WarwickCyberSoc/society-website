@@ -549,7 +549,7 @@ current_events:
     end: 19:30
 
   - room: IMC0.04
-    title: "Talk series - title TBC"
+    title: "Talk series - Title TBC"
     type: academic
     sober: false
     week: 9
@@ -576,7 +576,7 @@ current_events:
     end: 19:30
 
   - room: "Terrace Bar"
-    title: "Christmas pub crawl"
+    title: "Christmas Pub Crawl"
     type: social
     sober: false
     week: 10
