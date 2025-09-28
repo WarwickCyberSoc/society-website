@@ -1,0 +1,64 @@
+{{ define "head" }}
+{{ end }}
+
+{{ define "contentTop" }}
+<section>
+  <div class="container bg titleBar">
+    <h2>Society Calendar</h2>
+  </div>
+</section>
+
+{{ end }}
+
+{{ define "contentWide" }}
+<section style="width: 100%; padding: 2.5% 0;" class="alt-bg">
+  <div id="timetableKey">
+    <div class="keyItem">
+      <div class="colorID" id="academic-color"></div>
+      <p>Academic</p>
+    </div>
+    <div class="keyItem">
+      <div class="colorID" id="sober-color"></div>
+      <p>Sober Social</p>
+    </div>
+    <div class="keyItem">
+      <div class="colorID" id="drinking-color"></div>
+    <p>Non-Sober Social</p>
+    </div>
+  </div>
+  <div id="timetable">
+    <div class="table-scroll-wrapper">
+      <table>
+        <thead>
+          <tr>
+            <th>Week</th>
+            {{ range .Timetable.Days }}
+              <th>{{ . }}</th>
+            {{ end }}
+          </tr>
+        </thead>
+        <tbody>
+          {{ range $weekIdx, $week := $.Timetable.Weeks }}
+            <tr>
+              <td>Week <b>{{ $week.Index }}</b><br>w/c <b>{{ $week.Date }}</b></td>
+
+              {{ range $dayIdx, $day := $.Timetable.Days }}
+                  <td>
+                    {{ range $.Timetable.CurrentEvents }}
+                      {{ if and (eq .Day $day) (eq .Week $week.Index) }}
+                          <div class="calendar-event {{ if eq .Type "academic"}} academic {{ else if .Sober }} sober-social {{ else}} drinking-social {{ end }}">
+                            <strong>{{ .Title }}</strong>
+                            {{ .Room }}<br /><b>{{ .Start }} - {{ .End }}</b>
+                          </div>
+                      {{ end }}
+                    {{ end }}
+                  </td>
+              {{ end }}
+            </tr>
+          {{ end }}
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+{{ end }}

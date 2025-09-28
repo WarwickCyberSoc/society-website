@@ -86,23 +86,30 @@ func main() {
 	skipMap := prepareSchedule(&Schedule)
 	Schedule.SkipMap = skipMap
 
+
+	Timetable := timetable{
+		Days:			config.TimetableDays,
+		Weeks:			config.TimetableWeeks,
+		CurrentEvents:	config.TimetableCurrentEvents,
+	}
+
+
+
 	templateData := TemplateData{
 		Config: config,
 		Schedule: Schedule,
+		Timetable: Timetable,
 	}
 
 	for _, file := range files {
 	if file.IsDir() {
 			continue	
 		}
-		if file.Name() == "layout.tmpl" {
-			continue
-		}
-		if file.Name() == "layout_misc0nfig.tmpl" {
+		if file.Name() == "layout.tmpl" || file.Name() == "layout_misc0nfig.tmpl" {
 			continue
 		}
 
-		if file.Name() == "misc0nfig.tmpl" {
+		if file.Name() == "misc0nfig.tmpl" || file.Name() == "timetable.tmpl" {
 			templates[file.Name()] = template.Must(templates["layout_misc0nfig"].Clone())
 		} else {
 			templates[file.Name()] = template.Must(templates["layout"].Clone())
@@ -117,7 +124,7 @@ func main() {
 			fmt.Println("Error creating file:", err)
 			os.Exit(1)
 		}
-		if file.Name() == "misc0nfig.tmpl" {
+		if file.Name() == "misc0nfig.tmpl" || file.Name() == "timetable.tmpl" {
 			err = templates[file.Name()].ExecuteTemplate(outFile, "layout_misc0nfig", templateData)
 		} else {
 			err = templates[file.Name()].ExecuteTemplate(outFile, "layout", config)

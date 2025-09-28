@@ -451,6 +451,14 @@ section {
 	margin: auto;
 }
 
+.sponsor .gold {
+	filter: drop-shadow(5px 5px 5px #a4a400);
+}
+
+.sponsor .silver {
+	filter: drop-shadow(5px 5px 5px #979797);
+}
+
 .sponsor .link {
 	font-size: 1.5rem;
 	font-weight: 600;
@@ -558,6 +566,58 @@ strong {
 	font-size: 60px;
 }
   
+.calendar-event {
+	padding-bottom: 3vh;
+	padding: 1vh 1vw;
+	color: whitesmoke;
+}
+.academic {
+	color: rgb(167, 213, 188);
+}
+.sober-social {
+	color: rgb(132, 199, 250);
+}
+.drinking-social {
+	color: rgb(193, 142, 247);
+}
   
-  
-  
+#timetableKey{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+	margin-bottom: 3vh;
+}
+
+.keyItem {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	font-size: 1.5vh;
+}
+
+.keyItem p {
+	margin: 0;
+}
+
+.colorID {
+	height: 3vh;
+	width: 3vh;
+	border: 2px solid #f5f5f5;
+	margin-right: 1vw;
+}
+
+#academic-color {
+	background-color: rgb(167, 213, 188);
+}
+#sober-color {
+	background-color: rgb(132, 199, 250);
+}
+#drinking-color {
+	background-color: rgb(193, 142, 247);
+}
+
+.titleBar {
+	text-align: center;
+}
