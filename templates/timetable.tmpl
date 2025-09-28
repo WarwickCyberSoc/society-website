@@ -3,7 +3,7 @@
 
 {{ define "contentTop" }}
 <section>
-  <div class="container" id="mainHeaderMisc">
+  <div class="container" id="mainHeader">
     <h2>Society Calendar</h2>
   </div>
 </section>
@@ -11,6 +11,20 @@
 {{ end }}
 
 {{ define "contentWide" }}
+<div id="timetableKey">
+  <div class="keyItem">
+    <div class="colorID" id="academic-color" />
+    <p>Academic</p>
+  </div>
+  <div class="keyItem">
+    <div class="colorID" id="sober-color" />
+    <p>Sober Social</p>
+  </div>
+  <div class="keyItem">
+    <div class="colorID" id="drinking-color" />
+  <p>Non-Sober Social</p>
+  </div>
+</div>
 <section style="width: 100%; padding: 2.5% 0;" class="bg">
   <div id="timetable">
     <div class="table-scroll-wrapper">

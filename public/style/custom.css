@@ -581,4 +581,32 @@ strong {
 	color: rgb(193, 142, 247);
 }
   
-  
+#timetableKey{
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-evenly;
+}
+
+.keyItem {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+}
+
+.colorID {
+	height: 5vh;
+	width: 5vh;
+	border: 1px solid #000;
+}
+
+#academic-color {
+	background-color: rgb(167, 213, 188);
+}
+#sober-color {
+	background-color: rgb(132, 199, 250);
+}
+#drinking-color {
+	background-color: rgb(193, 142, 247);
+}
