@@ -586,6 +586,7 @@ strong {
 	flex-direction: row;
 	align-items: center;
 	justify-content: space-evenly;
+	margin-bottom: 3vh;
 }
 
 .keyItem {
@@ -593,7 +594,7 @@ strong {
 	flex-direction: row;
 	align-items: center;
 	justify-content: center;
-	font-size: 3vh;
+	font-size: 1.5vh;
 }
 
 .keyItem p {
