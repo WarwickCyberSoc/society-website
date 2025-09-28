@@ -566,6 +566,19 @@ strong {
 	font-size: 60px;
 }
   
-  
+.calendar-event {
+	padding-bottom: 3vh;
+	padding: 1vh 1vw;
+	color: whitesmoke;
+}
+.academic {
+	background-color: rgba(102, 161, 130, 0.5);
+}
+.sober-social {
+	background-image: linear-gradient(to bottom right, rgba(142, 247, 247, 0.5), rgba(142, 247, 153, 0.5));
+}
+.drinking-social {
+	background-image: linear-gradient(to bottom right, rgba(142, 247, 247, 0.5), rgba(193, 142, 247, 0.5));
+}
   
   
