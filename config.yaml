@@ -567,7 +567,7 @@ current_events:
     end: 22:00
 
   - room: "IMC2.46"
-    title: "IntroToCTF: Intro to pwn"
+    title: "IntroToCTF: Intro to Pwn"
     type: academic
     sober: true
     week: 10
