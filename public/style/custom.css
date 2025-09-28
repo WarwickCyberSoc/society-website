@@ -617,3 +617,7 @@ strong {
 #drinking-color {
 	background-color: rgb(193, 142, 247);
 }
+
+.titleBar {
+	text-align: center;
+}
