@@ -32,9 +32,9 @@
                   <td>
                     {{ range $.Timetable.CurrentEvents }}
                       {{ if and (eq .Day $day) (eq .Week $week.Index) }}
-                          <hr />
                           <strong>{{ .Title }}</strong>
-                          {{ .Room }}<br><b>{{ .Start }} - {{ .End }}</b>
+                          {{ .Room }}<br /><b>{{ .Start }} - {{ .End }}</b>
+                          <br />
                       {{ end }}
                     {{ end }}
                   </td>
