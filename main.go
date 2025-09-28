@@ -135,8 +135,7 @@ func main() {
 			err = templates[file.Name()].ExecuteTemplate(outFile, "layout_misc0nfig", templateData)
 		} else if file.Name() == "timetable.tmpl" {
 			err = templates[file.Name()].ExecuteTemplate(outFile, "layout", templateData)
-		}
-		else {
+		} else {
 			err = templates[file.Name()].ExecuteTemplate(outFile, "layout", config)
 		}
 		if err != nil {
