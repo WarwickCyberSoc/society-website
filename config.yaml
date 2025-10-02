@@ -25,7 +25,7 @@ exec:
     role: Social Secretary
   - name: Tom Slater
     role: Social Secretary
-  - name: Samuel Kamas
+  - name: Hedley Benaiges
     role: Marketing Officer
 navbar:
   - name: Home
@@ -576,7 +576,7 @@ current_events:
     end: 22:00
 
   - room: "IMC2.46"
-    title: "IntroToCTF: Intro to pwn"
+    title: "IntroToCTF: Intro to Pwn"
     type: academic
     sober: true
     week: 10
@@ -585,7 +585,7 @@ current_events:
     end: 19:30
 
   - room: "Terrace Bar"
-    title: "Christmas pub crawl"
+    title: "Christmas Pub Crawl"
     type: social
     sober: false
     week: 10
