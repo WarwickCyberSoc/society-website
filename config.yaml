@@ -25,7 +25,7 @@ exec:
     role: Social Secretary
   - name: Tom Slater
     role: Social Secretary
-  - name: Samuel Kamas
+  - name: Hedley Benaiges
     role: Marketing Officer
 navbar:
   - name: Home
@@ -315,7 +315,7 @@ current_events:
     end: 17:30
 
   - room: IMC0.04
-    title: "Talk series - Title TBC"
+    title: "Talk series - Peter Jones"
     type: academic
     sober: true
     week: 1
@@ -351,7 +351,7 @@ current_events:
     end: 19:30
 
   - room: IMC0.04
-    title: "Talk series - Title TBC, Jack Simpson"
+    title: "Talk series - Entering the threat maze: A case study in Russian cyber sabotage - Jack Simpson"
     type: academic
     sober: true
     week: 2
@@ -378,13 +378,22 @@ current_events:
     end: 19:30
 
   - room: "IMC0.04"
-    title: "Talk series - TBC"
+    title: "Talk series - Julian Meyrick (Eraneos, CyberFirst)"
+    type: academic
+    sober: true
+    week: 3
+    day: Wed
+    start: 13:00
+    end: 14:00
+
+  - room: "IMC0.04"
+    title: "TryHackMe CTF"
     type: academic
     sober: true
     week: 3
     day: Wed
     start: 14:00
-    end: 15:00
+    end: 16:00
 
   - room: "Terrace Bar"
     title: "Pub Crawl"
@@ -423,7 +432,7 @@ current_events:
     end: 22:00
   
   - room: "IMC0.04"
-    title: "Talk series - Title TBC"
+    title: "Talk Series - Label Printers go BRRRR - Owen R (Reversec)"
     type: academic
     sober: true
     week: 4
@@ -450,7 +459,7 @@ current_events:
     end: 22:00
 
   - room: "IMC0.04"
-    title: "Talk series - Title TBC"
+    title: "Talk series - Unraveling Supply Chain Attacks - Andrea Riva (Bending Spoons)"
     type: academic
     sober: true
     week: 5
@@ -494,14 +503,14 @@ current_events:
     start: 17:30
     end: 19:30
 
-  - room: "IMC0.04"
-    title: "Talk series - Title TBC, Jon Harry"
-    type: academic
-    sober: true
-    week: 7
-    day: Wed
-    start: 13:00
-    end: 14:00
+  # - room: "IMC0.04"
+  #   title: "Talk series - Title TBC, Jon Harry"
+  #   type: academic
+  #   sober: true
+  #   week: 7
+  #   day: Wed
+  #   start: 13:00
+  #   end: 14:00
 
   - room: "Kelseys, Leamington Spa"
     title: "Circle - Theme TBC"
@@ -549,7 +558,7 @@ current_events:
     end: 19:30
 
   - room: IMC0.04
-    title: "Talk series - title TBC"
+    title: "Talk series - Industry's X Factor: Connecting Security Requirements with Verification Reality"
     type: academic
     sober: false
     week: 9
@@ -567,7 +576,7 @@ current_events:
     end: 22:00
 
   - room: "IMC2.46"
-    title: "IntroToCTF: Intro to pwn"
+    title: "IntroToCTF: Intro to Pwn"
     type: academic
     sober: true
     week: 10
@@ -576,7 +585,7 @@ current_events:
     end: 19:30
 
   - room: "Terrace Bar"
-    title: "Christmas pub crawl"
+    title: "Christmas Pub Crawl"
     type: social
     sober: false
     week: 10
