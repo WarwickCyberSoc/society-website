@@ -332,7 +332,7 @@ current_events:
     start: 15:00
     end: 17:00
 
-- room: IMC2.46
+  - room: IMC2.46
     title: "IntroToCTF: VMs and Linux"
     type: academic
     sober: true
