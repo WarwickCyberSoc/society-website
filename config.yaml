@@ -323,7 +323,7 @@ current_events:
     start: 13:00
     end: 14:00
 
-  - room: IMC0.04
+  - room: IMC0.02
     title: "Ethical Hacking - a practical introduction to Cyber Security"
     type: academic
     sober: true
