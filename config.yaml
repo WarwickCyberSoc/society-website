@@ -332,6 +332,15 @@ current_events:
     start: 15:00
     end: 17:00
 
+- room: IMC2.46
+    title: "IntroToCTF: VMs and Linux"
+    type: academic
+    sober: true
+    week: 1
+    day: Mon
+    start: 18:00
+    end: 19:30
+
   - room: IMC0.02
     title: "IntakeCTF 2025: Opening event"
     type: academic
