@@ -347,7 +347,7 @@ current_events:
     sober: true
     week: 1
     day: Thurs
-    start: 18:30
+    start: 18:00
     end: 21:00
 
   - room: IMC2.46
