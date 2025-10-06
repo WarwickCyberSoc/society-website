@@ -350,6 +350,15 @@ current_events:
     start: 18:00
     end: 21:00
 
+  - room: CS1.04
+    title: "IntakeCTF 2025: Closing event"
+    type: academic
+    sober: true
+    week: 1
+    day: Sun
+    start: 18:00
+    end: 20:00
+
   - room: IMC2.46
     title: "IntroToCTF: guided hacking session"
     type: academic
