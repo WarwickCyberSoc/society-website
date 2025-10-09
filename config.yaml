@@ -368,7 +368,7 @@ current_events:
     start: 18:00
     end: 19:30
 
-  - room: IMC0.04
+  - room: IMC0.02
     title: "Talk series - Entering the threat maze: A case study in Russian cyber sabotage - Jack Simpson"
     type: academic
     sober: true
@@ -378,7 +378,7 @@ current_events:
     end: 15:00
 
   - room: "SU Atrium"
-    title: "Circle - Theme TBC"
+    title: "Circle - Theme: Shit Shirt"
     type: social
     sober: false
     week: 2
