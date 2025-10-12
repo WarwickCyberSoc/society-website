@@ -387,7 +387,7 @@ current_events:
     end: 00:00
 
   - room: "IMC2.46"
-    title: "IntroToCTF: Intro to Rev"
+    title: "IntroToCTF: Intro to Forensics"
     type: academic
     sober: true
     week: 3
@@ -432,7 +432,7 @@ current_events:
     end: 16:30
   
   - room: "IMC2.46"
-    title: "IntroToCTF: Intro to Forensics"
+    title: "IntroToCTF: Intro to Rev"
     type: academic
     sober: true
     week: 4
