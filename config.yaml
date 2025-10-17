@@ -75,7 +75,7 @@ sponsors:
   - name: "Bending Spoons"
     link: "https://jobs.bendingspoons.com/"
     image: "/images/Bending-Spoons-Recolour.png"
-    description: ""
+    description: "Bending Spoons. Curious name, right? It’s from The Matrix, where the hero discovers that what seems impossible often isn't so. In 2013, when we were a punchy little startup, the parallel was fitting. Today, it’s more appropriate than ever. That five-person startup has become a leading tech company—with 500+ bright, inspiring, and hard-working Spooners from over 35 countries. Our category-leading products—including Evernote, Issuu, Meetup, Remini, Splice, StreamYard, and WeTransfer—have been downloaded over a billion times and delight millions of people every day."
   - name: "Crowdstrike"
     link: "https://www.crowdstrike.com/en-gb/careers/university-interns/"
     image: "/images/Crowdstrike_Recolor.png"
@@ -83,13 +83,13 @@ sponsors:
   - name: "Reversec"
     link: "https://reversec.com/careers/"
     image: "/images/reversec_logo.png"
-    description: ""
+    description: "Reversec, a new name in cybersecurity consulting, helps organizations worldwide tackle their most complex cybersecurity challenges. With a focus on continuous research, practical solutions and knowledge sharing, Reversec’s findings provide the rationale behind informed security decisions. Reversec is committed to being the leading global provider of offensive-driven consulting services."
 
 goldSponsors:
   - name: "Bending Spoons"
     link: "https://jobs.bendingspoons.com/"
     image: "/images/Bending-Spoons-Recolour.png"
-    description: ""
+    description: "Bending Spoons. Curious name, right? It’s from The Matrix, where the hero discovers that what seems impossible often isn't so. In 2013, when we were a punchy little startup, the parallel was fitting. Today, it’s more appropriate than ever. That five-person startup has become a leading tech company—with 500+ bright, inspiring, and hard-working Spooners from over 35 countries. Our category-leading products—including Evernote, Issuu, Meetup, Remini, Splice, StreamYard, and WeTransfer—have been downloaded over a billion times and delight millions of people every day."
     
 silverSponsors:
   - name: "Crowdstrike"
@@ -99,7 +99,7 @@ silverSponsors:
   - name: "Reversec"
     link: "https://reversec.com/careers/"
     image: "/images/reversec_logo.png"
-    description: ""
+    description: "Reversec, a new name in cybersecurity consulting, helps organizations worldwide tackle their most complex cybersecurity challenges. With a focus on continuous research, practical solutions and knowledge sharing, Reversec’s findings provide the rationale behind informed security decisions. Reversec is committed to being the leading global provider of offensive-driven consulting services."
 
 confSponsors:
 - name: "Crowdstrike"
@@ -113,7 +113,7 @@ confSponsors:
 - name: "Reversec"
   link: "https://reversec.com/"
   image: "/images/reversec_logo.png"
-  description: ""
+  description: "Reversec, a new name in cybersecurity consulting, helps organizations worldwide tackle their most complex cybersecurity challenges. With a focus on continuous research, practical solutions and knowledge sharing, Reversec’s findings provide the rationale behind informed security decisions. Reversec is committed to being the leading global provider of offensive-driven consulting services."
 
 rooms:
   - "Recharge"
