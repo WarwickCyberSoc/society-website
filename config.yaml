@@ -440,7 +440,7 @@ current_events:
     start: 18:00
     end: 19:30
 
-  - room: "TBC"
+  - room: "S0.11"
     title: "Film night"
     type: social
     sober: true
@@ -467,7 +467,7 @@ current_events:
     start: 18:00
     end: 19:30
 
-  - room: "TBC"
+  - room: "OC1.08"
     title: "Board games night"
     type: social
     sober: true
@@ -548,7 +548,7 @@ current_events:
     start: 18:00
     end: 19:30
 
-  - room: "TBC"
+  - room: "R0.04"
     title: "Taskmaster night"
     type: social
     sober: true
