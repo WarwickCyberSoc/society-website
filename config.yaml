@@ -404,7 +404,7 @@ current_events:
     start: 13:00
     end: 14:00
 
-  - room: "IMC0.04"
+  - room: "IMC2.46"
     title: "TryHackMe CTF"
     type: academic
     sober: true
