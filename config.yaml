@@ -450,7 +450,7 @@ current_events:
     end: 22:00
   
   - room: "IMC0.04"
-    title: "Talk Series - Label Printers go BRRRR - Owen R (Reversec)"
+    title: "Talk Series - Label Printers go BRRRR - Owen Reeve (Reversec)"
     type: academic
     sober: true
     week: 4
@@ -459,7 +459,7 @@ current_events:
     end: 15:00
 
   - room: "IMC2.46"
-    title: "IntroToCTF: guided hacking session"
+    title: "IntroToCTF: Elastic Security hacking session"
     type: academic
     sober: true
     week: 5
