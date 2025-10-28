@@ -449,7 +449,7 @@ current_events:
     start: 19:30
     end: 22:00
   
-  - room: "IMC0.04"
+  - room: "IDL"
     title: "Talk Series - Label Printers go BRRRR - Owen Reeve (Reversec)"
     type: academic
     sober: true
