@@ -494,6 +494,15 @@ current_events:
     start: 10:00
     end: 18:00
 
+  - room: "IDL Auditorium"
+    title: "Talk series - Title TBC, Jon Harry"
+    type: academic
+    sober: true
+    week: 6
+    day: Wed
+    start: 13:00
+    end: 14:00
+
   - room: "Terrace Bar"
     title: "Pub Crawl"
     type: social
@@ -520,15 +529,6 @@ current_events:
     day: Tues
     start: 17:30
     end: 19:30
-
-  # - room: "IMC0.04"
-  #   title: "Talk series - Title TBC, Jon Harry"
-  #   type: academic
-  #   sober: true
-  #   week: 7
-  #   day: Wed
-  #   start: 13:00
-  #   end: 14:00
 
   - room: "Kelseys, Leamington Spa"
     title: "Circle - Theme TBC"
