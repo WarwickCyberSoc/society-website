@@ -504,7 +504,7 @@ current_events:
     end: 00:00
 
   - room: "IMC2.46"
-    title: "IntroToCTF: Intro to Crypto"
+    title: "IntroToCTF: Intro to Web"
     type: academic
     sober: true
     week: 7
@@ -567,7 +567,16 @@ current_events:
     end: 15:00
 
   - room: IMC2.46
-    title: "IntroToCTF: Intro to Web"
+    title: "Crowdstrike CTF"
+    type: academic
+    sober: true
+    week: 8
+    day: Wed
+    start: 15:00
+    end: TBC
+
+  - room: IMC2.46
+    title: "IntroToCTF: Intro to Crypto"
     type: academic
     sober: true
     week: 9
