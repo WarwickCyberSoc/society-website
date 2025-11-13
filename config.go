@@ -69,6 +69,7 @@ type sponsor struct {
 	Link string `yaml:"link"`
 	Image string `yaml:"image"`
 	Description string `yaml:"description"`
+	Opportunities []opportunities `yaml:opportunities`
 }
 
 type goldSponsor struct {
@@ -137,4 +138,14 @@ type TemplateData struct {
 	Config   Config
 	Schedule conferenceSchedule
 	Timetable timetable
+}
+
+type opportunity struct {
+	Role string `yaml:"role"`
+	Link string `yaml:"link"`
+}
+
+type opportunities struct {
+	Internships []opportunity `yaml:"internships"`
+	Gradroles []opportunity `yaml:"gradroles"`
 }

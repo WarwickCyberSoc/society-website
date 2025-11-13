@@ -482,7 +482,11 @@ section {
 }
 
 .justify-left {
-	text-align: left;
+	text-align: left !important;
+}
+
+.justify-center {
+	text-align: center !important;
 }
 
 .clickable {

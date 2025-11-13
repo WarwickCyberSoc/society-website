@@ -1,0 +1,25 @@
+{{define "head"}}
+{{end}}
+{{define "content"}}
+<section>
+	<div class=container id=head>
+		<h1>Opportunities</h1>
+		<p class="justify-center">
+		A list of open opportunities from our society sponsors, including both placement and graduate role opportunities!
+		</p>
+		<div>
+			{{range .Sponsors}}
+				<div>
+					<a href="{{.Link}}" target="_blank" class="clickable fixed-size"><img src="{{.Image}}" class="image clickable" /></a>
+					{{ range .Opportunities.Internships }}
+						<a href="{{ .Link }}">{{ .Role }}</a><br />
+					{{ end }}
+					{{ range .Opportunities.Gradroles }}
+						<a href="{{ .Link }}">{{ .Role }}</a><br />
+					{{ end }}
+				</div>
+			{{end}}
+		</div>
+	</div>
+</section>
+{{end}}

@@ -76,6 +76,21 @@ sponsors:
     link: "https://jobs.bendingspoons.com/"
     image: "/images/Bending-Spoons-Recolour.png"
     description: "Bending Spoons. Curious name, right? It’s from The Matrix, where the hero discovers that what seems impossible often isn't so. In 2013, when we were a punchy little startup, the parallel was fitting. Today, it’s more appropriate than ever. That five-person startup has become a leading tech company—with 500+ bright, inspiring, and hard-working Spooners from over 35 countries. Our category-leading products—including Evernote, Issuu, Meetup, Remini, Splice, StreamYard, and WeTransfer—have been downloaded over a billion times and delight millions of people every day."
+    opportunities:
+      internships:
+        - role: "Software Engineering Internship"
+          link: "https://jobs.bendingspoons.com/positions/6890dba49d850bc8ab9a94f9"
+        - role: "Data Analysis Internship"
+          link: "https://jobs.bendingspoons.com/positions/66bb94dc1e8f86fcdd695ee9"
+      gradroles:
+        - role: "Software Engineering Grad Scheme"
+          link: "https://jobs.bendingspoons.com/positions/668e71387a24106d65888827"
+        - role: "Data Analysis Grad Scheme"
+          link: "https://jobs.bendingspoons.com/positions/6889d2629c65e916b84e716c"
+        - role: "Graduate Content Manager"
+          link: "https://jobs.bendingspoons.com/positions/68f122eb045ec2dddb1aee88"
+        - role: "Graduate Communications Manager"
+          link: "https://jobs.bendingspoons.com/positions/68f1213a63c9548216e076ae"
   - name: "Crowdstrike"
     link: "https://www.crowdstrike.com/en-gb/careers/university-interns/"
     image: "/images/Crowdstrike_Recolor.png"
