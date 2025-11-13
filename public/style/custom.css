@@ -481,6 +481,10 @@ section {
 	text-align: justify;
 }
 
+.justify-left {
+	text-align: left;
+}
+
 .clickable {
 	cursor: pointer;
 }
