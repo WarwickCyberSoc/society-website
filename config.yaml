@@ -84,6 +84,10 @@ sponsors:
     link: "https://reversec.com/careers/"
     image: "/images/reversec_logo.png"
     description: "Reversec, a new name in cybersecurity consulting, helps organizations worldwide tackle their most complex cybersecurity challenges. With a focus on continuous research, practical solutions and knowledge sharing, Reversec’s findings provide the rationale behind informed security decisions. Reversec is committed to being the leading global provider of offensive-driven consulting services."
+  - name: "Interrupt Labs"
+    link: "https://www.interruptlabs.co.uk/careers"
+    image: "/images/IL_Logo.png"
+    description: "Interrupt Labs is a leading vulnerability research company working on some of the toughest challenges in the industry; from popping browsers to exploiting phones and cars. We cover it all with an exceptional team of vulnerability researchers. To follow our latest research and job openings, follow us on LinkedIn or X @InterruptLabs."
 
 goldSponsors:
   - name: "Bending Spoons"
@@ -100,6 +104,10 @@ silverSponsors:
     link: "https://reversec.com/careers/"
     image: "/images/reversec_logo.png"
     description: "Reversec, a new name in cybersecurity consulting, helps organizations worldwide tackle their most complex cybersecurity challenges. With a focus on continuous research, practical solutions and knowledge sharing, Reversec’s findings provide the rationale behind informed security decisions. Reversec is committed to being the leading global provider of offensive-driven consulting services."
+  - name: "Interrupt Labs"
+    link: "https://www.interruptlabs.co.uk/careers"
+    image: "/images/IL_Logo.png"
+    description: "Interrupt Labs is a leading vulnerability research company working on some of the toughest challenges in the industry; from popping browsers to exploiting phones and cars. We cover it all with an exceptional team of vulnerability researchers. To follow our latest research and job openings, follow us on LinkedIn or X @InterruptLabs."
 
 confSponsors:
 - name: "Crowdstrike"
