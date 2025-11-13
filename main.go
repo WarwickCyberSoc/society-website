@@ -109,7 +109,7 @@ func main() {
 			continue
 		}
 
-		if file.Name() == "misc0nfig.tmpl" || file.Name() == "timetable.tmpl" {
+		if file.Name() == "misc0nfig.tmpl" || file.Name() == "calendar.tmpl" {
 			templates[file.Name()] = template.Must(templates["layout_misc0nfig"].Clone())
 		} else {
 			templates[file.Name()] = template.Must(templates["layout"].Clone())
@@ -124,7 +124,7 @@ func main() {
 			fmt.Println("Error creating file:", err)
 			os.Exit(1)
 		}
-		if file.Name() == "misc0nfig.tmpl" || file.Name() == "timetable.tmpl" {
+		if file.Name() == "misc0nfig.tmpl" || file.Name() == "calendar.tmpl" {
 			err = templates[file.Name()].ExecuteTemplate(outFile, "layout_misc0nfig", templateData)
 		} else {
 			err = templates[file.Name()].ExecuteTemplate(outFile, "layout", config)

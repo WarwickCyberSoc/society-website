@@ -32,12 +32,12 @@ navbar:
     link: /
   - name: Sponsors
     link: /sponsors
-  - name: Timetable
-    link: /timetable
+  - name: Calendar
+    link: /calendar
   - name: misc0nfig
     link: /misc0nfig
-  - name: Resources
-    link: /resources
+  - name: Opportunities
+    link: /opportunities
 
 
 achievements:
