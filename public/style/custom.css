@@ -440,7 +440,7 @@ section {
 	padding: 20px;
 	height: 100%;
 	min-width: 100%;
-	align-items: center;
+	align-items: left;
 	flex-grow: 1;
 }
 
