@@ -635,7 +635,7 @@ strong {
 .opportunityContainer {
 	display: flex;
 	flex-direction: row;
-	align-items: flex-start;
+	align-items: stretch;
 }
 
 @media (max-width: 768px) { 

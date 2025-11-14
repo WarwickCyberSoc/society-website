@@ -14,7 +14,7 @@
 		{{range .Sponsors}}
 			<div class="opportunityBlock">
 				<a href="{{.Link}}" target="_blank" class="clickable h-100"><img src="{{.Image}}" class="image clickable mw-100" /></a>
-				<hr />
+				<hr class="hr-white" />
 				{{ if or .Opportunities.Internships .Opportunities.Gradroles }}
 					{{ range .Opportunities.Internships }}
 						<a href="{{ .Link }}" class="link-light">{{ .Role }}</a><br /><br />
