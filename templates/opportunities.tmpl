@@ -15,11 +15,15 @@
 			<div class="opportunityBlock">
 				<a href="{{.Link}}" target="_blank" class="clickable h-100"><img src="{{.Image}}" class="image clickable mw-100" /></a>
 				<hr />
-				{{ range .Opportunities.Internships }}
-					<a href="{{ .Link }}" class="link-light">{{ .Role }}</a><br /><br />
-				{{ end }}
-				{{ range .Opportunities.Gradroles }}
-					<a href="{{ .Link }}" class="link-dark">{{ .Role }}</a><br /><br />
+				{{ if or .Opportunities.Internships .Opportunities.Gradroles }}
+					{{ range .Opportunities.Internships }}
+						<a href="{{ .Link }}" class="link-light">{{ .Role }}</a><br /><br />
+					{{ end }}
+					{{ range .Opportunities.Gradroles }}
+						<a href="{{ .Link }}" class="link-dark">{{ .Role }}</a><br /><br />
+					{{ end }}
+				{{ else }}
+					<p>Nothing to see here...</p>
 				{{ end }}
 			</div>
 		{{end}}

@@ -673,3 +673,7 @@ strong {
 .hr-white{
 	color: var(--text-color);
 }
+
+a {
+	overflow-wrap: break-word;
+}
