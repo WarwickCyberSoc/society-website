@@ -509,7 +509,7 @@ h1 {
 }
 
 .fixed-size {
-	width: 90%;
+	width: 100%;
 
 	align-items: center;
 	text-align: center;
@@ -640,6 +640,9 @@ strong {
 @media (max-width: 768px) { 
   .opportunityContainer {
     flex-direction: column;
+  }
+  .opportunityBlock {
+	max-width: calc(100% - 2vw);
   }
 }
 
