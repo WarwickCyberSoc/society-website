@@ -635,7 +635,6 @@ strong {
 .opportunityContainer {
 	display: flex;
 	flex-direction: row;
-	align-items: stretch;
 }
 
 @media (max-width: 768px) { 
@@ -650,6 +649,10 @@ strong {
 .opportunityBlock {
 	max-width: calc(25% - 2vw);
 	margin: 1vw;
+}
+
+.opportunityBlock img {
+	height: 150px;
 }
 
 .mw-100 {
@@ -671,7 +674,7 @@ strong {
 }
 
 .hr-white{
-	color: var(--text-color);
+	border-color: var(--text-color);
 }
 
 a {
