@@ -12,10 +12,10 @@
 				<div class="opportunityBlock">
 					<a href="{{.Link}}" target="_blank" class="clickable fixed-size"><img src="{{.Image}}" class="image clickable mw-100" /></a>
 					{{ range .Opportunities.Internships }}
-						<a href="{{ .Link }}">{{ .Role }}</a><br /><br />
+						<a href="{{ .Link }}" class="link-light">{{ .Role }}</a><br /><br />
 					{{ end }}
 					{{ range .Opportunities.Gradroles }}
-						<a href="{{ .Link }}">{{ .Role }}</a><br /><br />
+						<a href="{{ .Link }}" class="link-dark">{{ .Role }}</a><br /><br />
 					{{ end }}
 				</div>
 			{{end}}
