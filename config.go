@@ -35,6 +35,8 @@ type Config struct {
 	TimetableDays []string `yaml:"days_of_the_week"`
 	TimetableWeeks []Week `yaml:"weeks_term1_25"`
 	TimetableCurrentEvents []currentEvent `yaml:"current_events"`
+	Opportunities opportunities `yaml:"opportunities`
+	Opportunity []opportunity `yaml:"-"`
 }
 
 type post struct {
@@ -69,6 +71,7 @@ type sponsor struct {
 	Link string `yaml:"link"`
 	Image string `yaml:"image"`
 	Description string `yaml:"description"`
+	Opportunities opportunities `yaml:opportunities`
 }
 
 type goldSponsor struct {
@@ -84,8 +87,6 @@ type silverSponsor struct {
 	Image string `yaml:"image"`
 	Description string `yaml:"description"`
 }
-
-
 
 type confsponsor struct {
 	Name string `yaml:"name"`
@@ -137,4 +138,14 @@ type TemplateData struct {
 	Config   Config
 	Schedule conferenceSchedule
 	Timetable timetable
+}
+
+type opportunity struct {
+	Role string `yaml:"role"`
+	Link string `yaml:"link"`
+}
+
+type opportunities struct {
+	Internships []opportunity `yaml:"internships"`
+	Gradroles []opportunity `yaml:"gradroles"`
 }

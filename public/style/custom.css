@@ -439,8 +439,9 @@ section {
 	border-radius: 6px;
 	padding: 20px;
 	height: 100%;
+	max-width: 100%;
 	min-width: 100%;
-	align-items: center;
+	align-items: left;
 	flex-grow: 1;
 }
 
@@ -481,6 +482,14 @@ section {
 	text-align: justify;
 }
 
+.justify-left {
+	text-align: left !important;
+}
+
+.justify-center {
+	text-align: center !important;
+}
+
 .clickable {
 	cursor: pointer;
 }
@@ -501,7 +510,8 @@ h1 {
 }
 
 .fixed-size {
-	height: 200px;
+	width: 100%;
+
 	align-items: center;
 	text-align: center;
 	display: grid;
@@ -620,4 +630,59 @@ strong {
 
 .titleBar {
 	text-align: center;
+}
+
+.opportunityContainer {
+	display: flex;
+	flex-direction: row;
+}
+
+@media (max-width: 768px) { 
+  .opportunityContainer {
+    flex-direction: column;
+  }
+  .opportunityBlock {
+	width: calc(100% - 2vw) !important;
+  }
+}
+
+.opportunityBlock {
+	width: calc(25% - 2vw);
+	margin: 1vw;
+}
+
+.mw-100 {
+	max-width: 100%;
+}
+
+.link-light {
+	color: rgb(167, 213, 188);
+	text-decoration: underline;
+}
+
+.link-dark {
+	color: rgb(132, 199, 250);
+	text-decoration: underline;
+}
+
+.height100 {
+	height: 100px;
+	display: block;
+}
+
+.hr-white{
+	border-color: var(--text-color);
+}
+
+a {
+	overflow-wrap: break-word;
+}
+
+.opportunityBlock img {
+	position: absolute;
+	bottom: 0;
+}
+
+.opportunityBlock a.logo {
+	position: relative;
 }
