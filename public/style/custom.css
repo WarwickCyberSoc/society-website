@@ -690,3 +690,7 @@ a {
 .opportunityBlock a.logo {
 	position: relative;
 }
+
+.float-right {
+	float: right;
+}
