@@ -651,10 +651,6 @@ strong {
 	margin: 1vw;
 }
 
-.opportunityBlock a {
-	height: 120px;
-}
-
 .mw-100 {
 	max-width: 100%;
 }
@@ -671,6 +667,7 @@ strong {
 
 .h-100 {
 	height: 100px;
+	display: block;
 }
 
 .hr-white{
