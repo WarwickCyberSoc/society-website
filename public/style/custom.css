@@ -646,9 +646,11 @@ strong {
 }
 
 .link-light {
-	color: #cbd5e1;
+	color: rgb(167, 213, 188);
+	text-decoration: underline;
 }
 
 .link-dark {
-	color: #9ba9ba;
+	color: rgb(132, 199, 250);
+	text-decoration: underline;
 }
