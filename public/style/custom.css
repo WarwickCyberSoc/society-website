@@ -643,7 +643,7 @@ strong {
     flex-direction: column;
   }
   .opportunityBlock {
-	max-width: calc(100% - 2vw);
+	max-width: calc(100% - 2vw) !important;
   }
 }
 
