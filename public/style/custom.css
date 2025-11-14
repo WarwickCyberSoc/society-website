@@ -511,6 +511,20 @@ h1 {
 	padding: 50px 0;
 	margin: 0;
 	text-align: center;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.announcement img {
+	flex-basis: 1;
+	height: 200px;
+	text-align: center;
+}
+
+.announcement .header-text {
+	flex-basis: 4;
+	text-align: center;
 }
 
 .fixed-size {
