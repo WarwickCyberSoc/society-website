@@ -629,3 +629,14 @@ strong {
 .titleBar {
 	text-align: center;
 }
+
+.opportunityContainer {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+}
+
+.opportunityBlock {
+	max-width: 25%;
+	margin: 1vw;
+}

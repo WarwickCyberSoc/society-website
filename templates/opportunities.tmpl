@@ -7,9 +7,9 @@
 		<p class="justify-center">
 		A list of open opportunities from our society sponsors, including both placement and graduate role opportunities!
 		</p>
-		<div>
+		<div class="opportunityContainer">
 			{{range .Sponsors}}
-				<div>
+				<div class="opportunityBlock">
 					<a href="{{.Link}}" target="_blank" class="clickable fixed-size"><img src="{{.Image}}" class="image clickable" /></a>
 					{{ range .Opportunities.Internships }}
 						<a href="{{ .Link }}">{{ .Role }}</a><br />
