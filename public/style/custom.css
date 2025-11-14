@@ -633,14 +633,14 @@ strong {
 .opportunityContainer {
 	display: flex;
 	flex-direction: row;
-	align-items: center;
+	align-items: flex-start;
 }
 
 .opportunityBlock {
-	max-width: 25%;
+	max-width: calc(25% - 2vw);
 	margin: 1vw;
 }
 
-.mh-200 {
-	max-height: 200px;
+.mw-100 {
+	max-width: 100%;
 }
