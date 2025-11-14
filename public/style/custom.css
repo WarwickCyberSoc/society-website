@@ -191,7 +191,7 @@ h1, h2 {
 }
 
 .alt-navbar {
-	background-color: var(--bg-1)/0.2 !important;
+	background-color: var(--bg-1) !important;
 }
 
 #navbar ul {
