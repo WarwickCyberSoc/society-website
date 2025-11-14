@@ -158,6 +158,9 @@ confSponsors:
 - name: "Reversec"
   link: "https://reversec.com/"
   image: "/images/reversec_logo.png"
+- name: "CyberWomen @ Warwick"
+  link: "https://www.linkedin.com/company/cyberwomen-warwick"
+  image: "/images/CWW_logo.png"
 
 rooms:
   - "IMC 0.02"
@@ -185,6 +188,20 @@ events:
     speaker: ""
     company: ""
     start: "10:00"
+    end: "13:00"
+
+  - room: "Recharge"
+    title: "Lunch"
+    speaker: ""
+    company: ""
+    start: "13:00"
+    end: "14:00"
+
+  - room: "Recharge"
+    title: "Networking Hub"
+    speaker: ""
+    company: ""
+    start: "14:00"
     end: "19:00"
 
   # - room: "IMC 0.02"
