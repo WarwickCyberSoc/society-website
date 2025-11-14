@@ -642,12 +642,12 @@ strong {
     flex-direction: column;
   }
   .opportunityBlock {
-	max-width: calc(100% - 2vw) !important;
+	width: calc(100% - 2vw) !important;
   }
 }
 
 .opportunityBlock {
-	max-width: calc(25% - 2vw);
+	width: calc(25% - 2vw);
 	margin: 1vw;
 }
 
