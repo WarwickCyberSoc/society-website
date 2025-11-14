@@ -160,10 +160,11 @@ confSponsors:
   image: "/images/reversec_logo.png"
 
 rooms:
-  - "Recharge"
   - "IMC 0.02"
   - "IMC 0.04"
   - "IMC 2.46"
+  - "Boardroom 2"
+  - "Recharge"
 
 timeslots:
   - "10:00"
@@ -178,12 +179,12 @@ timeslots:
 
 
 events: 
-  # - room: "Recharge"
-  #   title: "Arrival"
-  #   speaker: ""
-  #   company: ""
-  #   start: "10:00"
-  #   end: "10:45"
+  - room: "Recharge"
+    title: "Networking Hub"
+    speaker: ""
+    company: ""
+    start: "10:00"
+    end: "19:00"
 
   # - room: "IMC 0.02"
   #   title: "Welcome"
