@@ -7,15 +7,15 @@
 		<p class="justify-center">
 		A list of open opportunities from our society sponsors, including both placement and graduate role opportunities!
 		</p>
-		<div class="opportunityContainer">
+		<div class="opportunityContainer alt-bg">
 			{{range .Sponsors}}
 				<div class="opportunityBlock">
 					<a href="{{.Link}}" target="_blank" class="clickable fixed-size"><img src="{{.Image}}" class="image clickable mw-100" /></a>
 					{{ range .Opportunities.Internships }}
-						<a href="{{ .Link }}">{{ .Role }}</a><br />
+						<a href="{{ .Link }}">{{ .Role }}</a><br /><br />
 					{{ end }}
 					{{ range .Opportunities.Gradroles }}
-						<a href="{{ .Link }}">{{ .Role }}</a><br />
+						<a href="{{ .Link }}">{{ .Role }}</a><br /><br />
 					{{ end }}
 				</div>
 			{{end}}
