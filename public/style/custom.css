@@ -190,6 +190,10 @@ h1, h2 {
 	z-index: 100;
 }
 
+.alt-navbar {
+	background-color: var(--bg-2) !important;
+}
+
 #navbar ul {
 	display: flex;
 	justify-content: center;
