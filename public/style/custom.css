@@ -676,7 +676,9 @@ strong {
 
 a {
 	overflow-wrap: break-word;
-	display: flex;
-	flex-direction: column;
-	align-items: flex-end;
+}
+
+.opportunityBlock img {
+	position: relative;
+	bottom: 0;
 }
