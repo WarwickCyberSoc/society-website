@@ -10,7 +10,7 @@
 		<div class="opportunityContainer">
 			{{range .Sponsors}}
 				<div class="opportunityBlock">
-					<a href="{{.Link}}" target="_blank" class="clickable fixed-size"><img src="{{.Image}}" class="image clickable" /></a>
+					<a href="{{.Link}}" target="_blank" class="clickable fixed-size"><img src="{{.Image}}" class="image clickable mh-200" /></a>
 					{{ range .Opportunities.Internships }}
 						<a href="{{ .Link }}">{{ .Role }}</a><br />
 					{{ end }}

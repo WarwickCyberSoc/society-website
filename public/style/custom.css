@@ -640,3 +640,7 @@ strong {
 	max-width: 25%;
 	margin: 1vw;
 }
+
+.mh-200 {
+	max-height: 200px;
+}
