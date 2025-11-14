@@ -525,6 +525,7 @@ h1 {
 
 .announcement .header-text {
 	flex-basis: 4;
+	padding: 2vw;
 	text-align: center;
 }
 
