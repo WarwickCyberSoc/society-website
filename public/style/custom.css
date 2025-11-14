@@ -651,10 +651,6 @@ strong {
 	margin: 1vw;
 }
 
-.opportunityBlock img {
-	vertical-align: bottom;
-}
-
 .mw-100 {
 	max-width: 100%;
 }
@@ -680,4 +676,7 @@ strong {
 
 a {
 	overflow-wrap: break-word;
+	display: flex;
+	flex-direction: column;
+	align-items: flex-end;
 }
