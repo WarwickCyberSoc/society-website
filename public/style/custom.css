@@ -651,8 +651,8 @@ strong {
 	margin: 1vw;
 }
 
-.opportunityBlock img {
-	height: 150px;
+.opportunityBlock a {
+	height: 120px;
 }
 
 .mw-100 {
