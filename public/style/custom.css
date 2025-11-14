@@ -651,6 +651,10 @@ strong {
 	margin: 1vw;
 }
 
+.opportunityBlock img {
+	vertical-align: bottom;
+}
+
 .mw-100 {
 	max-width: 100%;
 }
@@ -665,7 +669,7 @@ strong {
 	text-decoration: underline;
 }
 
-.h-100 {
+.height100 {
 	height: 100px;
 	display: block;
 }
