@@ -439,6 +439,7 @@ section {
 	border-radius: 6px;
 	padding: 20px;
 	height: 100%;
+	max-width: 100%;
 	min-width: 100%;
 	align-items: left;
 	flex-grow: 1;
