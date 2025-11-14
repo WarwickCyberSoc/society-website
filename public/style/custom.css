@@ -654,3 +654,11 @@ strong {
 	color: rgb(132, 199, 250);
 	text-decoration: underline;
 }
+
+.h-100 {
+	height: 100px;
+}
+
+.hr-white{
+	color: var(--text-color);
+}
