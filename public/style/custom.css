@@ -508,7 +508,7 @@ h1 {
 }
 
 .announcement{
-	padding: 50px 0;
+	padding: 50px;
 	margin: 0;
 	text-align: center;
 	display: flex;
@@ -531,8 +531,9 @@ h1 {
 
 .announcement .header-text {
 	flex-basis: 4;
-	padding: 2vw;
+	padding: 1vw;
 	text-align: center;
+	width: 100%;
 }
 
 .fixed-size {
