@@ -588,7 +588,8 @@ strong {
   }
   
   .table-scroll-wrapper {
-	width: 100%;
+	width: 95%;
+	margin: auto;
 	overflow-x: auto; /* Allow horizontal scrolling on the wrapper */
   }
   
