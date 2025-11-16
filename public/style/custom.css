@@ -2,7 +2,6 @@
 
 body {
 	--bg-color: rgb(15 23 42);
-	--bg-color-transparent: rgba(15 23 42 0.6);
 	--bg-1: rgb(30 41 59);
 	--bg-2: rgb(58, 89, 138);
 	--text-color: rgb(203 213 225);
@@ -354,7 +353,7 @@ section {
 }
 
 #hamburgerContainer[data-open="true"]{
-	background-color: var(--bg-color-transparent);
+	background-color: rgba(5, 23, 42, 0.6);
 	backdrop-filter: blur(4px);
 	-webkit-backdrop-filter: blur(4px);
 	width: 100%;
