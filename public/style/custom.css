@@ -588,13 +588,12 @@ strong {
   }
   
   .table-scroll-wrapper {
-	width: 95%;
-	margin: auto;
+	width: 100%;
 	overflow-x: auto; /* Allow horizontal scrolling on the wrapper */
   }
   
   .table-scroll-wrapper table {
-	min-width: 1000px; /* Set a minimum width to force scrolling */
+	min-width: 800px; /* Set a minimum width to force scrolling */
 	width: 100%; /* Ensure the table takes up full width of its wrapper */
 	table-layout: auto; /* Optional: ensures consistent column sizing */
   }
