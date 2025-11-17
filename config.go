@@ -21,8 +21,6 @@ type Config struct {
 	GoogleCalendarID string `yaml:"googleCalendarID"`
 	GoogleCalendarURL string `yaml:"googleCalendarURL"`
 	Sponsors []sponsor `yaml:"sponsors"`
-	GoldSponsors []goldSponsor `yaml:"goldSponsors"`
-	SilverSponsors []silverSponsor `yaml:"silverSponsors"`
 	ConfSponsors []confsponsor `yaml:"confSponsors"`
 	Schedule []conferenceSchedule `yaml:"-"`
 	Rooms []string `yaml:"rooms"`
