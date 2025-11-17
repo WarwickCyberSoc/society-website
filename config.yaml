@@ -497,7 +497,7 @@ current_events:
     day: Wed
     start: 15:30
     end: 16:30
-
+    
   - room: "Kelseys, Leamington Spa"
     title: "Circle - Theme British Icons"
     type: social
@@ -515,15 +515,6 @@ current_events:
     day: Mon
     start: 18:00
     end: 19:30
-
-  - room: "Kelseys, Leamington Spa"
-    title: "Circle - Theme British Icons"
-    type: social
-    sober: false
-    week: 7
-    day: Wed
-    start: 19:30
-    end: 00:00
 
   - room: "R0.04"
     title: "Taskmaster night"
