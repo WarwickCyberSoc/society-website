@@ -488,6 +488,15 @@ current_events:
     day: Tues
     start: 17:30
     end: 19:30
+  
+  - room: "IMC0.04"
+    title: "Talk Series: Business Continuity, Adrian Hope
+    type: academic
+    sober: true
+    week: 7
+    day: Wed
+    start: 15:30
+    end: 16:30
 
   - room: "Kelseys, Leamington Spa"
     title: "Circle - Theme British Icons"
@@ -497,16 +506,6 @@ current_events:
     day: Wed
     start: 19:30
     end: 00:00
-
-  - room: "IMC0.04"
-    title: "Talk Series: Adrian Hope, title TBC"
-    type: academic
-    sober: true
-    week: 7
-    day: Wed
-    start: 15:30
-    end: 16:30
-
 
   - room: "IMC2.46"
     title: "IntroToCTF: guided hacking session"
