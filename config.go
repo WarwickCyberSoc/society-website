@@ -20,8 +20,6 @@ type Config struct {
 	GoogleCalendarAPIKey string `yaml:"googleCalendarAPIKey"`
 	GoogleCalendarID string `yaml:"googleCalendarID"`
 	GoogleCalendarURL string `yaml:"googleCalendarURL"`
-	Posts []post `yaml:"posts"`
-	Resources []resource `yaml:"resources"`
 	Sponsors []sponsor `yaml:"sponsors"`
 	GoldSponsors []goldSponsor `yaml:"goldSponsors"`
 	SilverSponsors []silverSponsor `yaml:"silverSponsors"`
@@ -37,18 +35,6 @@ type Config struct {
 	TimetableCurrentEvents []currentEvent `yaml:"current_events"`
 	Opportunities opportunities `yaml:"opportunities`
 	Opportunity []opportunity `yaml:"-"`
-}
-
-type post struct {
-	Title string `yaml:"title"`
-	Author string `yaml:"author"`
-	Link string `yaml:"link"`
-}
-
-type resource struct {
-	Title string `yaml:"title"`
-	Link string `yaml:"link"`
-	Description string `yaml:"description"`
 }
 
 type execMember struct {
@@ -73,20 +59,6 @@ type sponsor struct {
 	Level string `yaml:"level"`
 	Description string `yaml:"description"`
 	Opportunities opportunities `yaml:opportunities`
-}
-
-type goldSponsor struct {
-	Name string `yaml:"name"`
-	Link string `yaml:"link"`
-	Image string `yaml:"image"`
-	Description string `yaml:"description"`
-}
-
-type silverSponsor struct {
-	Name string `yaml:"name"`
-	Link string `yaml:"link"`
-	Image string `yaml:"image"`
-	Description string `yaml:"description"`
 }
 
 type confsponsor struct {
