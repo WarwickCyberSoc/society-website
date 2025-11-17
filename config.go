@@ -70,6 +70,7 @@ type sponsor struct {
 	Name string `yaml:"name"`
 	Link string `yaml:"link"`
 	Image string `yaml:"image"`
+	Level string `yaml:"level"`
 	Description string `yaml:"description"`
 	Opportunities opportunities `yaml:opportunities`
 }
