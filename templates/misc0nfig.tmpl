@@ -5,14 +5,17 @@
 <section class="alt-bg">
   <div class="container misc0grad" id="mainHeaderMisc">
     <img src="/images/misc0nfig_banner_transparent.png" alt="misc0nfig" class="headerImage" loading="eager" id="misc0nfigLogo"/>
-    <h2>10th May 2025 | University of Warwick</h2>
+    <h2>Cyber Security Conference | 7th February 2026 | University of Warwick</h2>
     <p>misc0nfig is the annual Warwick Cyber Security Society conference, started in 2025! We host a series of talks and workshops for all levels of cyber knowledge.</p>
   </div>
 </section>
 
 <section class="bg announcement">
-  <h1>A huge thank you to everyone who attended and/or took part in the CTF!</h1>
-  <h2>This page will be updated once we publish the details of the next misc0nfig!</h2>
+  <div class="header-text">
+    <h2>It is our pleasure to once again be hosting misc0nfig for you, this February, in collaboration with <a href="https://www.linkedin.com/company/cyberwomen-warwick/">CyberWomen@Warwick</a>!</h2>
+    <h3>Tickets will be available soon, so keep an eye on this page!</h3>
+  </div>
+  <img src="/images/cww_orig_logo.png" class="height-250" />
 </section>
 
 <section class="alt-bg">
@@ -21,7 +24,7 @@
     <div class="sponsorContainer clickable">
       {{ range .Config.ConfSponsors }}
         <div class="sponsor">
-          <img src="{{.Image}}" class="image" />
+          <a href="{{.Link}}" ><img src="{{.Image}}" class="image" /></a>
         </div>
       {{ end }}
     </div>
@@ -31,6 +34,7 @@
 
 {{ define "contentWide" }}
 <section style="width: 100%; padding: 2.5% 0;" class="bg">
+  <h2 class="subTitle">Schedule</h2>
   <div id="timetable">
     <div class="table-scroll-wrapper">
       <table>

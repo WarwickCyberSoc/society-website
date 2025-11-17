@@ -190,6 +190,10 @@ h1, h2 {
 	z-index: 100;
 }
 
+.alt-navbar {
+	background-color: var(--bg-1) !important;
+}
+
 #navbar ul {
 	display: flex;
 	justify-content: center;
@@ -349,7 +353,7 @@ section {
 }
 
 #hamburgerContainer[data-open="true"]{
-	background-color: var(--bg-color)/0.5;
+	background-color: rgba(5, 23, 42, 0.6);
 	backdrop-filter: blur(4px);
 	-webkit-backdrop-filter: blur(4px);
 	width: 100%;
@@ -418,7 +422,7 @@ section {
 	}
 
 	#timetable {
-		max-width: 100% !important;
+		max-width: 95% !important;
 	  }
 	
 }
@@ -504,9 +508,31 @@ h1 {
 }
 
 .announcement{
-	padding: 50px 0;
+	padding: 50px;
 	margin: 0;
 	text-align: center;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+}
+
+@media (max-width: 768px) { 
+  .announcement {
+    flex-direction: column;
+  }
+}
+
+.announcement img {
+	flex-basis: 1;
+	height: 220px;
+	text-align: center;
+}
+
+.announcement .header-text {
+	flex-basis: 4;
+	text-align: center;
+	width: 100%;
 }
 
 .fixed-size {
@@ -567,7 +593,7 @@ strong {
   }
   
   .table-scroll-wrapper table {
-	min-width: 1000px; /* Set a minimum width to force scrolling */
+	min-width: 800px; /* Set a minimum width to force scrolling */
 	width: 100%; /* Ensure the table takes up full width of its wrapper */
 	table-layout: auto; /* Optional: ensures consistent column sizing */
   }
@@ -685,4 +711,12 @@ a {
 
 .opportunityBlock a.logo {
 	position: relative;
+}
+
+.float-right {
+	float: right;
+}
+
+.height-250{
+	height: 250px;
 }
