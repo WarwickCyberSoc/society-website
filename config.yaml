@@ -122,7 +122,7 @@ sponsors:
     opportunities:
       internships:
         - role: "Vulnerability Research Internship"
-          link: "https://jobs.gohire.io/interrupt-labs-zcocopee/vulnerability-research-summer-placement-2026-248379/"
+          link: "https://interruptlabs.teamtailor.com/jobs/6609975-vulnerability-research-summer-placement-2026"
       gradroles:
 
 goldSponsors:
@@ -489,15 +489,6 @@ current_events:
     start: 17:30
     end: 19:30
 
-  - room: "Kelseys, Leamington Spa"
-    title: "Circle - Theme TBC"
-    type: social
-    sober: false
-    week: 7
-    day: Wed
-    start: 19:30
-    end: 00:00
-
   - room: "IMC2.46"
     title: "IntroToCTF: guided hacking session"
     type: academic
@@ -506,6 +497,15 @@ current_events:
     day: Mon
     start: 18:00
     end: 19:30
+
+  - room: "Kelseys, Leamington Spa"
+    title: "Circle - Theme TBC"
+    type: social
+    sober: false
+    week: 7
+    day: Wed
+    start: 19:30
+    end: 00:00
 
   - room: "R0.04"
     title: "Taskmaster night"
