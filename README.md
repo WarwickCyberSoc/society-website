@@ -49,5 +49,7 @@ Variables in structs need to start with a capital letter to be exported
 
 
 #### Other
-Feel free to contact me on discord (tomsteer) or email (tom@tomsteer.me)
+Feel free to contact the creator on discord (tomsteer) or email (tom@tomsteer.me)
+
+Or the active maintainer, on either discord (peterw18) or email (contact@peter-walker.com)
 
