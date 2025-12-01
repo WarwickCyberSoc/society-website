@@ -552,7 +552,7 @@ current_events:
     start: 14:00
     end: 15:00
   
-  - room: "TBC"
+  - room: "MB0.07"
     title: "Games night"
     type: social
     sober: false
