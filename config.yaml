@@ -525,7 +525,7 @@ current_events:
     start: 18:30
     end: 21:30
   
-  - room: IMC0.04
+  - room: IMC0.02
     title: "Talk series - Ransomware 101: The Stupidly Simple Side of Cybercrime - Al Platt"
     type: academic
     sober: true
@@ -543,7 +543,7 @@ current_events:
     start: 18:00
     end: 19:30
 
-  - room: IMC0.04
+  - room: IMC0.02
     title: "Talk series - Industry's X Factor: Connecting Security Requirements with Verification Reality"
     type: academic
     sober: false
