@@ -570,6 +570,15 @@ current_events:
     start: 18:00
     end: 19:30
 
+  - room: "IDL Auditorium"
+    title: "Talk series - Applying for Placements - Rob D"
+    type: academic
+    sober: true
+    week: 10
+    day: Wed
+    start: 16:30
+    end: 17:30
+
   - room: "Terrace Bar"
     title: "Christmas Pub Crawl"
     type: social
