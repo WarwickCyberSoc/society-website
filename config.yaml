@@ -278,6 +278,15 @@ current_events:
     start: 18:00
     end: 19:30
 
+  - room: "IMC 002"
+    title: "Talk Series: Sofia Celi TBC"
+    type: academic
+    sober: true
+    week: 2
+    day: Wed
+    start: 11:00
+    end: 13:00
+
   - room: "Terrace Bar"
     title: "Bar Crawl"
     type: social
@@ -304,15 +313,6 @@ current_events:
     day: Tues
     start: 19:00
     end: 22:00
-
-  - room: "IMC 002"
-    title: "Talk Series: Sofia Celi TBC"
-    type: academic
-    sober: true
-    week: 3
-    day: Wed
-    start: 11:00
-    end: 13:00
 
   - room: "IMC2.46"
     title: "IntroToCTF: Guided Hacking Session"
