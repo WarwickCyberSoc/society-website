@@ -202,37 +202,35 @@ events:
     start: "14:00"
     end: "19:00"
 
-  # - room: "IMC 0.02"
-  #   title: "Welcome"
-  #   speaker: "Peter Walker"
-  #   company: "Warwick Cyber Security Society"
-  #   start: "10:45"
-  #   end: "11:00"
+  - room: "IMC 0.02"
+    title: "Welcome"
+    speaker: "Peter Walker"
+    company: "Warwick Cyber Security Society"
+    start: "10:30"
+    end: "11:00"
 
 
 weeks_term1_25:
-  - index: 0
-    date: 29/09/2025
   - index: 1
-    date: 06/10/2025
+    date: 12/01/2026
   - index: 2
-    date: 13/10/2025
+    date: 19/01/2026
   - index: 3
-    date: 20/10/2025
+    date: 26/01/2026
   - index: 4
-    date: 27/10/2025
+    date: 02/02/2026
   - index: 5
-    date: 03/11/2025
+    date: 09/02/2026
   - index: 6
-    date: 10/11/2025
+    date: 16/02/2026
   - index: 7
-    date: 17/11/2025
+    date: 23/02/2026
   - index: 8
-    date: 24/11/2025
+    date: 02/03/2026
   - index: 9
-    date: 01/12/2025
+    date: 09/03/2026
   - index: 10
-    date: 08/12/2025
+    date: 16/03/2026
 
 days_of_the_week:
   - Mon
@@ -244,53 +242,8 @@ days_of_the_week:
   - Sun
 
 current_events:
-  - room: Curiositea
-    title: "Meet & Greet with the exec"
-    type: social
-    sober: true
-    week: 0
-    day: Mon
-    start: 14:00
-    end: 15:30
-
-  - room: "Sports and Wellness Hub"
-    title: Societies Fair
-    type: social
-    sober: true
-    week: 0
-    day: Thurs
-    start: 10:00
-    end: 18:00
-
-  - room: "Terrace Bar"
-    title: "Meet & Greet with the exec"
-    type: social
-    sober: false
-    week: 0
-    day: Fri
-    start: 16:00
-    end: 17:30
-
-  - room: IMC0.04
-    title: "Talk series - Peter Jones"
-    type: academic
-    sober: true
-    week: 1
-    day: Wed
-    start: 13:00
-    end: 14:00
-
-  - room: IMC0.02
-    title: "Ethical Hacking - a practical introduction to Cyber Security"
-    type: academic
-    sober: true
-    week: 0
-    day: Sat
-    start: 15:00
-    end: 17:00
-
-  - room: IMC2.46
-    title: "IntroToCTF: VMs and Linux"
+  - room: "IMC2.46"
+    title: "IntroToCTF: Guided Hacking Session"
     type: academic
     sober: true
     week: 1
@@ -298,98 +251,71 @@ current_events:
     start: 18:00
     end: 19:30
 
-  - room: IMC0.02
-    title: "IntakeCTF 2025: Opening event"
-    type: academic
+  - room: "R3.41"
+    title: "Games Night"
+    type: social
     sober: true
     week: 1
-    day: Thurs
+    day: Tues
     start: 18:00
     end: 21:00
 
-  - room: CS1.04
-    title: "IntakeCTF 2025: Closing event"
+  - room: "IMC0.02"
+    title: "Talk Series: Ian Levy TBC"
     type: academic
     sober: true
     week: 1
-    day: Sun
-    start: 18:00
-    end: 20:00
+    day: Wed
+    start: 15:00
+    end: 16:00
 
-  - room: IMC2.46
-    title: "IntroToCTF: guided hacking session"
+  - room: "IMC2.46"
+    title: "IntroToCTF"
     type: academic
     sober: true
     week: 2
     day: Mon
     start: 18:00
     end: 19:30
-
-  - room: IMC0.02
-    title: "Talk series - Entering the threat maze: A case study in Russian cyber sabotage - Jack Simpson"
-    type: academic
-    sober: true
-    week: 2
-    day: Wed
-    start: 14:00
-    end: 15:00
-
-  - room: "SU Atrium"
-    title: "Circle - Theme: Shit Shirt"
-    type: social
-    sober: false
-    week: 2
-    day: Wed
-    start: 19:30
-    end: 00:00
-
-  - room: "IMC2.46"
-    title: "IntroToCTF: Intro to Forensics"
-    type: academic
-    sober: true
-    week: 3
-    day: Mon
-    start: 18:00
-    end: 19:30
-
-  - room: "IMC0.04"
-    title: "Talk series - Julian Meyrick (Eraneos, CyberFirst)"
-    type: academic
-    sober: true
-    week: 3
-    day: Wed
-    start: 13:00
-    end: 14:00
-
-  - room: "IMC2.46"
-    title: "TryHackMe CTF"
-    type: academic
-    sober: true
-    week: 3
-    day: Wed
-    start: 14:30
-    end: 16:30
 
   - room: "Terrace Bar"
-    title: "Pub Crawl"
+    title: "Bar Crawl"
     type: social
     sober: false
-    week: 3
+    week: 2
     day: Fri
     start: 19:00
     end: 00:00
 
-  - room: "Curiositea"
-    title: "W&NB Curiositea & Walk"
+  - room: "IMC2.46"
+    title: "IntroToCTF"
+    type: academic
+    sober: true
+    week: 3
+    day: Mon
+    start: 18:00
+    end: 19:30
+
+  - room: "OC1.07"
+    title: "Film night"
     type: social
     sober: true
     week: 3
-    day: Sat
-    start: 14:00
-    end: 16:30
-  
+    day: Tues
+    start: 19:00
+    end: 22:00
+
+  - room: "IMC 002"
+    title: "Talk Series: Sofia Celi TBC"
+    type: academic
+    sober: true
+    week: 3
+    day: Wed
+    start: 11:00
+    end: 13:00
+
   - room: "IMC2.46"
-    title: "IntroToCTF: Intro to Rev"
+    title: "IntroToCTF: Guided Hacking Session"
     type: academic
     sober: true
     week: 4
@@ -397,143 +323,89 @@ current_events:
     start: 18:00
     end: 19:30
 
-  - room: "S0.11"
-    title: "Film night"
+  - room: "TBC"
+    title: "Circle - Theme TBC"
     type: social
-    sober: true
-    week: 4
-    day: Tues
-    start: 19:30
-    end: 22:00
-  
-  - room: "IDL"
-    title: "Talk Series - Label Printers go BRRRR - Owen Reeve (Reversec)"
-    type: academic
-    sober: true
+    sober: false
     week: 4
     day: Wed
-    start: 14:00
-    end: 15:00
+    start: 19:30
+    end: 00:00
 
   - room: "IMC2.46"
-    title: "IntroToCTF: Elastic Security hacking session"
+    title: "IntroToCTF"
     type: academic
     sober: true
     week: 5
+    day: Mon
+    start: 18:00
+    end: 19:30
+
+  - room: "MB0.08"
+    title: "Taskmaster"
+    type: social
+    sober: true
+    week: 5
+    day: Tues
+    start: 19:00
+    end: 22:00
+
+  - room: "Fusion"
+    title: "Circle w/ Latin Ballroom"
+    type: social
+    sober: false
+    week: 6
+    day: Wed
+    start: 19:30
+    end: 00:00
+
+  - room: "IMC2.46"
+    title: "IntroToCTF: Guided Hacking Session"
+    type: academic
+    sober: true
+    week: 7
+    day: Mon
+    start: 18:00
+    end: 19:30
+
+  - room: "Leamington Spa"
+    title: "Chase The Chicken"
+    type: social
+    sober: false
+    week: 7
+    day: Fri
+    start: 19:00
+    end: 00:00
+
+  - room: "IMC2.46"
+    title: "IntroToCTF"
+    type: academic
+    sober: true
+    week: 8
     day: Mon
     start: 18:00
     end: 19:30
 
   - room: "OC1.08"
-    title: "Board games night"
+    title: "Sober Social TBD"
     type: social
     sober: true
-    week: 5
+    week: 8
     day: Tues
     start: 19:00
     end: 22:00
 
-  - room: "IMC0.04"
-    title: "Talk series - Unraveling Supply Chain Attacks - Andrea Riva (Bending Spoons)"
-    type: academic
-    sober: true
-    week: 5
-    day: Wed
-    start: 14:00
-    end: 15:00
-  
-  - room: "Aston University"
-    title: "Aston x Warwick CTF"
-    type: academic
-    sober: true
-    week: 5
+  - room: "TBC"
+    title: "Circle - Theme TBC"
+    type: social
+    sober: false
+    week: 8
     day: Sat
-    start: 10:00
-    end: 18:00
-
-  - room: "IDL Auditorium"
-    title: "Talk series - Title TBC, Jon Harry"
-    type: academic
-    sober: true
-    week: 6
-    day: Wed
-    start: 13:00
-    end: 14:00
-
-  - room: "Terrace Bar"
-    title: "Pub Crawl"
-    type: social
-    sober: false
-    week: 6
-    day: Fri
-    start: 19:00
-    end: 00:00
-
-  - room: "IMC2.46"
-    title: "IntroToCTF: Intro to Web"
-    type: academic
-    sober: true
-    week: 7
-    day: Mon
-    start: 18:00
-    end: 19:30
-
-  - room: "R1.03"
-    title: "W&NB Indoor Picnic"
-    type: social
-    sober: true
-    week: 7
-    day: Tues
-    start: 17:30
-    end: 19:30
-  
-  - room: "IMC0.04"
-    title: "Talk Series: Business Continuity, Adrian Hope"
-    type: academic
-    sober: true
-    week: 7
-    day: Wed
-    start: 15:30
-    end: 16:30
-    
-  - room: "Kelseys, Leamington Spa"
-    title: "Circle - Theme British Icons"
-    type: social
-    sober: false
-    week: 7
-    day: Wed
     start: 19:30
     end: 00:00
 
   - room: "IMC2.46"
-    title: "IntroToCTF: guided hacking session"
-    type: academic
-    sober: true
-    week: 8
-    day: Mon
-    start: 18:00
-    end: 19:30
-
-  - room: "R0.04"
-    title: "Taskmaster night"
-    type: social
-    sober: true
-    week: 8
-    day: Tues
-    start: 18:30
-    end: 21:30
-  
-  - room: IMC0.02
-    title: "Talk series - Ransomware 101: The Stupidly Simple Side of Cybercrime - Al Platt"
-    type: academic
-    sober: true
-    week: 8
-    day: Wed
-    start: 14:00
-    end: 15:00
-
-  - room: IMC2.46
-    title: "IntroToCTF: Intro to Crypto"
+    title: "IntroToCTF"
     type: academic
     sober: true
     week: 9
@@ -541,26 +413,17 @@ current_events:
     start: 18:00
     end: 19:30
 
-  - room: IMC0.02
-    title: "Talk series - Industry's X Factor: Connecting Security Requirements with Verification Reality"
-    type: academic
-    sober: false
-    week: 9
-    day: Wed
-    start: 14:00
-    end: 15:00
-  
-  - room: "MB0.07"
+  - room: "OC1.07"
     title: "Games night"
     type: social
-    sober: false
+    sober: true
     week: 9
-    day: Fri
+    day: Tues
     start: 19:00
     end: 22:00
 
   - room: "IMC2.46"
-    title: "IntroToCTF: Intro to Pwn"
+    title: "IntroToCTF: Guided Hacking Session"
     type: academic
     sober: true
     week: 10
@@ -568,20 +431,11 @@ current_events:
     start: 18:00
     end: 19:30
 
-  - room: "IMC Boardroom 2"
-    title: "Talk series - Applying for Placements - Rob D"
-    type: academic
-    sober: true
-    week: 10
-    day: Wed
-    start: 16:30
-    end: 17:30
-
   - room: "Terrace Bar"
-    title: "Christmas Pub Crawl"
+    title: "Bar Crawl"
     type: social
     sober: false
     week: 10
-    day: Thurs
+    day: Fri
     start: 19:00
     end: 00:00
