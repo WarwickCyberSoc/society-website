@@ -206,7 +206,7 @@ events:
     title: "Welcome"
     speaker: "Peter Walker"
     company: "Warwick Cyber Security Society"
-    start: "10:30"
+    start: "10:00"
     end: "11:00"
 
 
@@ -261,7 +261,7 @@ current_events:
     end: 21:00
 
   - room: "IMC0.02"
-    title: "<s>Talk Series: Ian Levy</s> CANCELLED"
+    title: "CANCELLED: Talk Series: Ian Levy"
     type: academic
     sober: true
     week: 1
