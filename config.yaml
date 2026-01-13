@@ -261,7 +261,7 @@ current_events:
     end: 21:00
 
   - room: "IMC0.02"
-    title: "Talk Series: Ian Levy TBC"
+    title: "<s>Talk Series: Ian Levy</s> CANCELLED"
     type: academic
     sober: true
     week: 1
