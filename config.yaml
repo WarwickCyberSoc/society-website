@@ -218,13 +218,6 @@ events:
     end: "17:00"
 
   - room: "IMC 0.02"
-    title: "Industrial Control System Security"
-    speaker: "Tony Badsey-Ellis"
-    company: "2T Security"
-    start: "16:00"
-    end: "17:00"
-
-  - room: "IMC 0.02"
     title: ""
     speaker: "Dave Lodge"
     company: "Pen Test Partners"
