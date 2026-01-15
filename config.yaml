@@ -218,7 +218,7 @@ events:
     end: "17:00"
 
   - room: "IMC 0.02"
-    title: ""
+    title: "Playing MarioKart with a car: an intro to car hacking"
     speaker: "Dave Lodge"
     company: "Pen Test Partners"
     start: "17:00"
@@ -259,9 +259,16 @@ events:
     start: "16:00"
     end: "17:00"
 
+  - room: "IMC 0.04"
+    title: ""
+    speaker: ""
+    company: "JUMPSEC"
+    start: "17:00"
+    end: "18:00"
+
   - room: "IMC 2.46"
     title: "IoT Vulnerability Research Workshop"
-    speaker: ""
+    speaker: "Joe Y, and Joel C"
     company: "Interrupt Labs"
     start: "14:00"
     end: "16:00"
