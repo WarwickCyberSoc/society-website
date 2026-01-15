@@ -254,7 +254,7 @@ events:
 
   - room: "IMC 0.04"
     title: "UNIX IS DEAD. Long live UNIX."
-    speaker: "Alex"
+    speaker: "Alex M"
     company: "Foundry Zero"
     start: "16:00"
     end: "17:00"
