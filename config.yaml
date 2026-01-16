@@ -206,7 +206,7 @@ events:
   - room: "IMC 0.02"
     title: "A Panel of CISOs: how, what and why?"
     speaker: "Adrian Hope, Sean Turner, and Shiv Kaul"
-    company: "UoW, Twinstake, and the FCA"
+    company: "UoW, Zerohash, and the FCA"
     start: "15:00"
     end: "16:00"
 
