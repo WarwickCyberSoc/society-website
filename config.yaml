@@ -259,13 +259,6 @@ events:
     start: "16:00"
     end: "17:00"
 
-  - room: "IMC 0.04"
-    title: ""
-    speaker: ""
-    company: "JUMPSEC"
-    start: "17:00"
-    end: "18:00"
-
   - room: "IMC 2.46"
     title: "IoT Vulnerability Research Workshop"
     speaker: "Joe Y, and Joel C"
@@ -341,14 +334,14 @@ current_events:
     start: 18:00
     end: 19:30
 
-  - room: "IMC 002"
+  - room: "Online"
     title: "Talk Series: Sofia Celi TBC"
     type: academic
     sober: true
     week: 2
     day: Wed
-    start: 11:00
-    end: 13:00
+    start: 13:00
+    end: 14:00
 
   - room: "Terrace Bar"
     title: "Bar Crawl"
@@ -372,7 +365,7 @@ current_events:
     title: "Film night"
     type: social
     sober: true
-    week: 3
+    week: 4
     day: Tues
     start: 19:00
     end: 22:00
@@ -386,14 +379,23 @@ current_events:
     start: 18:00
     end: 19:30
 
-  - room: "TBC"
+  - room: "Kelseys, Leamington Spa"
     title: "Circle - Theme TBC"
     type: social
     sober: false
-    week: 4
+    week: 3
     day: Wed
     start: 19:30
     end: 00:00
+
+  - room: "IMC"
+    title: "misc0nfig 2026"
+    type: academic
+    sober: true
+    week: 4
+    day: Sat
+    start: 10:00
+    end: 19:00
 
   - room: "IMC2.46"
     title: "IntroToCTF"
@@ -458,7 +460,7 @@ current_events:
     start: 19:00
     end: 22:00
 
-  - room: "TBC"
+  - room: "Kelseys, Leamington Spa"
     title: "Circle - Theme TBC"
     type: social
     sober: false
