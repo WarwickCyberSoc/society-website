@@ -210,12 +210,12 @@ events:
     start: "15:00"
     end: "16:00"
 
-  - room: "IMC 0.02"
+  - room: "IMC 0.04"
     title: "Industrial Control System Security"
     speaker: "Tony Badsey-Ellis"
     company: "2T Security"
-    start: "16:00"
-    end: "17:00"
+    start: "15:00"
+    end: "16:00"
 
   - room: "IMC 0.02"
     title: "Playing MarioKart with a car: an intro to car hacking"
@@ -245,12 +245,12 @@ events:
     start: "14:00"
     end: "15:00"
 
-  - room: "IMC 0.04"
+  - room: "IMC 0.02"
     title: "Static Analysis for Humans: A Beginner's Guide to SAST"
     speaker: "Thomas Hedderwick"
     company: "Veracode"
-    start: "15:00"
-    end: "16:00"
+    start: "16:00"
+    end: "17:00"
 
   - room: "IMC 0.04"
     title: "UNIX IS DEAD. Long live UNIX."
