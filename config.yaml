@@ -299,7 +299,7 @@ days_of_the_week:
 
 current_events:
   - room: "IMC2.46"
-    title: "IntroToCTF: Guided Hacking Session"
+    title: "IntroToCTF"
     type: academic
     sober: true
     week: 1
@@ -335,7 +335,7 @@ current_events:
     end: 19:30
 
   - room: "Online"
-    title: "Talk Series: Sofia Celi TBC"
+    title: "Talk Series: Sofia Celi"
     type: academic
     sober: true
     week: 2
@@ -361,6 +361,15 @@ current_events:
     start: 18:00
     end: 19:30
 
+  - room: "IDL Auditorium"
+    title: "Talk Series: George Chapman"
+    type: academic
+    sober: true
+    week: 3
+    day: Wed
+    start: 14:00
+    end: 15:00
+
   - room: "OC1.07"
     title: "Film night"
     type: social
@@ -371,13 +380,22 @@ current_events:
     end: 22:00
 
   - room: "IMC2.46"
-    title: "IntroToCTF: Guided Hacking Session"
+    title: "IntroToCTF"
     type: academic
     sober: true
     week: 4
     day: Mon
     start: 18:00
     end: 19:30
+
+  - room: "IMC0.02"
+    title: "Talk Series: Stan Shaw"
+    type: academic
+    sober: true
+    week: 4
+    day: Wed
+    start: 14:00
+    end: 15:00
 
   - room: "Kelseys, Leamington Spa"
     title: "Circle - Theme: Kids TV"
@@ -415,6 +433,15 @@ current_events:
     start: 19:00
     end: 22:00
 
+  - room: "IMC0.02"
+    title: "Talk Series: Kash Valji: SOC Technologies and Advances in AI Defence"
+    type: academic
+    sober: true
+    week: 5
+    day: Wed
+    start: 13:00
+    end: 14:00
+
   - room: "Fusion"
     title: "Circle w/ Latin Ballroom"
     type: social
@@ -425,13 +452,22 @@ current_events:
     end: 00:00
 
   - room: "IMC2.46"
-    title: "IntroToCTF: Guided Hacking Session"
+    title: "IntroToCTF"
     type: academic
     sober: true
     week: 7
     day: Mon
     start: 18:00
     end: 19:30
+
+  - room: "IMC0.02"
+    title: "Talk Series: Richard Aldridge: Technology and the Changing Nature of Covert Action"
+    type: academic
+    sober: true
+    week: 7
+    day: Wed
+    start: 13:00
+    end: 14:00
 
   - room: "Leamington Spa"
     title: "Chase The Chicken"
@@ -460,6 +496,15 @@ current_events:
     start: 19:00
     end: 22:00
 
+  - room: "IMC0.02"
+    title: "Talk Series: Jamie Madden"
+    type: academic
+    sober: true
+    week: 8
+    day: Wed
+    start: 14:00
+    end: 15:00
+
   - room: "Kelseys, Leamington Spa"
     title: "Circle - Theme TBC"
     type: social
@@ -487,8 +532,17 @@ current_events:
     start: 19:00
     end: 22:00
 
+  - room: "FAB0.08"
+    title: "Talk Series: Daniel Harvey"
+    type: academic
+    sober: true
+    week: 7
+    day: Wed
+    start: 14:00
+    end: 15:00
+
   - room: "IMC2.46"
-    title: "IntroToCTF: Guided Hacking Session"
+    title: "IntroToCTF"
     type: academic
     sober: true
     week: 10
