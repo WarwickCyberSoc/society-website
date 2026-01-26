@@ -133,6 +133,9 @@ confSponsors:
 - name: "CyberWomen @ Warwick"
   link: "https://www.linkedin.com/company/cyberwomen-warwick"
   image: "/images/CWW_logo.png"
+- name: "Conscia"
+  link: "https://conscia.com"
+  image: "/images/conscia-logo-small-padding-transparent.png"
 
 rooms:
   - "IMC 0.02"
