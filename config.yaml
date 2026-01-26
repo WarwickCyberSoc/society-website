@@ -532,6 +532,15 @@ current_events:
     start: 14:00
     end: 15:00
 
+  - room: "S0.11"
+    title: "Cybersoc Elections"
+    type: academic
+    sober: true
+    week: 8
+    day: Thurs
+    start: 19:00
+    end: 21:00
+
   - room: "CyberSoc Discord"
     title: "Guided Hacking Session w/ Mirek"
     type: academic
