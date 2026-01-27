@@ -176,7 +176,7 @@ events:
     speaker: ""
     company: ""
     start: "14:00"
-    end: "19:00"
+    end: "18:00"
 
   - room: "IMC 0.02"
     title: "Welcome"
