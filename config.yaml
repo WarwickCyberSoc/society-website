@@ -154,7 +154,6 @@ timeslots:
   - "16:00"
   - "17:00"
   - "18:00"
-  - "19:00"
 
 
 events: 
@@ -185,13 +184,6 @@ events:
     company: "Warwick Cyber Security Society"
     start: "10:30"
     end: "11:00"
-
-  - room: "IMC 0.02"
-    title: "The invisible battles of a CISO"
-    speaker: "Jitender Arora"
-    company: "Deloitte"
-    start: "11:00"
-    end: "12:00"
   
   - room: "IMC 0.02"
     title: "Hortus Conclusus, Pomarium Apertum - or Quid Malum is going on with mobile distribution?"
@@ -232,8 +224,8 @@ events:
     title: "Specific and General Resilience for Cyber Practitioners"
     speaker: "Andrew Peck"
     company: "Loughborough University"
-    start: "18:00"
-    end: "19:00"
+    start: "11:00"
+    end: "12:00"
 
   - room: "IMC 0.04"
     title: "Synthetic Data in Healthcare: Challenges, Impact, and Opportunities"
