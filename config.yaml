@@ -525,7 +525,7 @@ current_events:
     end: 21:00
 
   - room: "Kelseys, Leamington Spa"
-    title: "Circle - Theme TBC"
+    title: "Circle - Dress as the Exec"
     type: social
     sober: false
     week: 8
@@ -552,7 +552,7 @@ current_events:
     end: 22:00
 
   - room: "FAB0.08"
-    title: "Talk Series: Daniel Harvey"
+    title: "Talk Series: Samuel Kamas"
     type: academic
     sober: true
     week: 9
