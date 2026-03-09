@@ -533,15 +533,6 @@ current_events:
     start: 19:30
     end: 00:00
 
-  - room: "IMC2.46"
-    title: "IntroToCTF"
-    type: academic
-    sober: true
-    week: 9
-    day: Mon
-    start: 18:00
-    end: 19:30
-
   - room: "OC1.07"
     title: "Games night"
     type: social
@@ -568,6 +559,15 @@ current_events:
     day: Mon
     start: 18:00
     end: 19:30
+
+  - room: "IMC0.02"
+    title: "Talk Series: Laurence (Dutch student Security Researcher): Turning the tables -  rooting linux by exploiting nftables"
+    type: academic
+    sober: true
+    week: 10
+    day: Wed
+    start: 14:00
+    end: 15:00
 
   - room: "CyberSoc Discord"
     title: "Guided Hacking Session w/ Mirek"
