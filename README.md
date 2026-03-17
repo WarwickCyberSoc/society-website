@@ -24,7 +24,7 @@ The go program follows the following logic:
 - Run every template in the templates directory and add those to the build folder with the config context
 
 ## Adding new config values
-To add new values to a template you need to add the parameter to the Config stuct in `config.go` e.g
+To add new values to a template you need to add the parameter to the Config stuct in `config.go` e.g.
 ```go
 type Config struct {
     .... Existing data
@@ -40,11 +40,11 @@ newData: new value
 This can then be referenced in the templates by `.NewData`
 
 ## Building
-There is a github action set to automatically build and publish the site when pushed to the master branch
+There is a github action set to automatically build and publish the site when pushed to the master branch.
 
 
-### Troublshooting
-#### variable is an unexported field
+### Troubleshooting
+#### Variable is an unexported field
 Variables in structs need to start with a capital letter to be exported
 
 
