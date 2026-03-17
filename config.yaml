@@ -1,5 +1,5 @@
 title: Warwick Cyber Security Society
-description: Welcome to the Warwick Cyber Security Society!. We're a friendly and inclusive community centred around our love of Cyber Security.
+description: Welcome to the Warwick Cyber Security Society! We're a friendly and inclusive community centred around our love of Cyber Security.
 discordURL: https://discord.gg/Ys4fr5CMKj
 instagramURL: https://www.instagram.com/warwickcybersoc/
 twitterURL: https://twitter.com/warwickcybersoc
@@ -7,26 +7,26 @@ githubURL: https://www.github.com/warwickcybersoc/
 email: contact@warwickcybersoc.com
 societyURL: https://www.warwicksu.com/societies-sports/societies/61481/
 exec:
-  - name: Peter Walker
-    role: President
-  - name: Oscar Topliss
-    role: Vice President
-  - name: Ellie Baxter
-    role: Treasurer
-  - name: Oscar Innes
-    role: Welfare Officer
-  - name: Samuel Kamas
-    role: Technician
-  - name: Abi Lowrie
-    role: Gender Inclusion Officer
   - name: Artem Polovnev
+    role: President
+  - name: Samuel Kamas
+    role: Vice President
+  - name: Isaac McBride
+    role: Treasurer
+  - name: George Fairey
+    role: Welfare Officer
+  - name: Piero Alvarez
+    role: Technician
+  - name: Eleanor Baxter
+    role: Inclusion Officer
+  - name: Alex Roberts
     role: External Communications Officer
-  - name: Jamie Madden
+  - name: Sophia Antoniou
     role: Social Secretary
-  - name: Tom Slater
+  - name: Jago Brazier
     role: Social Secretary
-  - name: Hedley Benaiges
-    role: Marketing Officer
+  - name: Elyana Zafar
+    role: Publicity Officer
 navbar:
   - name: Home
     link: /
