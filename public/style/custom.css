@@ -616,6 +616,9 @@ strong {
 .drinking-social {
 	color: rgb(193, 142, 247);
 }
+.cyber-ball {
+	color: rgb(255, 215, 0);
+}
   
 #timetableKey{
 	display: flex;

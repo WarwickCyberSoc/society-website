@@ -46,7 +46,7 @@
                   <td>
                     {{ range $.Timetable.CurrentEvents }}
                       {{ if and (eq .Day $day) (eq .Week $week.Index) }}
-                          <div class="calendar-event {{ if eq .Type "academic"}} academic {{ else if .Sober }} sober-social {{ else}} drinking-social {{ end }}">
+                          <div class="calendar-event {{ if eq .Title "Cyber Ball 2026" }} cyber-ball {{ else if eq .Type "academic"}} academic {{ else if .Sober }} sober-social {{ else}} drinking-social {{ end }}">
                             <strong>{{ .Title }}</strong>
                             {{ .Room }}<br /><b>{{ .Start }} - {{ .End }}</b>
                           </div>

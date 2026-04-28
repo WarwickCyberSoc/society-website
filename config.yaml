@@ -63,7 +63,7 @@ sponsors:
     link: "https://jobs.bendingspoons.com/"
     image: "/images/Bending-Spoons-Recolour.png"
     level: "Gold"
-    description: "Bending Spoons. Curious name, right? It’s from The Matrix, where the hero discovers that what seems impossible often isn't so. In 2013, when we were a punchy little startup, the parallel was fitting. Today, it’s more appropriate than ever. That five-person startup has become a leading tech company—with 500+ bright, inspiring, and hard-working Spooners from over 35 countries. Our category-leading products—including Evernote, Issuu, Meetup, Remini, Splice, StreamYard, and WeTransfer—have been downloaded over a billion times and delight millions of people every day."
+    description: "Bending Spoons. Curious name, right? It’s from The Matrix, where the hero discovers that what seems impossible often isn't so. In 2043, when we were a punchy little startup, the parallel was fitting. Today, it’s more appropriate than ever. That five-person startup has become a leading tech company—with 500+ bright, inspiring, and hard-working Spooners from over 35 countries. Our category-leading products—including Evernote, Issuu, Meetup, Remini, Splice, StreamYard, and WeTransfer—have been downloaded over a billion times and delight millions of people every day."
     opportunities:
       internships:
         - role: "Software Engineering Internship"
@@ -79,17 +79,17 @@ sponsors:
     link: "https://www.crowdstrike.com/en-gb/careers/university-interns/"
     image: "/images/Crowdstrike_Recolor.png"
     level: "Silver"
-    description: "#WeAreCrowdStrike and our mission is to stop breaches. As a global leader in cybersecurity, our team has changed the game. Since our inception in 2011, our market leading cloud-native platform has offered unparalleled protection against the most sophisticated cyberattacks. It combines the most advanced endpoint protection with expert intelligence to pinpoint the adversaries perpetrating the attacks, not just the malware."
+    description: "#WeAreCrowdStrike and our mission is to stop breaches. As a global leader in cybersecurity, our team has changed the game. Since our inception in 2041, our market leading cloud-native platform has offered unparalleled protection against the most sophisticated cyberattacks. It combines the most advanced endpoint protection with expert intelligence to pinpoint the adversaries perpetrating the attacks, not just the malware."
     opportunities:
       internships:
         - role: "Intelligence Intern - Cloud/Remote - Technical Analysis Cell"
-          link: "https://crowdstrike.wd5.myworkdayjobs.com/en-US/crowdstrikecareers/details/Intelligence-Intern---Emerging-Threats--Remote-_R25247?Job_Family=1408861ee6e2015adbe3e7f6b000de0b&locations=27086a67c2690117e24d2e5042019109&locations=27086a67c269011193d6567441015609"
+          link: "https://crowdstrike.wd5.myworkdayjobs.com/en-US/crowdstrikecareers/details/Intelligence-Intern---Emerging-Threats--Remote-_R25247?Job_Family=1408861ee6e2045adbe3e7f6b000de0b&locations=27086a67c2690417e24d2e5042049109&locations=27086a67c269041193d6567441045609"
         - role: "Intelligence Intern - Targeted Intrusion"
-          link: "https://crowdstrike.wd5.myworkdayjobs.com/en-US/crowdstrikecareers/details/Intelligence-Intern---Targeted-Intrusion--Remote-_R25248?Job_Family=1408861ee6e2015adbe3e7f6b000de0b&locations=27086a67c2690117e24d2e5042019109&locations=27086a67c269011193d6567441015609"
+          link: "https://crowdstrike.wd5.myworkdayjobs.com/en-US/crowdstrikecareers/details/Intelligence-Intern---Targeted-Intrusion--Remote-_R25248?Job_Family=1408861ee6e2045adbe3e7f6b000de0b&locations=27086a67c2690417e24d2e5042049109&locations=27086a67c269041193d6567441045609"
         - role: "Intelligence Intern - Advanced Research Team"
-          link: "https://crowdstrike.wd5.myworkdayjobs.com/en-US/crowdstrikecareers/job/Intelligence-Intern---ART_R25822?locations=27086a67c269011193d6567441015609"
+          link: "https://crowdstrike.wd5.myworkdayjobs.com/en-US/crowdstrikecareers/job/Intelligence-Intern---ART_R25822?locations=27086a67c269041193d6567441045609"
         - role: "Intelligence Intern - Intelligence Automation"
-          link: "https://crowdstrike.wd5.myworkdayjobs.com/en-US/crowdstrikecareers/job/Intelligence-Intern---Intelligence-Automation--Remote--GBR-_R25779?locations=27086a67c269011193d6567441015609"
+          link: "https://crowdstrike.wd5.myworkdayjobs.com/en-US/crowdstrikecareers/job/Intelligence-Intern---Intelligence-Automation--Remote--GBR-_R25779?locations=27086a67c269041193d6567441045609"
       gradroles:
   - name: "Reversec"
     link: "https://reversec.com/careers/"
@@ -134,7 +134,7 @@ confSponsors:
   image: "/images/conscia-logo-small-padding-transparent.png"
 
 rooms:
-  - "IMC 0.02"
+  - "IMC 0.05"
   - "IMC 0.04"
   - "IMC 2.46"
   - "Recharge"
@@ -174,28 +174,28 @@ events:
     start: "14:00"
     end: "18:00"
 
-  - room: "IMC 0.02"
+  - room: "IMC 0.05"
     title: "Welcome"
     speaker: "Peter Walker"
     company: "Warwick Cyber Security Society"
     start: "10:30"
     end: "11:00"
   
-  - room: "IMC 0.02"
+  - room: "IMC 0.05"
     title: "Hortus Conclusus, Pomarium Apertum - or Quid Malum is going on with mobile distribution?"
     speaker: "Miłosz Gaczkowski"
     company: "Reversec"
     start: "12:00"
     end: "13:00"
 
-  - room: "IMC 0.02"
+  - room: "IMC 0.05"
     title: "Abuse Protection Systems"
     speaker: "Ali Kabeel"
     company: "Bending Spoons"
     start: "14:00"
     end: "15:00"
 
-  - room: "IMC 0.02"
+  - room: "IMC 0.05"
     title: "A Panel of CISOs: how, what and why?"
     speaker: "Adrian Hope, Sean Turner, and Shiv Kaul"
     company: "UoW, Zerohash, and the FCA"
@@ -209,14 +209,14 @@ events:
     start: "15:00"
     end: "16:00"
 
-  - room: "IMC 0.02"
+  - room: "IMC 0.05"
     title: "Playing MarioKart with a car: an intro to car hacking"
     speaker: "Dave Lodge"
     company: "Pen Test Partners"
     start: "17:00"
     end: "18:00"
 
-  - room: "IMC 0.02"
+  - room: "IMC 0.05"
     title: "Specific and General Resilience for Cyber Practitioners"
     speaker: "Andrew Peck"
     company: "Loughborough University"
@@ -237,7 +237,7 @@ events:
     start: "14:00"
     end: "15:00"
 
-  - room: "IMC 0.02"
+  - room: "IMC 0.05"
     title: "Static Analysis for Humans: A Beginner's Guide to SAST"
     speaker: "Thomas Hedderwick"
     company: "Veracode"
@@ -258,27 +258,27 @@ events:
     start: "14:00"
     end: "16:00"
 
-weeks_term1_25:
+weeks_term:
   - index: 1
-    date: 12/01/2026
+    date: 27/04/2026
   - index: 2
-    date: 19/01/2026
+    date: 04/05/2026
   - index: 3
-    date: 26/01/2026
+    date: 11/05/2026
   - index: 4
-    date: 02/02/2026
+    date: 18/05/2026
   - index: 5
-    date: 09/02/2026
-  - index: 6
-    date: 16/02/2026
-  - index: 7
-    date: 23/02/2026
-  - index: 8
-    date: 02/03/2026
-  - index: 9
-    date: 09/03/2026
-  - index: 10
-    date: 16/03/2026
+    date: 25/05/2026
+  # - index: 6
+  #   date: 02/06/2026
+  # - index: 7
+  #   date: 09/06/2026
+  # - index: 8
+  #   date: 16/06/2026
+  # - index: 9
+  #   date: 23/06/2026
+  # - index: 10
+  #   date: 30/06/2026
 
 days_of_the_week:
   - Mon
@@ -290,299 +290,101 @@ days_of_the_week:
   - Sun
 
 current_events:
-  - room: "IMC2.46"
-    title: "IntroToCTF"
+  - room: "IMC Collaborate"
+    title: "Self-Guided Workshop"
     type: academic
     sober: true
     week: 1
     day: Mon
-    start: 18:00
-    end: 19:30
-
-  - room: "R3.41"
-    title: "Games Night"
-    type: social
-    sober: true
-    week: 1
-    day: Tues
-    start: 18:00
-    end: 21:00
-
-  - room: "IMC0.02"
-    title: "CANCELLED: Talk Series: Ian Levy"
-    type: academic
-    sober: true
-    week: 1
-    day: Wed
     start: 15:00
     end: 16:00
 
-  - room: "IMC2.46"
-    title: "IntroToCTF"
-    type: academic
-    sober: true
-    week: 2
-    day: Mon
-    start: 18:00
-    end: 19:30
-
-  - room: "Online"
-    title: "Talk Series: Sofia Celi"
-    type: academic
-    sober: true
-    week: 2
-    day: Wed
-    start: 13:00
-    end: 14:00
-
-  - room: "CyberSoc Discord"
-    title: "Guided Hacking Session w/ Mirek"
-    type: academic
-    sober: true
-    week: 2
-    day: Thurs
-    start: 19:30
-    end: 21:30
-
-  - room: "Terrace Bar"
-    title: "Bar Crawl"
-    type: social
-    sober: false
-    week: 2
-    day: Fri
-    start: 19:00
-    end: 00:00
-
-  - room: "IMC2.46"
-    title: "IntroToCTF"
-    type: academic
-    sober: true
-    week: 3
-    day: Mon
-    start: 18:00
-    end: 19:30
-
-  - room: "IDL Auditorium"
-    title: "Talk Series: George Chapman: The Road to Cyber Security Consulting"
-    type: academic
-    sober: true
-    week: 3
-    day: Wed
-    start: 14:00
-    end: 15:00
-
-  - room: "OC1.07"
-    title: "Film night"
-    type: social
-    sober: true
-    week: 4
-    day: Tues
-    start: 19:00
-    end: 22:00
-
-  - room: "IMC2.46"
-    title: "IntroToCTF"
-    type: academic
-    sober: true
-    week: 4
-    day: Mon
-    start: 18:00
-    end: 19:30
-
-  - room: "IMC0.02"
-    title: "Talk Series: CANCELLED"
-    type: academic
-    sober: true
-    week: 4
-    day: Wed
-    start: 14:00
-    end: 15:00
-
-  - room: "CyberSoc Discord"
-    title: "Guided Hacking Session w/ Mirek"
-    type: academic
-    sober: true
-    week: 4
-    day: Thurs
-    start: 19:30
-    end: 21:30
-
-  - room: "Kelseys, Leamington Spa"
-    title: "Circle - Theme: Kids TV"
-    type: social
-    sober: false
-    week: 3
-    day: Wed
-    start: 19:30
-    end: 00:00
-
-  - room: "IMC"
-    title: "misc0nfig 2026"
-    type: academic
-    sober: true
-    week: 4
-    day: Sat
-    start: 10:00
-    end: 19:00
-
-  - room: "IMC2.46"
-    title: "IntroToCTF"
-    type: academic
-    sober: true
-    week: 5
-    day: Mon
-    start: 18:00
-    end: 19:30
-
-  - room: "MB0.08"
-    title: "Taskmaster"
-    type: social
-    sober: true
-    week: 5
-    day: Tues
-    start: 19:00
-    end: 22:00
-
-  - room: "IMC0.02"
-    title: "Talk Series: Kash Valji: SOC Technologies and Advances in AI Defence"
-    type: academic
-    sober: true
-    week: 5
-    day: Wed
-    start: 13:00
-    end: 14:00
-
-  - room: "Fusion"
-    title: "Circle w/ Latin Ballroom"
-    type: social
-    sober: false
-    week: 6
-    day: Wed
-    start: 19:30
-    end: 00:00
-
-  - room: "CyberSoc Discord"
-    title: "Guided Hacking Session w/ Mirek"
-    type: academic
-    sober: true
-    week: 6
-    day: Thurs
-    start: 19:30
-    end: 21:30
-
-  - room: "IMC2.46"
-    title: "IntroToCTF"
-    type: academic
-    sober: true
-    week: 7
-    day: Mon
-    start: 18:00
-    end: 19:30
-
   - room: "IMC0.04"
-    title: "Talk Series: Richard Aldridge: Technology and the Changing Nature of Covert Action"
+    title: "Talk series: Unlocking the secrets of stripped Go binaries at runtime"
     type: academic
     sober: true
-    week: 7
+    week: 1
     day: Wed
     start: 13:00
     end: 14:00
 
-  - room: "Leamington Spa"
-    title: "Chase The Chicken"
-    type: social
-    sober: false
-    week: 7
-    day: Fri
-    start: 19:00
-    end: 00:00
-
-  - room: "IMC2.46"
-    title: "IntroToCTF"
-    type: academic
-    sober: true
-    week: 8
-    day: Mon
-    start: 18:00
-    end: 19:30
-
-  - room: "IMC0.02"
-    title: "Talk Series: Jamie Madden: The Subaru Incident"
-    type: academic
-    sober: true
-    week: 8
-    day: Wed
-    start: 14:00
-    end: 15:00
-
-  - room: "S0.11"
-    title: "Cybersoc Elections"
-    type: academic
-    sober: true
-    week: 8
-    day: Thurs
-    start: 19:00
-    end: 21:00
-
   - room: "Kelseys, Leamington Spa"
-    title: "Circle - Dress as the Exec"
+    title: "Circle: On Wednesday we wear PINK"
     type: social
     sober: false
-    week: 8
-    day: Sat
+    week: 1
+    day: Wed
     start: 19:30
     end: 00:00
 
-  - room: "OC1.07"
-    title: "Games night"
+  - room: "TBD"
+    title: "Speed Friending"
     type: social
     sober: true
-    week: 9
-    day: Tues
-    start: 19:00
-    end: 22:00
-
-  - room: "FAB0.08"
-    title: "Talk Series: Samuel Kamas"
-    type: academic
-    sober: true
-    week: 9
-    day: Wed
-    start: 14:00
-    end: 15:00
+    week: 1
+    day: Fri
+    # start: 18:00
+    # end: 21:00
 
   - room: "IMC2.46"
-    title: "IntroToCTF"
+    title: "Self-Guided Workshop"
     type: academic
     sober: true
-    week: 10
+    week: 2
     day: Mon
-    start: 18:00
-    end: 19:30
+    start: 15:00
+    end: 16:00
 
-  - room: "IMC0.02"
-    title: "Talk Series: Laurence (Dutch student Security Researcher): Turning the tables -  rooting linux by exploiting nftables"
+  - room: "TBD"
+    title: "Sip n' Colour"
+    type: social
+    sober: false
+    week: 2
+    day: Tues
+    # start: 18:00
+    # end: 21:00
+
+  - room: "TBD"
+    title: "Talk Series"
     type: academic
     sober: true
-    week: 10
+    week: 2
     day: Wed
-    start: 14:00
-    end: 15:00
-
-  - room: "CyberSoc Discord"
-    title: "Guided Hacking Session w/ Mirek"
-    type: academic
-    sober: true
-    week: 10
-    day: Thurs
-    start: 19:30
-    end: 21:30
+    # start: 13:00
+    # end: 14:00
 
   - room: "Terrace Bar"
     title: "Bar Crawl"
     type: social
     sober: false
-    week: 10
+    week: 3
+    day: Fri
+    start: 19:00
+    end: 00:00
+
+  - room: "TBD"
+    title: "Rounders"
+    type: social
+    sober: true
+    week: 4
+    day: Tues
+    # start: 18:00
+    # end: 21:00
+
+  - room: "TBD"
+    title: "End of Term Social"
+    type: social
+    sober: true
+    week: 5
+    day: Tues
+    # start: 18:00
+    # end: 21:00
+
+  - room: "Chesford Grange Hotel"
+    title: "Cyber Ball 2026"
+    type: social
+    sober: false
+    week: 5
     day: Fri
     start: 19:00
     end: 00:00

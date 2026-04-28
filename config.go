@@ -29,7 +29,7 @@ type Config struct {
 	SkipMap map[string]bool `yaml:"-"`
 	Timetable timetable `yaml:"-"`
 	TimetableDays []string `yaml:"days_of_the_week"`
-	TimetableWeeks []Week `yaml:"weeks_term1_25"`
+	TimetableWeeks []Week `yaml:"weeks_term"`
 	TimetableCurrentEvents []currentEvent `yaml:"current_events"`
 	Opportunities opportunities `yaml:"opportunities`
 	Opportunity []opportunity `yaml:"-"`
