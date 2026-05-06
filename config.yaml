@@ -317,14 +317,14 @@ current_events:
     start: 19:30
     end: 00:00
 
-  - room: "TBD"
+  - room: "MB0.08"
     title: "Speed Friending"
     type: social
     sober: true
     week: 1
     day: Fri
-    # start: 18:00
-    # end: 21:00
+    start: 15:00
+    end: 17:00
 
   - room: "IMC2.46"
     title: "Self-Guided Workshop"
@@ -335,23 +335,23 @@ current_events:
     start: 15:00
     end: 16:00
 
-  - room: "TBD"
+  - room: "IMC Collaborate"
     title: "Sip n' Colour"
     type: social
     sober: false
     week: 2
     day: Tues
-    # start: 18:00
-    # end: 21:00
+    start: 19:30
+    end: 21:00
 
-  - room: "TBD"
-    title: "Talk Series"
+  - room: "IMC0.04"
+    title: "Talk Series: NFC Access Cards"
     type: academic
     sober: true
     week: 2
     day: Wed
-    # start: 13:00
-    # end: 14:00
+    start: 16:00
+    end: 17:00
 
   - room: "Terrace Bar"
     title: "Bar Crawl"
