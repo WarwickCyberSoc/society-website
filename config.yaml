@@ -354,7 +354,7 @@ current_events:
     end: 17:00
 
   - room: "Terrace Bar"
-    title: "Bar Crawl"
+    title: "Bar Bingo"
     type: social
     sober: false
     week: 3
@@ -362,13 +362,13 @@ current_events:
     start: 19:00
     end: 00:00
 
-  - room: "TBD"
-    title: "Rounders"
+  - room: "S.011"
+    title: "Drunk Movie Night (Drinking Optional)"
     type: social
-    sober: true
+    sober: false
     week: 4
-    day: Tues
-    # start: 18:00
+    day: Mon
+    start: 19:00
     # end: 21:00
 
   - room: "TBD"
