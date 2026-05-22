@@ -371,14 +371,14 @@ current_events:
     start: 19:00
     # end: 21:00
 
-  - room: "TBD"
+  - room: "IMC Recharge"
     title: "End of Term Social"
     type: social
     sober: true
     week: 5
     day: Tues
-    # start: 18:00
-    # end: 21:00
+    start: 16:00
+    end: 17:00
 
   - room: "Chesford Grange Hotel"
     title: "Cyber Ball 2026"
