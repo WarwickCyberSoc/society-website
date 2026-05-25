@@ -377,8 +377,8 @@ current_events:
     sober: true
     week: 5
     day: Tues
-    start: 16:00
-    end: 17:00
+    start: 18:00
+    end: 19:00
 
   - room: "Chesford Grange Hotel"
     title: "Cyber Ball 2026"
