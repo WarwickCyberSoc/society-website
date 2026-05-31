@@ -269,16 +269,16 @@ weeks_term:
     date: 18/05/2026
   - index: 5
     date: 25/05/2026
-  # - index: 6
-  #   date: 02/06/2026
-  # - index: 7
-  #   date: 09/06/2026
-  # - index: 8
-  #   date: 16/06/2026
-  # - index: 9
-  #   date: 23/06/2026
-  # - index: 10
-  #   date: 30/06/2026
+  - index: 6
+    date: 02/06/2026
+  - index: 7
+    date: 09/06/2026
+  - index: 8
+    date: 16/06/2026
+  - index: 9
+    date: 23/06/2026
+  - index: 10
+    date: 30/06/2026
 
 days_of_the_week:
   - Mon
@@ -388,3 +388,39 @@ current_events:
     day: Fri
     start: 19:00
     end: 00:00
+
+  - room: "TBD"
+    title: "Rounders"
+    type: social
+    sober: true
+    week: 7
+    day: Tues
+    # start: 18:00
+    # end: 19:00
+
+  - room: "Kelseys, Leamington Spa"
+    title: "Circle: Dress as the first letter of your name"
+    type: social
+    sober: false
+    week: 6
+    day: Fri
+    start: 19:30
+    end: 00:00
+
+  - room: "Leamington Spa"
+    title: "Pub Crawl"
+    type: social
+    sober: false
+    week: 7
+    day: Fri
+    start: 19:30
+    end: 00:00
+
+  - room: "TBD"
+    title: "End of Term Picnic"
+    type: social
+    sober: true
+    week: 8
+    day: Sat
+    # start: 18:00
+    # end: 19:00
