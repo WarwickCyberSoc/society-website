@@ -389,13 +389,13 @@ current_events:
     start: 19:00
     end: 00:00
 
-  - room: "TBD"
+  - room: "Victoria Park, Leamington Spa"
     title: "Rounders"
     type: social
     sober: true
     week: 7
     day: Tues
-    # start: 18:00
+    start: 14:00
     # end: 19:00
 
   - room: "Kelseys, Leamington Spa"
