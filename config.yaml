@@ -416,11 +416,11 @@ current_events:
     start: 19:30
     end: 00:00
 
-  - room: "TBD"
+  - room: "Victoria Park, Leamington Spa"
     title: "End of Term Picnic"
     type: social
     sober: true
     week: 8
     day: Sat
-    # start: 18:00
+    start: 17:00
     # end: 19:00
