@@ -4,6 +4,7 @@ import (
 	"fmt"
 	"html/template"
 	"os"
+
 	"gopkg.in/yaml.v2"
 )
 
@@ -11,19 +12,19 @@ var templates map[string]*template.Template
 var config Config
 
 func init() {
-		// Remove build directory
+	// Remove build directory
 	err := os.RemoveAll("build")
 	if err != nil {
 		fmt.Println("Error removing build directory:", err)
 		os.Exit(1)
 	}
+
 	// Create build directory
 	err = os.Mkdir("build", 0755)
 	if err != nil {
 		fmt.Println("Error creating build directory:", err)
 		os.Exit(1)
 	}
-
 
 	templates = make(map[string]*template.Template)
 	config = Config{}
@@ -33,6 +34,7 @@ func init() {
 		os.Exit(1)
 	}
 	defer file.Close()
+
 	decoder := yaml.NewDecoder(file)
 	err = decoder.Decode(&config)
 	if err != nil {
@@ -56,6 +58,7 @@ func init() {
 		os.Exit(1)
 	}
 	defer file.Close()
+
 	encoder := yaml.NewEncoder(file)
 	err = encoder.Encode(config)
 	if err != nil {
@@ -86,14 +89,15 @@ func main() {
 	skipMap := prepareSchedule(&Schedule)
 	Schedule.SkipMap = skipMap
 
+	if config.TimetableDays == nil {
+		config.TimetableDays = []string{ "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun" }
+	}
 
 	Timetable := timetable{
 		Days:			config.TimetableDays,
 		Weeks:			config.TimetableWeeks,
 		CurrentEvents:	config.TimetableCurrentEvents,
 	}
-
-
 
 	templateData := TemplateData{
 		Config: config,
@@ -102,7 +106,7 @@ func main() {
 	}
 
 	for _, file := range files {
-	if file.IsDir() {
+		if file.IsDir() {
 			continue	
 		}
 		if file.Name() == "layout.tmpl" || file.Name() == "layout_misc0nfig.tmpl" {

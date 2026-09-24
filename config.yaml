@@ -280,15 +280,6 @@ weeks_term:
   - index: 10
     date: 07/12/2026
 
-days_of_the_week:
-  - Mon
-  - Tue
-  - Wed
-  - Thu
-  - Fri
-  - Sat
-  - Sun
-
 current_events:
 
   - room: "TBD"
