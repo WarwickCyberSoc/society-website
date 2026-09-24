@@ -258,27 +258,30 @@ events:
     start: "14:00"
     end: "16:00"
 
-weeks_term:
-  - index: 1
-    date: 05/10/2026
-  - index: 2
-    date: 12/10/2026
-  - index: 3
-    date: 19/10/2026
-  - index: 4
-    date: 26/10/2026
-  - index: 5
-    date: 02/11/2026
-  - index: 6
-    date: 09/11/2026
-  - index: 7
-    date: 16/11/2026
-  - index: 8
-    date: 23/11/2026
-  - index: 9
-    date: 30/11/2026
-  - index: 10
-    date: 07/12/2026
+# weeks_term:
+#   - index: 1
+#     date: 05/10/2026
+#   - index: 2
+#     date: 12/10/2026
+#   - index: 3
+#     date: 19/10/2026
+#   - index: 4
+#     date: 26/10/2026
+#   - index: 5
+#     date: 02/11/2026
+#   - index: 6
+#     date: 09/11/2026
+#   - index: 7
+#     date: 16/11/2026
+#   - index: 8
+#     date: 23/11/2026
+#   - index: 9
+#     date: 30/11/2026
+#   - index: 10
+#     date: 07/12/2026
+
+term_start: 05/10/2026
+term_weeks_length: 10
 
 current_events:
 

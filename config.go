@@ -29,7 +29,8 @@ type Config struct {
 	SkipMap map[string]bool `yaml:"-"`
 	Timetable timetable `yaml:"-"`
 	TimetableDays []string `yaml:"days_of_the_week"`
-	TimetableWeeks []Week `yaml:"weeks_term"`
+	FirstDayOfTerm string `yaml:"term_start"`
+	TermLengthWeeks int `yaml:"term_weeks_length"`
 	TimetableCurrentEvents []currentEvent `yaml:"current_events"`
 	Opportunities opportunities `yaml:"opportunities`
 	Opportunity []opportunity `yaml:"-"`
@@ -84,8 +85,8 @@ type conferenceSchedule struct {
 }
 
 type Week struct {
-	Index		int		`yaml:"index"`
-	Date 		string	`yaml:"date"`
+	Index		int		`yaml:"-"`
+	Date 		string	`yaml:"-"`
 }
 
 type currentEvent struct {
