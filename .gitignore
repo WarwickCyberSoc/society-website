@@ -1,3 +1,4 @@
 build/
 go.sum
 parsedConfig.yaml
+google_credentials.json

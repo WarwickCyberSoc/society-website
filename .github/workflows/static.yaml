@@ -1,13 +1,15 @@
-# Simple workflow for deploying static content to GitHub Pages
 name: Deploy static content to Pages
 
 on:
-  # Runs on pushes targeting the default branch
   push:
     branches: ["master"]
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+  workflow_dispatch: # Manual run
+
+  # Because we use Go rather than an actual web framework, it was easier to integrate Google Calendar from Go
+  # This means we need to rebuild to sync with it
+  schedule:
+    - cron: 34 2 * * *
 
 # Sets permissions of the GITHUB_TOKEN to allow deployment to GitHub Pages
 permissions:
@@ -31,23 +33,34 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+
       - name: Install go
         uses: actions/setup-go@v2
         with:
           go-version: '1.21.6'
+
       - name: Install dependencies
         run: |
           go mod tidy
+
+      - name: Google OIDC
+        uses: 'google-github-actions/auth@v3'
+        with:
+          service_account: 'goose-bot@cybersoc-integration.iam.gserviceaccount.com'
+          workload_identity_provider: 'projects/542775616678/locations/global/workloadIdentityPools/soc-github-runners/providers/github'
+
       - name: Run go app
         run: |
           go run .
+          
       - name: Setup Pages
         uses: actions/configure-pages@v4
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload entire repository
           path: './build'
+
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

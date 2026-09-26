@@ -4,6 +4,8 @@ import (
 	"fmt"
 	"html/template"
 	"os"
+	"time"
+
 	"gopkg.in/yaml.v2"
 )
 
@@ -11,19 +13,19 @@ var templates map[string]*template.Template
 var config Config
 
 func init() {
-		// Remove build directory
+	// Remove build directory
 	err := os.RemoveAll("build")
 	if err != nil {
 		fmt.Println("Error removing build directory:", err)
 		os.Exit(1)
 	}
+
 	// Create build directory
 	err = os.Mkdir("build", 0755)
 	if err != nil {
 		fmt.Println("Error creating build directory:", err)
 		os.Exit(1)
 	}
-
 
 	templates = make(map[string]*template.Template)
 	config = Config{}
@@ -33,6 +35,7 @@ func init() {
 		os.Exit(1)
 	}
 	defer file.Close()
+
 	decoder := yaml.NewDecoder(file)
 	err = decoder.Decode(&config)
 	if err != nil {
@@ -48,14 +51,15 @@ func init() {
 		}{Name: "Home", Link: "/"})
 	}
 
-
 	// Save the config to a file
+	// Piero: for debugging I assume
 	file, err = os.Create("parsedConfig.yaml")
 	if err != nil {
 		fmt.Println("Error creating config file:", err)
 		os.Exit(1)
 	}
 	defer file.Close()
+
 	encoder := yaml.NewEncoder(file)
 	err = encoder.Encode(config)
 	if err != nil {
@@ -65,9 +69,7 @@ func init() {
 }
 
 func main() {
-
-	// Load every template
-	// layout
+	// Load every template layout
 	templates["layout"] = template.Must(template.ParseFiles("templates/layout.tmpl"))
 	templates["layout_misc0nfig"] = template.Must(template.ParseFiles("templates/layout_misc0nfig.tmpl"))
 	
@@ -83,17 +85,12 @@ func main() {
 		Timeslots: config.Timeslots,
 		Events:    config.Events,
 	}	
-	skipMap := prepareSchedule(&Schedule)
-	Schedule.SkipMap = skipMap
-
+	Schedule.SkipMap = prepareConferenceSchedule(&Schedule)
 
 	Timetable := timetable{
-		Days:			config.TimetableDays,
-		Weeks:			config.TimetableWeeks,
-		CurrentEvents:	config.TimetableCurrentEvents,
+		Days:			[]string{ "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun" },
 	}
-
-
+	Timetable.Weeks, Timetable.CurrentEvents = prepareTimetable(config.FirstDayOfTerm, config.TermLengthWeeks)
 
 	templateData := TemplateData{
 		Config: config,
@@ -102,11 +99,8 @@ func main() {
 	}
 
 	for _, file := range files {
-	if file.IsDir() {
+		if file.IsDir() || file.Name() == "layout.tmpl" || file.Name() == "layout_misc0nfig.tmpl" {
 			continue	
-		}
-		if file.Name() == "layout.tmpl" || file.Name() == "layout_misc0nfig.tmpl" {
-			continue
 		}
 
 		if file.Name() == "misc0nfig.tmpl" || file.Name() == "calendar.tmpl" {
@@ -115,73 +109,39 @@ func main() {
 			templates[file.Name()] = template.Must(templates["layout"].Clone())
 		}
 
-		// Generate the template
 		templates[file.Name()] = template.Must(templates[file.Name()].ParseFiles("templates/" + file.Name()))
 
-		// Execute the template (swap tmpl with html)
-		outFile, err := os.Create("build/" + file.Name()[:len(file.Name())-5] + ".html")
-		if err != nil {
-			fmt.Println("Error creating file:", err)
-			os.Exit(1)
-		}
-		if file.Name() == "misc0nfig.tmpl" || file.Name() == "calendar.tmpl" {
-			err = templates[file.Name()].ExecuteTemplate(outFile, "layout_misc0nfig", templateData)
-		} else {
-			err = templates[file.Name()].ExecuteTemplate(outFile, "layout", config)
-		}
-		if err != nil {
-			fmt.Println("Error executing template:", err)
-			os.Exit(1)
-		}
-		outFile.Close()
+		execTemplate(file, templateData)
 	}
 	
-	// Copy static files from public folder
-	// List all files in public folder
-	copyDir("public")
+	copyDirToBuild("public") // static files
 }
 
-func copyDir(dir string) {
-	// List all files in directory
-	files, err := os.ReadDir(dir)
+func prepareTimetable(firstDay string, termLengthWeeks int) ([]Week, []currentEvent) {
+	const dateFmt = "02/01/2006"
+	firstDayConv, err := time.Parse(dateFmt, firstDay);
 	if err != nil {
-		fmt.Println("Error reading directory:", err)
+		fmt.Println("Error parsing date:", err)
 		os.Exit(1)
 	}
-	// Create directory in build directory
-	if dir != "public" {
-		err = os.Mkdir("build/" + dir[7:], 0755)
-		if err != nil {
-			fmt.Println("Error creating directory:", err)
-			os.Exit(1)
+
+	calendarEvents := getAllEvents(firstDayConv, termLengthWeeks)
+
+	weeks := make([]Week, 0, termLengthWeeks)
+
+	for i := 0; i < termLengthWeeks; i++ {
+		week := Week {
+			Index: i + 1,
+			Date: firstDayConv.AddDate(0, 0, 7 * i).Format(dateFmt),
 		}
+
+		weeks = append(weeks, week)
 	}
-	// Copy each file to build directory
-	for _, file := range files {
-		if file.IsDir() {
-			copyDir(dir + "/" + file.Name())
-			continue
-		}
-		data, err := os.ReadFile(dir + "/" + file.Name())
-		if err != nil {
-			fmt.Println("Error reading file:", err)
-			os.Exit(1)
-		}
-		// Remove public from path
-		path := dir[6:]
-		// add slash if not present and length is not 0
-		if len(path) != 0 && path[len(path)-1] != '/' {
-			path += "/"
-		}
-		err = os.WriteFile("build/" + path + file.Name(), data, 0644)
-		if err != nil {
-			fmt.Println("Error copying file:", err)
-			os.Exit(1)
-		}
-	}
+
+	return weeks, calendarEvents
 }
 
-func prepareSchedule(schedule *conferenceSchedule) map[string]bool {
+func prepareConferenceSchedule(schedule *conferenceSchedule) map[string]bool {
     timeToIndex := make(map[string]int)
     for idx, t := range schedule.Timeslots {
         timeToIndex[t] = idx
@@ -205,5 +165,65 @@ func prepareSchedule(schedule *conferenceSchedule) map[string]bool {
             schedule.Events[i].RowSpan = 1
         }
     }
+
     return skipMap
+}
+
+// Swap tmpl with html
+func execTemplate(file os.DirEntry, data TemplateData) {
+	outFile, err := os.Create("build/" + file.Name()[:len(file.Name())-5] + ".html")
+	if err != nil {
+		fmt.Println("Error creating file:", err)
+		os.Exit(1)
+	}
+	if file.Name() == "misc0nfig.tmpl" || file.Name() == "calendar.tmpl" {
+		err = templates[file.Name()].ExecuteTemplate(outFile, "layout_misc0nfig", data)
+	} else {
+		err = templates[file.Name()].ExecuteTemplate(outFile, "layout", config)
+	}
+	if err != nil {
+		fmt.Println("Error executing template:", err)
+		os.Exit(1)
+	}
+	outFile.Close()
+}
+
+func copyDirToBuild(dir string) {
+	// List all files in directory
+	files, err := os.ReadDir(dir)
+	if err != nil {
+		fmt.Println("Error reading directory:", err)
+		os.Exit(1)
+	}
+	// Create directory in build directory
+	if dir != "public" {
+		err = os.Mkdir("build/" + dir[7:], 0755)
+		if err != nil {
+			fmt.Println("Error creating directory:", err)
+			os.Exit(1)
+		}
+	}
+	// Copy each file to build directory
+	for _, file := range files {
+		if file.IsDir() {
+			copyDirToBuild(dir + "/" + file.Name())
+			continue
+		}
+		data, err := os.ReadFile(dir + "/" + file.Name())
+		if err != nil {
+			fmt.Println("Error reading file:", err)
+			os.Exit(1)
+		}
+		// Remove public from path
+		path := dir[6:]
+		// add slash if not present and length is not 0
+		if len(path) != 0 && path[len(path)-1] != '/' {
+			path += "/"
+		}
+		err = os.WriteFile("build/" + path + file.Name(), data, 0644)
+		if err != nil {
+			fmt.Println("Error copying file:", err)
+			os.Exit(1)
+		}
+	}
 }
