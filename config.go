@@ -28,10 +28,8 @@ type Config struct {
 	Events []conferenceEvent  `yaml:"events"`
 	SkipMap map[string]bool `yaml:"-"`
 	Timetable timetable `yaml:"-"`
-	TimetableDays []string `yaml:"days_of_the_week"`
 	FirstDayOfTerm string `yaml:"term_start"`
 	TermLengthWeeks int `yaml:"term_weeks_length"`
-	TimetableCurrentEvents []currentEvent `yaml:"current_events"`
 	Opportunities opportunities `yaml:"opportunities`
 	Opportunity []opportunity `yaml:"-"`
 }
@@ -94,8 +92,7 @@ type currentEvent struct {
 	Room        string 	`yaml:"room"`
 	Start       string 	`yaml:"start"`
 	End         string	`yaml:"end"`
-	Type		string	`yaml:"type"`
-	Sober		bool	`yaml:"sober"`
+	Type		string	`yaml:"type"` // academic, sober, drinking
 	Week		int		`yaml:"week"`
 	Day			string	`yaml:"day"`
 }

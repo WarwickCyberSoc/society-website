@@ -4,8 +4,8 @@ import (
 	"fmt"
 	"html/template"
 	"os"
+	"time"
 
-	"github.com/rickb777/date/v2"
 	"gopkg.in/yaml.v2"
 )
 
@@ -87,15 +87,10 @@ func main() {
 	}	
 	Schedule.SkipMap = prepareConferenceSchedule(&Schedule)
 
-	if config.TimetableDays == nil {
-		config.TimetableDays = []string{ "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun" }
-	}
-
 	Timetable := timetable{
-		Days:			config.TimetableDays,
-		CurrentEvents:	config.TimetableCurrentEvents,
+		Days:			[]string{ "Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun" },
 	}
-	Timetable.Weeks = prepareTimetable(config.FirstDayOfTerm, config.TermLengthWeeks)
+	Timetable.Weeks, Timetable.CurrentEvents = prepareTimetable(config.FirstDayOfTerm, config.TermLengthWeeks)
 
 	templateData := TemplateData{
 		Config: config,
@@ -119,18 +114,18 @@ func main() {
 		execTemplate(file, templateData)
 	}
 	
-	// Copy static files from public folder
-	// List all files in public folder
-	copyDir("public")
+	copyDirToBuild("public") // static files
 }
 
-func prepareTimetable(firstDay string, termLengthWeeks int) []Week {
+func prepareTimetable(firstDay string, termLengthWeeks int) ([]Week, []currentEvent) {
 	const dateFmt = "02/01/2006"
-	firstDayConv, err := date.Parse(dateFmt, firstDay);
+	firstDayConv, err := time.Parse(dateFmt, firstDay);
 	if err != nil {
 		fmt.Println("Error parsing date:", err)
 		os.Exit(1)
 	}
+
+	calendarEvents := getAllEvents(firstDayConv, termLengthWeeks)
 
 	weeks := make([]Week, 0, termLengthWeeks)
 
@@ -143,7 +138,7 @@ func prepareTimetable(firstDay string, termLengthWeeks int) []Week {
 		weeks = append(weeks, week)
 	}
 
-	return weeks
+	return weeks, calendarEvents
 }
 
 func prepareConferenceSchedule(schedule *conferenceSchedule) map[string]bool {
@@ -193,7 +188,7 @@ func execTemplate(file os.DirEntry, data TemplateData) {
 	outFile.Close()
 }
 
-func copyDir(dir string) {
+func copyDirToBuild(dir string) {
 	// List all files in directory
 	files, err := os.ReadDir(dir)
 	if err != nil {
@@ -211,7 +206,7 @@ func copyDir(dir string) {
 	// Copy each file to build directory
 	for _, file := range files {
 		if file.IsDir() {
-			copyDir(dir + "/" + file.Name())
+			copyDirToBuild(dir + "/" + file.Name())
 			continue
 		}
 		data, err := os.ReadFile(dir + "/" + file.Name())
