@@ -40,7 +40,8 @@
         <tbody>
           {{ range $weekIdx, $week := $.Timetable.Weeks }}
             <tr>
-              <td>Week <b>{{ $week.Index }}</b><br>w/c <b>{{ $week.Date }}</b></td>
+              <!-- *Very* hacky way to substract, dont care will roll back after welcome week -->
+              <td>{{ if eq $week.Index 1 }} {{ "Welcome Week" }} {{ else }} Week <b> {{ len (slice (printf "%*s" $week.Index "") 1) }} </b> {{ end }}<br>w/c <b>{{ $week.Date }}</b></td>
 
               {{ range $dayIdx, $day := $.Timetable.Days }}
                   <td>
