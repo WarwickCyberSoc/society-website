@@ -3,6 +3,8 @@ package main
 import (
 	"context"
 	"log"
+	"slices"
+	"strings"
 	"time"
 
 	"google.golang.org/api/calendar/v3"
@@ -97,6 +99,10 @@ func getAllEvents(initialDate time.Time, weekCount int) []currentEvent {
 		events := getCalendarEvents(service, calendarId, eventType, initialDate, weekCount)
 		out = append(out, events...)
 	}
+
+	slices.SortFunc(out, func(a, b currentEvent) int {
+		return strings.Compare(a.Start, b.Start)
+	})
 
 	return out
 }
