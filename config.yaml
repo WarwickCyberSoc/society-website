@@ -101,7 +101,7 @@ sponsors:
       gradroles:
   - name: "Interrupt Labs"
     link: "https://www.interruptlabs.co.uk/careers"
-    image: "/images/IL_Logo.png"
+    image: "/images/InterruptLabs_Logo_Light.svg"
     level: "Silver"
     description: "Interrupt Labs is a leading vulnerability research company working on some of the toughest challenges in the industry; from popping browsers to exploiting phones and cars. We cover it all with an exceptional team of vulnerability researchers. To follow our latest research and job openings, follow us on LinkedIn or X @InterruptLabs."
     opportunities:
