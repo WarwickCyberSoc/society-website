@@ -21,12 +21,16 @@ exec:
     role: Inclusion Officer
   - name: Alex Roberts
     role: External Communications Officer
-  - name: Sophia Antoniou
-    role: Social Secretary
   - name: Jago Brazier
     role: Social Secretary
   - name: Elyana Zafar
     role: Publicity Officer
+  - name: Ethan Hawksley
+    role: Fresher's Representative
+  - name: Muhammad Taha
+    role: Fresher's Representative
+  - name: Billie Tinniswood
+    role: Fresher's Representative
 navbar:
   - name: Home
     link: /
@@ -49,10 +53,12 @@ achievements:
     year: 2024
   - title: "#1 - pwnEd2 CTF (2021)"
     year: 2021
+  - title: "#1 - The Sheffield Siege (2026)"
+    year: 2021
   - title: "#1 - HTB x UNI CTF Qualifiers (2021)"
     year: 2021
-  - title: "#1 - Veracode The Hacker Games (2021)"
-    year: 2021
+  # - title: "#1 - Veracode The Hacker Games (2021)"
+  #   year: 2021
  
 googleCalendarAPIKey: "AIzaSyB4zs2Pj-03aUlL5CHiRwU-PYVZR8glej0"
 googleCalendarID: "cb123093dad94d416cca0dab4107fac28aee675270cad0e082b8e7d35945df0a@group.calendar.google.com"
